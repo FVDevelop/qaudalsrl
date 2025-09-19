@@ -162,7 +162,7 @@ const Servicios = () => {
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 bg-gradient-to-b from-muted/30 to-background">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="section-title text-4xl md:text-6xl font-garet mb-8 uppercase font-normal" style={{color: '#737373'}}>
+          <h1 className="section-title text-4xl md:text-5xl font-garet mb-8 uppercase font-normal" style={{color: '#737373'}}>
             Nuestros Servicios
           </h1>
           <p className="text-xl max-w-4xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>

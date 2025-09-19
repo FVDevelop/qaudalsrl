@@ -79,6 +79,12 @@ const Header = () => {
               Servicios
             </Link>
             
+            <Link to="/como-trabajamos" className={`transition-colors font-light ${
+              location.pathname === "/como-trabajamos" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
+            }`}>
+              Cómo Trabajamos
+            </Link>
+            
             <Link to="/#metodologia" className={`transition-colors font-light ${
               isActive("/#metodologia") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
             }`}>
@@ -121,6 +127,11 @@ const Header = () => {
                 location.pathname === "/servicios" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
               }`} onClick={() => setIsMenuOpen(false)}>
                 Servicios
+              </Link>
+              <Link to="/como-trabajamos" className={`transition-colors font-light ${
+                location.pathname === "/como-trabajamos" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
+              }`} onClick={() => setIsMenuOpen(false)}>
+                Cómo Trabajamos
               </Link>
               <Link to="/#metodologia" className={`transition-colors font-light ${
                 isActive("/#metodologia") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
