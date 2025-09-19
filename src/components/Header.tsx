@@ -73,69 +73,11 @@ const Header = () => {
               Empresa
             </Link>
             
-            {/* Custom Services Menu */}
-            <div className="relative group" ref={servicesRef}>
-              <button 
-                className={`transition-colors font-light flex items-center gap-1 ${
-                  isActive("servicios") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
-                }`}
-                onClick={() => setIsServicesOpen(!isServicesOpen)}
-                onMouseEnter={() => setIsServicesOpen(true)}
-              >
-                Servicios
-                <ChevronDown className={`h-4 w-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
-              </button>
-              
-              {isServicesOpen && (
-                <div 
-                  className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-white border shadow-lg z-[60] rounded-none"
-                  onMouseEnter={() => setIsServicesOpen(true)}
-                  onMouseLeave={() => setIsServicesOpen(false)}
-                  style={{ width: 'calc(100vw - 2rem)', maxWidth: '900px' }}
-                >
-                  <div className="grid grid-cols-3 divide-x divide-gray-200">
-                    <Link 
-                      to="/#servicios-generales" 
-                      className="p-6 hover:bg-gray-50 transition-colors group text-center block"
-                      onClick={() => setIsServicesOpen(false)}
-                    >
-                      <h3 className="font-medium text-[#003249] mb-2 group-hover:text-[#007EA7]">
-                        Servicios Generales
-                      </h3>
-                      <p className="text-sm text-gray-600 font-light">
-                        Soluciones integrales para tu empresa
-                      </p>
-                    </Link>
-                    
-                    <Link 
-                      to="/#servicios-detallados" 
-                      className="p-6 hover:bg-gray-50 transition-colors group text-center block"
-                      onClick={() => setIsServicesOpen(false)}
-                    >
-                      <h3 className="font-medium text-[#003249] mb-2 group-hover:text-[#007EA7]">
-                        Servicios Detallados
-                      </h3>
-                      <p className="text-sm text-gray-600 font-light">
-                        Servicios especializados por área
-                      </p>
-                    </Link>
-                    
-                    <Link 
-                      to="/#servicios-complementarios" 
-                      className="p-6 hover:bg-gray-50 transition-colors group text-center block"
-                      onClick={() => setIsServicesOpen(false)}
-                    >
-                      <h3 className="font-medium text-[#003249] mb-2 group-hover:text-[#007EA7]">
-                        Servicios Complementarios
-                      </h3>
-                      <p className="text-sm text-gray-600 font-light">
-                        Servicios adicionales y de apoyo
-                      </p>
-                    </Link>
-                  </div>
-                </div>
-              )}
-            </div>
+            <Link to="/servicios" className={`transition-colors font-light ${
+              location.pathname === "/servicios" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
+            }`}>
+              Servicios
+            </Link>
             
             <Link to="/#metodologia" className={`transition-colors font-light ${
               isActive("/#metodologia") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
@@ -175,8 +117,8 @@ const Header = () => {
               }`} onClick={() => setIsMenuOpen(false)}>
                 Empresa
               </Link>
-              <Link to="/#servicios" className={`transition-colors font-light ${
-                isActive("servicios") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
+              <Link to="/servicios" className={`transition-colors font-light ${
+                location.pathname === "/servicios" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
               }`} onClick={() => setIsMenuOpen(false)}>
                 Servicios
               </Link>

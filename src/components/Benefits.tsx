@@ -5,21 +5,21 @@ const Benefits = () => {
   const benefits = [
     {
       icon: BadgeDollarSign,
-      title: "Reducción de Costos",
-      description: "Optimizamos recursos y procesos para reducir significativamente los costos operativos de tu empresa.",
-      highlight: "Hasta 30% de ahorro"
+      title: "Eficiencia Económica",
+      description: "Soluciones técnico-económicas optimizadas que maximizan el retorno de inversión en proyectos de infraestructura.",
+      highlight: "ROI optimizado"
     },
     {
       icon: "operational-continuity",
-      title: "Continuidad Operativa Garantizada",
-      description: "Protocolos de contingencia y mantenimiento preventivo que aseguran el funcionamiento ininterrumpido.",
-      highlight: "99.9% uptime"
+      title: "Integralidad de Servicios",
+      description: "Desde estudios y diseño hasta construcción, operación y mejora continua. Soluciones completas de principio a fin.",
+      highlight: "Ciclo completo"
     },
     {
       icon: GraduationCap,
-      title: "Personal Altamente Capacitado",
-      description: "Equipo especializado con formación continua en las últimas tecnologías del sector.",
-      highlight: "Personal experto"
+      title: "Experiencia Especializada",
+      description: "Equipo multidisciplinario con amplia experiencia en agua, saneamiento, energía y obras de infraestructura.",
+      highlight: "Expertise técnico"
     }
   ];
 
@@ -28,10 +28,10 @@ const Benefits = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-garet mb-8 uppercase font-normal section-title" style={{color: '#737373'}}>
-            Por qué elegir Innosphere?
+            Por qué elegirnos?
           </h2>
           <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#007EA7'}}>
-            Nos ocupamos de todo para que vos te enfoques en lo importante
+            Consultoría e ingeniería integral con alcance Argentina y exterior
           </p>
         </div>
 
@@ -76,11 +76,11 @@ const Benefits = () => {
         <div className="mt-16 text-center">
           <div className="max-w-4xl mx-auto bg-card rounded-none p-8 shadow-medium">
             <h3 className="text-2xl md:text-3xl font-garet font-normal text-foreground mb-6" style={{color: '#737373'}}>
-              Más que un proveedor, somos tu socio estratégico
+              Más que un consultor, somos tu socio de ingeniería
             </h3>
             <p className="text-lg font-light leading-relaxed mb-8" style={{color: '#737373'}}>
-              Entendemos que cada empresa tiene desafíos únicos. Por eso, desarrollamos 
-              soluciones a medida que se adaptan a tu sector, tamaño y objetivos específicos.
+              Trabajamos con equipo propio o en sociedad con terceros, adaptándonos a las necesidades específicas 
+              de cada proyecto de agua, saneamiento, energía y obras de infraestructura.
             </p>
             <div className="flex justify-center">
               <div className="text-center">

@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
+
 import Benefits from "@/components/Benefits";
 import Methodology from "@/components/Methodology";
 import ContactForm from "@/components/ContactForm";
@@ -31,7 +31,6 @@ const Index = () => {
       <Header />
       <Hero />
       <div className="homepage-content">
-        <Services />
         <Benefits />
         <Methodology />
         <ContactForm />

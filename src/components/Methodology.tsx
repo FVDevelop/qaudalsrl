@@ -11,30 +11,30 @@ const Methodology = () => {
   const steps = [
     {
       icon: Search,
-      title: "RELEVAMIENTO INICIAL",
-      description: "Análisis exhaustivo de instalaciones y procesos para entender la situación inicial.",
-      detail: "Auditoría completa de procesos y recursos",
+      title: "ESTUDIOS Y EVALUACIÓN",
+      description: "Investigación integral de recursos hídricos, estudios hidrogeológicos y análisis técnico-económico.",
+      detail: "Estudios especializados y planificación",
       bgColor: "#9AD1D4"
     },
     {
       icon: PenTool,
-      title: "INFORME DIAGNÓSTICO",
-      description: "Identificación de oportunidades de mejora y puntos críticos que requieren atención inmediata.",
-      detail: "Desarrollo de soluciones personalizadas",
+      title: "DISEÑO Y PROYECTO",
+      description: "Desarrollo de ingeniería, cálculos, optimización y documentación técnica completa del proyecto.",
+      detail: "Ingeniería detallada y documentación",
       bgColor: "#80CED7"
     },
     {
       icon: Play,
-      title: "PLAN DE ACCIÓN",
-      description: "Estrategia personalizada con objetivos claros y medibles para optimizar la operación y mantenimiento.",
-      detail: "Puesta en marcha con equipo especializado",
+      title: "CONSTRUCCIÓN Y MONTAJE",
+      description: "Ejecución de obras civiles e infraestructura con dirección técnica y control de calidad.",
+      detail: "Construcción y puesta en marcha",
       bgColor: "#007EA7"
     },
     {
       icon: BarChart3,
-      title: "CONSULTORÍA APLICADA",
-      description: "Acompañamiento continuo para implementación y optimización de soluciones propuestas.",
-      detail: "Seguimiento y optimización permanente",
+      title: "OPERACIÓN Y MEJORA",
+      description: "Gestión operativa, mantenimiento especializado y optimización continua de los sistemas.",
+      detail: "Operación y mejora continua",
       bgColor: "#003249"
     }
   ];
@@ -47,7 +47,7 @@ const Methodology = () => {
             Metodología y Procesos
           </h2>
           <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed text-muted-foreground">
-            Un enfoque estructurado que garantiza resultados excepcionales en cada proyecto
+            Desde estudios hasta operación: un enfoque integral para proyectos de agua, saneamiento y energía
           </p>
         </div>
 

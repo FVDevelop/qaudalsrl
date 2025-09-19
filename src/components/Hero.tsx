@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import heroBackground from "@/assets/hero-background.jpg";
+import heroBackground from "@/assets/hero-consulting-background.jpg";
 
 const Hero = () => {
   return (
@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src={heroBackground} 
-          alt="Instalaciones profesionales gestionadas por Innosphere"
+          alt="Infraestructura de agua, saneamiento y energía"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/20"></div>
@@ -22,15 +22,15 @@ const Hero = () => {
           <div className="flex justify-start">
             <div className="bg-black/30 p-8 text-left backdrop-blur-sm max-w-4xl">
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-garet mb-8 tracking-wide leading-tight text-white uppercase font-normal">
-                Gestión de Instalaciones
+                Consultoría e Ingeniería Integral
                 <span className="block text-2xl md:text-3xl lg:text-4xl mt-4 font-normal">
-                  FACILITY MANAGMENT
+                  AGUA • SANEAMIENTO • ENERGÍA • OBRAS
                 </span>
               </h1>
               
               <p className="text-base md:text-xl mb-12 max-w-4xl font-light leading-relaxed opacity-95 text-white">
-                Soluciones integrales para la gestión de tus espacios. Desde el mantenimiento técnico 
-                hasta la gestión de servicios, optimizamos cada aspecto de tu infraestructura.
+                Soluciones integrales desde estudios y diseño hasta construcción, operación y mejora continua. 
+                Alcance Argentina y exterior, con equipo propio o en sociedad con terceros.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-start items-start">
