@@ -13,11 +13,10 @@ const WhatsAppCTA = () => {
   return (
     <button 
       onClick={handleClick}
-      className="whatsapp-cta"
+      className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
       aria-label="Contactanos por WhatsApp"
     >
-      <MessageCircle className="w-5 h-5" />
-      Contáctanos ahora
+      <MessageCircle className="w-7 h-7" />
     </button>
   );
 };

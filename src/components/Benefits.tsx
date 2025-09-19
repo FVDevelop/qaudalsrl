@@ -1,31 +1,54 @@
-import { BadgeDollarSign, Cog, RefreshCcw, GraduationCap, Settings } from "lucide-react";
+import { TrendingDown, Shield, Clock, ShieldCheck, ArrowUpRight } from "lucide-react";
+import benefitsHeroBackground from "@/assets/benefits-hero-background.jpg";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Benefits = () => {
   const benefits = [
     {
-      icon: BadgeDollarSign,
-      title: "Eficiencia Económica",
-      description: "Soluciones técnico-económicas optimizadas que maximizan el retorno de inversión en proyectos de infraestructura.",
-      highlight: "ROI optimizado"
+      icon: TrendingDown,
+      title: "Menores Costos Operativos",
+      description: "Menores costos operativos por optimización y eficiencia energética.",
+      highlight: "Eficiencia energética"
     },
     {
-      icon: "operational-continuity",
-      title: "Integralidad de Servicios",
-      description: "Desde estudios y diseño hasta construcción, operación y mejora continua. Soluciones completas de principio a fin.",
-      highlight: "Ciclo completo"
+      icon: Shield,
+      title: "Mayor Confiabilidad",
+      description: "Mayor confiabilidad y continuidad de servicio por mantenimiento planificado.",
+      highlight: "Continuidad garantizada"
     },
     {
-      icon: GraduationCap,
-      title: "Experiencia Especializada",
-      description: "Equipo multidisciplinario con amplia experiencia en agua, saneamiento, energía y obras de infraestructura.",
-      highlight: "Expertise técnico"
+      icon: Clock,
+      title: "Tiempos Optimizados",
+      description: "Tiempos de ejecución más cortos por gestión integral del ciclo de vida.",
+      highlight: "Gestión integral"
+    },
+    {
+      icon: ShieldCheck,
+      title: "Reducción de Riesgos",
+      description: "Reducción de riesgos técnicos, ambientales y regulatorios.",
+      highlight: "Mitigación de riesgos"
+    },
+    {
+      icon: ArrowUpRight,
+      title: "Escalabilidad",
+      description: "Escalabilidad de soluciones y tecnologías según demanda.",
+      highlight: "Crecimiento adaptable"
     }
   ];
 
   return (
-    <section id="beneficios" className="py-section bg-white scroll-mt-28 md:scroll-mt-32">
-      <div className="container mx-auto px-4">
+    <section id="beneficios" className="py-section scroll-mt-28 md:scroll-mt-32 relative">
+      {/* Hero Background */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={benefitsHeroBackground} 
+          alt="Infrastructure and Engineering Solutions" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-white/85"></div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-garet mb-8 uppercase font-normal section-title" style={{color: '#737373'}}>
             Por qué elegirnos?
@@ -35,27 +58,44 @@ const Benefits = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {benefits.map((benefit, index) => (
-            <Card key={index} className="service-card border-0 text-center group rounded-none">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {/* First row: 3 items */}
+          {benefits.slice(0, 3).map((benefit, index) => (
+            <Card key={index} className="bg-white border-0 text-center group rounded-none shadow-md hover:shadow-lg transition-all duration-300">
               <CardContent className="p-8">
                 <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-[#007EA7] to-[#007EA7]/80 rounded-none flex items-center justify-center shadow-medium group-hover:shadow-strong transition-all duration-300">
-                  {benefit.icon === "operational-continuity" ? (
-                    <div className="relative">
-                      <Cog className="h-10 w-10 text-white" />
-                      <RefreshCcw className="h-6 w-6 text-white absolute -top-1 -right-1 animate-spin" style={{ animationDuration: '3s' }} />
-                    </div>
-                  ) : (
-                    <benefit.icon className="h-10 w-10 text-white" />
-                  )}
+                  <benefit.icon className="h-10 w-10 text-white" />
                 </div>
                 
                 <div className="mb-4">
-                  <span className={`inline-block px-3 py-1 text-sm font-medium rounded-full ${
-                    benefit.highlight === "Próximamente" 
-                      ? "bg-accent/10 text-accent border border-accent/20 rotate-2 shadow-md" 
-                      : "bg-accent/10 text-accent"
-                  }`}>
+                  <span className="inline-block px-3 py-1 text-sm font-medium rounded-full bg-accent/10 text-accent">
+                    {benefit.highlight}
+                  </span>
+                </div>
+                
+                <h3 className="text-xl font-garet font-normal mb-4 uppercase" style={{color: '#737373'}}>
+                  {benefit.title}
+                </h3>
+                
+                <p className="font-light leading-relaxed" style={{color: '#003249'}}>
+                  {benefit.description}
+                </p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+        
+        {/* Second row: 2 items centered */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-8">
+          {benefits.slice(3, 5).map((benefit, index) => (
+            <Card key={index + 3} className="bg-white border-0 text-center group rounded-none shadow-md hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-8">
+                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-[#007EA7] to-[#007EA7]/80 rounded-none flex items-center justify-center shadow-medium group-hover:shadow-strong transition-all duration-300">
+                  <benefit.icon className="h-10 w-10 text-white" />
+                </div>
+                
+                <div className="mb-4">
+                  <span className="inline-block px-3 py-1 text-sm font-medium rounded-full bg-accent/10 text-accent">
                     {benefit.highlight}
                   </span>
                 </div>
