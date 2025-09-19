@@ -1,0 +1,251 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+/* Innosphere Design System - Elegant & Professional */
+
+@layer base {
+  :root {
+    /* Core Brand Colors (reverted to previous neutral palette) */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    /* Surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    /* Brand */
+    --primary: 222.2 47.4% 11.2%;
+    --primary-light: 222.2 47.4% 20%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Secondary */
+    --secondary: 210 40% 96.1%;
+    --secondary-light: 210 40% 92%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    /* Accent (used for CTAs) */
+    --accent: 217.2 91.2% 59.8%;
+    --accent-light: 217.2 91.2% 70%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Muted */
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    /* Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders and Rings */
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(var(--muted)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 98%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 2px 8px hsla(0, 0%, 0%, 0.04);
+    --shadow-medium: 0 4px 16px hsla(0, 0%, 0%, 0.08);
+    --shadow-strong: 0 8px 32px hsla(0, 0%, 0%, 0.12);
+    --shadow-hero: 0 20px 60px hsla(0, 0%, 0%, 0.12);
+
+    /* Spacing System */
+    --space-section: 5rem;
+    --space-content: 2rem;
+
+    --radius: 0.75rem;
+
+    /* Sidebar (kept for components) */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-garet antialiased;
+  }
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-garet tracking-wide;
+    color: #737373;
+  }
+
+  /* Global text size reduction - 2pts smaller except homepage */
+  html {
+    font-size: 14px;
+  }
+  
+  /* Homepage keeps original size */
+  .homepage-content {
+    font-size: 16px;
+  }
+  
+  /* Decorative title lines */
+  .section-title {
+    position: relative;
+  }
+  
+  .section-title::before,
+  .section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #007EA7, #003249);
+  }
+  
+  .section-title::before {
+    top: -12px;
+  }
+  
+  .section-title::after {
+    bottom: -12px;
+  }
+
+  /* White text override */
+  .text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6 {
+    color: white !important;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+}
+
+@layer components {
+  /* Hero Section */
+  .hero-section {
+    background: var(--gradient-hero);
+    box-shadow: var(--shadow-hero);
+  }
+
+  /* Card Components */
+  .service-card {
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-medium);
+    @apply transition-all duration-300 hover:shadow-[var(--shadow-strong)] hover:-translate-y-1;
+  }
+
+  /* Section Backgrounds and Spacing */
+  .py-section {
+    @apply py-12;
+  }
+  
+  .section-muted {
+    background: var(--gradient-section);
+  }
+
+  /* Animations */
+  .fade-up {
+    @apply opacity-0 translate-y-8 transition-all duration-700;
+  }
+
+  .fade-up.animate {
+    @apply opacity-100 translate-y-0;
+  }
+
+  /* Professional Button Variants */
+  .btn-hero {
+    @apply bg-accent hover:bg-accent/90 text-accent-foreground font-medium px-8 py-4 rounded-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5;
+  }
+
+  .btn-outline-elegant {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-light px-6 py-3 rounded-none transition-all duration-300;
+  }
+  
+  /* WhatsApp CTA */
+  .whatsapp-cta {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #25d366;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-family: 'Garet', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .whatsapp-cta:hover {
+    background: #128c7e;
+    transform: translateY(-2px);
+  }
+
+  /* Squared buttons globally */
+  button, .btn {
+    @apply rounded-none;
+  }
+}
