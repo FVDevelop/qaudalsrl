@@ -5,13 +5,8 @@ import WhatsAppCTA from '@/components/WhatsAppCTA';
 import { Card, CardContent } from '@/components/ui/card';
 import { Search, PenTool, Calendar, HardHat, Play, Settings, ArrowRight, ArrowDown } from 'lucide-react';
 
-// Import background images
-import diagnosticoBackground from '@/assets/diagnostico-background.jpg';
-import ingenieriaBackground from '@/assets/ingenieria-background.jpg';
-import planObraBackground from '@/assets/plan-obra-background.jpg';
-import ejecucionBackground from '@/assets/ejecucion-background.jpg';
-import puestaMarchaBackground from '@/assets/puesta-marcha-background.jpg';
-import operacionBackground from '@/assets/operacion-background.jpg';
+// Import hero background image
+import heroConsultingBackground from '@/assets/hero-consulting-background.jpg';
 
 const ComoTrabajamos = () => {
   const workflowSteps = [
@@ -20,7 +15,6 @@ const ComoTrabajamos = () => {
       title: "Diagnóstico",
       color: "#9AD1D4",
       gradient: "from-[#9AD1D4] to-[#80CED7]",
-      background: diagnosticoBackground,
       bullets: [
         "Relevamiento de condiciones existentes",
         "Recolección de datos técnicos y operativos",
@@ -34,7 +28,6 @@ const ComoTrabajamos = () => {
       title: "Ingeniería",
       color: "#80CED7",
       gradient: "from-[#80CED7] to-[#007EA7]",
-      background: ingenieriaBackground,
       bullets: [
         "Desarrollo de alternativas técnicas",
         "Diseño detallado de sistemas",
@@ -48,7 +41,6 @@ const ComoTrabajamos = () => {
       title: "Plan de obra",
       color: "#007EA7",
       gradient: "from-[#007EA7] to-[#005577]",
-      background: planObraBackground,
       bullets: [
         "Elaboración de cronograma detallado",
         "Presupuesto integral del proyecto",
@@ -62,7 +54,6 @@ const ComoTrabajamos = () => {
       title: "Ejecución",
       color: "#005577",
       gradient: "from-[#005577] to-[#003249]",
-      background: ejecucionBackground,
       bullets: [
         "Dirección técnica de obra",
         "Inspección y control de calidad",
@@ -76,7 +67,6 @@ const ComoTrabajamos = () => {
       title: "Puesta en marcha",
       color: "#003249",
       gradient: "from-[#003249] to-[#737373]",
-      background: puestaMarchaBackground,
       bullets: [
         "Comisionamiento de sistemas",
         "Pruebas de funcionamiento",
@@ -90,7 +80,6 @@ const ComoTrabajamos = () => {
       title: "Operación y mejora",
       color: "#737373",
       gradient: "from-[#737373] to-[#9AD1D4]",
-      background: operacionBackground,
       bullets: [
         "Monitoreo continuo de performance",
         "Medición y verificación (M&V)",
@@ -106,12 +95,16 @@ const ComoTrabajamos = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16 bg-gradient-to-b from-muted/30 to-background">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="section-title text-4xl md:text-5xl font-garet mb-8 uppercase font-normal" style={{color: '#737373'}}>
+      <section 
+        className="relative pt-32 pb-20 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroConsultingBackground})` }}
+      >
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="relative z-10 container mx-auto px-4 text-center">
+          <h1 className="section-title text-4xl md:text-6xl font-garet mb-8 uppercase font-normal text-white">
             Cómo Trabajamos
           </h1>
-          <p className="text-xl max-w-4xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
+          <p className="text-xl md:text-2xl max-w-4xl mx-auto font-light leading-relaxed text-white/90">
             Nuestro proceso integral garantiza la excelencia desde el diagnóstico inicial 
             hasta la operación y mejora continua de cada proyecto.
           </p>
@@ -119,7 +112,7 @@ const ComoTrabajamos = () => {
       </section>
 
       {/* Workflow Cards Section */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-gradient-to-b from-background to-muted/20">
         <div className="max-w-7xl mx-auto">
           {/* Desktop and Tablet View - 3x2 Grid */}
           <div className="hidden md:block">
@@ -127,16 +120,8 @@ const ComoTrabajamos = () => {
             <div className="grid grid-cols-3 gap-8 mb-8">
               {workflowSteps.slice(0, 3).map((step, index) => (
                 <div key={step.title} className="relative">
-                  <Card className="h-[400px] overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 relative group">
-                    {/* Background Image */}
-                    <div 
-                      className="absolute inset-0 bg-cover bg-center"
-                      style={{ backgroundImage: `url(${step.background})` }}
-                    >
-                      <div className="absolute inset-0 bg-black/40"></div>
-                    </div>
-                    
-                    <CardContent className="relative z-10 p-6 h-full flex flex-col">
+                  <Card className="h-[400px] overflow-hidden bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 relative group hover:-translate-y-1">
+                    <CardContent className="p-6 h-full flex flex-col">
                       {/* Top Section - Circle */}
                       <div className="flex justify-center mb-6">
                         <div 
@@ -147,16 +132,19 @@ const ComoTrabajamos = () => {
                       </div>
                       
                       {/* Title */}
-                      <h3 className="text-xl font-bold text-white text-center mb-4 font-garet uppercase">
+                      <h3 className="text-xl font-bold text-gray-800 text-center mb-6 font-garet uppercase">
                         {step.title}
                       </h3>
                       
                       {/* Bottom Section - Bullets */}
-                      <div className="flex-1">
-                        <ul className="space-y-2">
+                      <div className="flex-1 bg-gray-50 rounded-lg p-4 border border-gray-100">
+                        <ul className="space-y-3">
                           {step.bullets.map((bullet, bulletIndex) => (
-                            <li key={bulletIndex} className="flex items-start text-white/90 text-sm font-garet">
-                              <span className="w-2 h-2 rounded-full bg-white/80 mt-2 mr-3 flex-shrink-0"></span>
+                            <li key={bulletIndex} className="flex items-start text-gray-700 text-sm font-garet leading-relaxed">
+                              <span 
+                                className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"
+                                style={{ backgroundColor: step.color }}
+                              ></span>
                               {bullet}
                             </li>
                           ))}
@@ -184,16 +172,8 @@ const ComoTrabajamos = () => {
             <div className="grid grid-cols-3 gap-8">
               {workflowSteps.slice(3).map((step, index) => (
                 <div key={step.title} className="relative">
-                  <Card className="h-[400px] overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 relative group">
-                    {/* Background Image */}
-                    <div 
-                      className="absolute inset-0 bg-cover bg-center"
-                      style={{ backgroundImage: `url(${step.background})` }}
-                    >
-                      <div className="absolute inset-0 bg-black/40"></div>
-                    </div>
-                    
-                    <CardContent className="relative z-10 p-6 h-full flex flex-col">
+                  <Card className="h-[400px] overflow-hidden bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 relative group hover:-translate-y-1">
+                    <CardContent className="p-6 h-full flex flex-col">
                       {/* Top Section - Circle */}
                       <div className="flex justify-center mb-6">
                         <div 
@@ -204,16 +184,19 @@ const ComoTrabajamos = () => {
                       </div>
                       
                       {/* Title */}
-                      <h3 className="text-xl font-bold text-white text-center mb-4 font-garet uppercase">
+                      <h3 className="text-xl font-bold text-gray-800 text-center mb-6 font-garet uppercase">
                         {step.title}
                       </h3>
                       
                       {/* Bottom Section - Bullets */}
-                      <div className="flex-1">
-                        <ul className="space-y-2">
+                      <div className="flex-1 bg-gray-50 rounded-lg p-4 border border-gray-100">
+                        <ul className="space-y-3">
                           {step.bullets.map((bullet, bulletIndex) => (
-                            <li key={bulletIndex} className="flex items-start text-white/90 text-sm font-garet">
-                              <span className="w-2 h-2 rounded-full bg-white/80 mt-2 mr-3 flex-shrink-0"></span>
+                            <li key={bulletIndex} className="flex items-start text-gray-700 text-sm font-garet leading-relaxed">
+                              <span 
+                                className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"
+                                style={{ backgroundColor: step.color }}
+                              ></span>
                               {bullet}
                             </li>
                           ))}
@@ -237,16 +220,8 @@ const ComoTrabajamos = () => {
           <div className="block md:hidden space-y-6">
             {workflowSteps.map((step, index) => (
               <div key={step.title} className="relative">
-                <Card className="h-[350px] overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 relative group">
-                  {/* Background Image */}
-                  <div 
-                    className="absolute inset-0 bg-cover bg-center"
-                    style={{ backgroundImage: `url(${step.background})` }}
-                  >
-                    <div className="absolute inset-0 bg-black/40"></div>
-                  </div>
-                  
-                  <CardContent className="relative z-10 p-6 h-full flex flex-col">
+                <Card className="h-[350px] overflow-hidden bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 relative group">
+                  <CardContent className="p-6 h-full flex flex-col">
                     {/* Top Section - Circle */}
                     <div className="flex justify-center mb-4">
                       <div 
@@ -257,16 +232,19 @@ const ComoTrabajamos = () => {
                     </div>
                     
                     {/* Title */}
-                    <h3 className="text-lg font-bold text-white text-center mb-4 font-garet uppercase">
+                    <h3 className="text-lg font-bold text-gray-800 text-center mb-4 font-garet uppercase">
                       {step.title}
                     </h3>
                     
                     {/* Bottom Section - Bullets */}
-                    <div className="flex-1">
+                    <div className="flex-1 bg-gray-50 rounded-lg p-4 border border-gray-100">
                       <ul className="space-y-2">
                         {step.bullets.map((bullet, bulletIndex) => (
-                          <li key={bulletIndex} className="flex items-start text-white/90 text-sm font-garet">
-                            <span className="w-2 h-2 rounded-full bg-white/80 mt-2 mr-3 flex-shrink-0"></span>
+                          <li key={bulletIndex} className="flex items-start text-gray-700 text-sm font-garet leading-relaxed">
+                            <span 
+                              className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"
+                              style={{ backgroundColor: step.color }}
+                            ></span>
                             {bullet}
                           </li>
                         ))}
