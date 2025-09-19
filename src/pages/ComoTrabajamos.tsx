@@ -1,66 +1,103 @@
-import { 
-  Search, 
-  PenTool, 
-  Calendar, 
-  HardHat, 
-  Play, 
-  Settings,
-  ArrowRight
-} from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import WhatsAppCTA from "@/components/WhatsAppCTA";
+import React from 'react';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import WhatsAppCTA from '@/components/WhatsAppCTA';
+import { Card, CardContent } from '@/components/ui/card';
+import { Search, PenTool, Calendar, HardHat, Play, Settings, ArrowRight, ArrowDown } from 'lucide-react';
+
+// Import background images
+import diagnosticoBackground from '@/assets/diagnostico-background.jpg';
+import ingenieriaBackground from '@/assets/ingenieria-background.jpg';
+import planObraBackground from '@/assets/plan-obra-background.jpg';
+import ejecucionBackground from '@/assets/ejecucion-background.jpg';
+import puestaMarchaBackground from '@/assets/puesta-marcha-background.jpg';
+import operacionBackground from '@/assets/operacion-background.jpg';
 
 const ComoTrabajamos = () => {
   const workflowSteps = [
     {
       icon: Search,
       title: "Diagnóstico",
-      description: "Relevamiento, datos base, riesgos y oportunidades",
-      details: "Análisis exhaustivo de la situación actual, recolección de datos técnicos y operativos, identificación de riesgos potenciales y evaluación de oportunidades de mejora para establecer una línea base sólida.",
       color: "#9AD1D4",
-      gradient: "from-[#9AD1D4] to-[#80CED7]"
+      gradient: "from-[#9AD1D4] to-[#80CED7]",
+      background: diagnosticoBackground,
+      bullets: [
+        "Relevamiento de condiciones existentes",
+        "Recolección de datos técnicos y operativos",
+        "Identificación de riesgos y oportunidades",
+        "Análisis de normativas aplicables",
+        "Evaluación de recursos disponibles"
+      ]
     },
     {
       icon: PenTool,
       title: "Ingeniería",
-      description: "Alternativas, diseño y documentación técnica",
-      details: "Desarrollo de alternativas de solución, diseño detallado de sistemas y procesos, elaboración de planos técnicos, especificaciones y documentación completa para la implementación del proyecto.",
       color: "#80CED7",
-      gradient: "from-[#80CED7] to-[#007EA7]"
+      gradient: "from-[#80CED7] to-[#007EA7]",
+      background: ingenieriaBackground,
+      bullets: [
+        "Desarrollo de alternativas técnicas",
+        "Diseño detallado de sistemas",
+        "Elaboración de planos y especificaciones",
+        "Cálculos estructurales y de proceso",
+        "Documentación técnica completa"
+      ]
     },
     {
       icon: Calendar,
       title: "Plan de obra",
-      description: "Cronograma, presupuesto, contrataciones",
-      details: "Planificación detallada del proyecto con cronograma de actividades, elaboración de presupuesto integral, gestión de contrataciones y definición de recursos necesarios para la ejecución exitosa.",
       color: "#007EA7",
-      gradient: "from-[#007EA7] to-[#005577]"
+      gradient: "from-[#007EA7] to-[#005577]",
+      background: planObraBackground,
+      bullets: [
+        "Elaboración de cronograma detallado",
+        "Presupuesto integral del proyecto",
+        "Gestión de contrataciones",
+        "Definición de recursos necesarios",
+        "Planificación logística"
+      ]
     },
     {
       icon: HardHat,
       title: "Ejecución",
-      description: "Dirección/inspección, aseguramiento de calidad",
-      details: "Dirección técnica de obra, inspección continua de procesos, control de calidad en todas las etapas, coordinación de equipos de trabajo y supervisión del cumplimiento de especificaciones técnicas.",
       color: "#005577",
-      gradient: "from-[#005577] to-[#003249]"
+      gradient: "from-[#005577] to-[#003249]",
+      background: ejecucionBackground,
+      bullets: [
+        "Dirección técnica de obra",
+        "Inspección y control de calidad",
+        "Coordinación de equipos de trabajo",
+        "Supervisión de cumplimiento normativo",
+        "Gestión de cambios y contingencias"
+      ]
     },
     {
       icon: Play,
       title: "Puesta en marcha",
-      description: "Comisionamiento y capacitación",
-      details: "Comisionamiento de sistemas y equipos, pruebas de funcionamiento, ajustes operativos, capacitación del personal técnico y operativo, y transferencia de conocimiento para la operación autónoma.",
       color: "#003249",
-      gradient: "from-[#003249] to-[#737373]"
+      gradient: "from-[#003249] to-[#737373]",
+      background: puestaMarchaBackground,
+      bullets: [
+        "Comisionamiento de sistemas",
+        "Pruebas de funcionamiento",
+        "Ajustes operativos",
+        "Capacitación del personal",
+        "Transferencia de conocimiento"
+      ]
     },
     {
       icon: Settings,
       title: "Operación y mejora",
-      description: "Monitoreo, M&V, mantenimiento y optimización",
-      details: "Monitoreo continuo de performance, medición y verificación de resultados, implementación de planes de mantenimiento preventivo y correctivo, optimización de procesos y mejora continua del sistema.",
       color: "#737373",
-      gradient: "from-[#737373] to-[#9AD1D4]"
+      gradient: "from-[#737373] to-[#9AD1D4]",
+      background: operacionBackground,
+      bullets: [
+        "Monitoreo continuo de performance",
+        "Medición y verificación (M&V)",
+        "Mantenimiento preventivo y correctivo",
+        "Optimización de procesos",
+        "Mejora continua del sistema"
+      ]
     }
   ];
 
@@ -81,187 +118,171 @@ const ComoTrabajamos = () => {
         </div>
       </section>
 
-      {/* Workflow Steps */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          
-          {/* Desktop Flow - Horizontal */}
-          <div className="hidden lg:block">
-            <div className="flex items-center justify-between mb-16">
-              {workflowSteps.map((step, index) => (
-                <div key={index} className="flex items-center">
-                  {/* Step Circle */}
-                  <div className="flex flex-col items-center">
+      {/* Workflow Cards Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          {/* Desktop and Tablet View - 3x2 Grid */}
+          <div className="hidden md:block">
+            {/* First Row */}
+            <div className="grid grid-cols-3 gap-8 mb-8">
+              {workflowSteps.slice(0, 3).map((step, index) => (
+                <div key={step.title} className="relative">
+                  <Card className="h-[400px] overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 relative group">
+                    {/* Background Image */}
                     <div 
-                      className={`w-20 h-20 rounded-full bg-gradient-to-br ${step.gradient} flex items-center justify-center shadow-lg mb-4 hover:scale-110 transition-transform duration-300`}
+                      className="absolute inset-0 bg-cover bg-center"
+                      style={{ backgroundImage: `url(${step.background})` }}
                     >
-                      <step.icon className="h-10 w-10 text-white" />
+                      <div className="absolute inset-0 bg-black/40"></div>
                     </div>
-                    <div className="text-center max-w-xs">
-                      <h3 className="text-lg font-garet font-normal mb-2 uppercase" style={{color: '#003249'}}>
+                    
+                    <CardContent className="relative z-10 p-6 h-full flex flex-col">
+                      {/* Top Section - Circle */}
+                      <div className="flex justify-center mb-6">
+                        <div 
+                          className={`w-20 h-20 rounded-full bg-gradient-to-br ${step.gradient} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                        >
+                          <step.icon className="w-10 h-10 text-white" />
+                        </div>
+                      </div>
+                      
+                      {/* Title */}
+                      <h3 className="text-xl font-bold text-white text-center mb-4 font-garet uppercase">
                         {step.title}
                       </h3>
-                      <p className="text-sm font-light" style={{color: '#737373'}}>
-                        {step.description}
-                      </p>
-                    </div>
-                  </div>
+                      
+                      {/* Bottom Section - Bullets */}
+                      <div className="flex-1">
+                        <ul className="space-y-2">
+                          {step.bullets.map((bullet, bulletIndex) => (
+                            <li key={bulletIndex} className="flex items-start text-white/90 text-sm font-garet">
+                              <span className="w-2 h-2 rounded-full bg-white/80 mt-2 mr-3 flex-shrink-0"></span>
+                              {bullet}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </CardContent>
+                  </Card>
                   
-                  {/* Arrow (except for last item) */}
-                  {index < workflowSteps.length - 1 && (
-                    <ArrowRight 
-                      className="h-8 w-8 mx-6 text-[#007EA7] animate-pulse" 
-                    />
+                  {/* Arrow to next step */}
+                  {index < 2 && (
+                    <div className="absolute -right-4 top-1/2 transform -translate-y-1/2 z-20">
+                      <ArrowRight className="w-8 h-8 text-primary bg-background rounded-full p-1 shadow-lg" />
+                    </div>
                   )}
                 </div>
               ))}
             </div>
             
-            {/* Details Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {workflowSteps.map((step, index) => (
-                <Card key={index} className="service-card border-0 hover:scale-105 transition-transform duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex items-center mb-4">
-                      <div 
-                        className={`w-12 h-12 rounded-full bg-gradient-to-br ${step.gradient} flex items-center justify-center mr-4`}
-                      >
-                        <step.icon className="h-6 w-6 text-white" />
-                      </div>
-                      <h4 className="text-lg font-garet font-normal uppercase" style={{color: '#003249'}}>
-                        {step.title}
-                      </h4>
-                    </div>
-                    <p className="font-light leading-relaxed text-sm" style={{color: '#737373'}}>
-                      {step.details}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-
-          {/* Tablet Flow - 2 Rows */}
-          <div className="hidden md:block lg:hidden">
-            <div className="space-y-12">
-              {/* First Row - 3 steps */}
-              <div className="flex items-center justify-between">
-                {workflowSteps.slice(0, 3).map((step, index) => (
-                  <div key={index} className="flex items-center">
-                    <div className="flex flex-col items-center">
-                      <div 
-                        className={`w-16 h-16 rounded-full bg-gradient-to-br ${step.gradient} flex items-center justify-center shadow-lg mb-3 hover:scale-110 transition-transform duration-300`}
-                      >
-                        <step.icon className="h-8 w-8 text-white" />
-                      </div>
-                      <div className="text-center max-w-xs">
-                        <h3 className="text-base font-garet font-normal mb-2 uppercase" style={{color: '#003249'}}>
-                          {step.title}
-                        </h3>
-                        <p className="text-xs font-light" style={{color: '#737373'}}>
-                          {step.description}
-                        </p>
-                      </div>
-                    </div>
-                    {index < 2 && (
-                      <ArrowRight className="h-6 w-6 mx-4 text-[#007EA7]" />
-                    )}
-                  </div>
-                ))}
-              </div>
-              
-              {/* Connecting Arrow Down */}
-              <div className="flex justify-center">
-                <ArrowRight className="h-8 w-8 rotate-90 text-[#007EA7] animate-pulse" />
-              </div>
-              
-              {/* Second Row - 3 steps */}
-              <div className="flex items-center justify-between">
-                {workflowSteps.slice(3).map((step, index) => (
-                  <div key={index} className="flex items-center">
-                    <div className="flex flex-col items-center">
-                      <div 
-                        className={`w-16 h-16 rounded-full bg-gradient-to-br ${step.gradient} flex items-center justify-center shadow-lg mb-3 hover:scale-110 transition-transform duration-300`}
-                      >
-                        <step.icon className="h-8 w-8 text-white" />
-                      </div>
-                      <div className="text-center max-w-xs">
-                        <h3 className="text-base font-garet font-normal mb-2 uppercase" style={{color: '#003249'}}>
-                          {step.title}
-                        </h3>
-                        <p className="text-xs font-light" style={{color: '#737373'}}>
-                          {step.description}
-                        </p>
-                      </div>
-                    </div>
-                    {index < 2 && (
-                      <ArrowRight className="h-6 w-6 mx-4 text-[#007EA7]" />
-                    )}
-                  </div>
-                ))}
-              </div>
+            {/* Connecting Arrow between rows */}
+            <div className="flex justify-center mb-8">
+              <ArrowDown className="w-8 h-8 text-primary bg-background rounded-full p-1 shadow-lg" />
             </div>
             
-            {/* Details Cards for Tablet */}
-            <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
-              {workflowSteps.map((step, index) => (
-                <Card key={index} className="service-card border-0 hover:scale-105 transition-transform duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex items-center mb-4">
-                      <div 
-                        className={`w-12 h-12 rounded-full bg-gradient-to-br ${step.gradient} flex items-center justify-center mr-4`}
-                      >
-                        <step.icon className="h-6 w-6 text-white" />
-                      </div>
-                      <h4 className="text-lg font-garet font-normal uppercase" style={{color: '#003249'}}>
-                        {step.title}
-                      </h4>
+            {/* Second Row */}
+            <div className="grid grid-cols-3 gap-8">
+              {workflowSteps.slice(3).map((step, index) => (
+                <div key={step.title} className="relative">
+                  <Card className="h-[400px] overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 relative group">
+                    {/* Background Image */}
+                    <div 
+                      className="absolute inset-0 bg-cover bg-center"
+                      style={{ backgroundImage: `url(${step.background})` }}
+                    >
+                      <div className="absolute inset-0 bg-black/40"></div>
                     </div>
-                    <p className="font-light leading-relaxed text-sm" style={{color: '#737373'}}>
-                      {step.details}
-                    </p>
-                  </CardContent>
-                </Card>
+                    
+                    <CardContent className="relative z-10 p-6 h-full flex flex-col">
+                      {/* Top Section - Circle */}
+                      <div className="flex justify-center mb-6">
+                        <div 
+                          className={`w-20 h-20 rounded-full bg-gradient-to-br ${step.gradient} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                        >
+                          <step.icon className="w-10 h-10 text-white" />
+                        </div>
+                      </div>
+                      
+                      {/* Title */}
+                      <h3 className="text-xl font-bold text-white text-center mb-4 font-garet uppercase">
+                        {step.title}
+                      </h3>
+                      
+                      {/* Bottom Section - Bullets */}
+                      <div className="flex-1">
+                        <ul className="space-y-2">
+                          {step.bullets.map((bullet, bulletIndex) => (
+                            <li key={bulletIndex} className="flex items-start text-white/90 text-sm font-garet">
+                              <span className="w-2 h-2 rounded-full bg-white/80 mt-2 mr-3 flex-shrink-0"></span>
+                              {bullet}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </CardContent>
+                  </Card>
+                  
+                  {/* Arrow to next step */}
+                  {index < 2 && (
+                    <div className="absolute -right-4 top-1/2 transform -translate-y-1/2 z-20">
+                      <ArrowRight className="w-8 h-8 text-primary bg-background rounded-full p-1 shadow-lg" />
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
           </div>
 
-          {/* Mobile Flow - Vertical */}
-          <div className="block md:hidden">
-            <div className="space-y-8">
-              {workflowSteps.map((step, index) => (
-                <div key={index} className="flex flex-col items-center">
-                  {/* Step */}
-                  <div className="flex flex-col items-center text-center">
-                    <div 
-                      className={`w-16 h-16 rounded-full bg-gradient-to-br ${step.gradient} flex items-center justify-center shadow-lg mb-4 hover:scale-110 transition-transform duration-300`}
-                    >
-                      <step.icon className="h-8 w-8 text-white" />
+          {/* Mobile View - Vertical Stack */}
+          <div className="block md:hidden space-y-6">
+            {workflowSteps.map((step, index) => (
+              <div key={step.title} className="relative">
+                <Card className="h-[350px] overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 relative group">
+                  {/* Background Image */}
+                  <div 
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{ backgroundImage: `url(${step.background})` }}
+                  >
+                    <div className="absolute inset-0 bg-black/40"></div>
+                  </div>
+                  
+                  <CardContent className="relative z-10 p-6 h-full flex flex-col">
+                    {/* Top Section - Circle */}
+                    <div className="flex justify-center mb-4">
+                      <div 
+                        className={`w-16 h-16 rounded-full bg-gradient-to-br ${step.gradient} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                      >
+                        <step.icon className="w-8 h-8 text-white" />
+                      </div>
                     </div>
-                    <h3 className="text-lg font-garet font-normal mb-2 uppercase" style={{color: '#003249'}}>
+                    
+                    {/* Title */}
+                    <h3 className="text-lg font-bold text-white text-center mb-4 font-garet uppercase">
                       {step.title}
                     </h3>
-                    <p className="text-sm font-light mb-4" style={{color: '#737373'}}>
-                      {step.description}
-                    </p>
                     
-                    {/* Detail Card */}
-                    <Card className="service-card border-0 w-full max-w-sm">
-                      <CardContent className="p-4">
-                        <p className="font-light leading-relaxed text-xs" style={{color: '#737373'}}>
-                          {step.details}
-                        </p>
-                      </CardContent>
-                    </Card>
+                    {/* Bottom Section - Bullets */}
+                    <div className="flex-1">
+                      <ul className="space-y-2">
+                        {step.bullets.map((bullet, bulletIndex) => (
+                          <li key={bulletIndex} className="flex items-start text-white/90 text-sm font-garet">
+                            <span className="w-2 h-2 rounded-full bg-white/80 mt-2 mr-3 flex-shrink-0"></span>
+                            {bullet}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </CardContent>
+                </Card>
+                
+                {/* Arrow to next step */}
+                {index < workflowSteps.length - 1 && (
+                  <div className="flex justify-center mt-4 mb-2">
+                    <ArrowDown className="w-8 h-8 text-primary bg-background rounded-full p-1 shadow-lg" />
                   </div>
-                  
-                  {/* Arrow Down (except for last item) */}
-                  {index < workflowSteps.length - 1 && (
-                    <ArrowRight className="h-8 w-8 rotate-90 mt-6 text-[#007EA7] animate-pulse" />
-                  )}
-                </div>
-              ))}
-            </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
