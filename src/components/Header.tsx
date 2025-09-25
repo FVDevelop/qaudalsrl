@@ -85,15 +85,10 @@ const Header = () => {
               Cómo Trabajamos
             </Link>
             
-            <Link to="/#metodologia" className={`transition-colors font-light ${
-              isActive("/#metodologia") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
-            }`}>
-              Metodología
-            </Link>
             <Link to="/#beneficios" className={`transition-colors font-light ${
               isActive("/#beneficios") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
             }`}>
-              Beneficios
+              ¿Por qué Elegirnos?
             </Link>
             <Link to="/#contacto" className={`transition-colors font-light ${
               isActive("/#contacto") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
@@ -133,15 +128,10 @@ const Header = () => {
               }`} onClick={() => setIsMenuOpen(false)}>
                 Cómo Trabajamos
               </Link>
-              <Link to="/#metodologia" className={`transition-colors font-light ${
-                isActive("/#metodologia") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
-              }`} onClick={() => setIsMenuOpen(false)}>
-                Metodología
-              </Link>
               <Link to="/#beneficios" className={`transition-colors font-light ${
                 isActive("/#beneficios") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
               }`} onClick={() => setIsMenuOpen(false)}>
-                Beneficios
+                ¿Por qué Elegirnos?
               </Link>
               <Link to="/#contacto" className={`transition-colors font-light ${
                 isActive("/#contacto") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"

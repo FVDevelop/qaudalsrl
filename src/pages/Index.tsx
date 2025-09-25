@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 
 import Benefits from "@/components/Benefits";
-import Methodology from "@/components/Methodology";
 import ContactForm from "@/components/ContactForm";
 import Trust from "@/components/Trust";
 import Footer from "@/components/Footer";
@@ -32,7 +31,6 @@ const Index = () => {
       <Hero />
       <div className="homepage-content">
         <Benefits />
-        <Methodology />
         <ContactForm />
         <Footer />
         <WhatsAppCTA />

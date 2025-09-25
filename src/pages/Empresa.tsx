@@ -41,42 +41,19 @@ const Empresa = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      {/* Hero Section with Carousel */}
-      <section className="relative pt-32 pb-20">
-        <Carousel 
-          className="w-full h-[70vh]" 
-          plugins={[Autoplay({ delay: 5000 })]}
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-        >
-          <CarouselContent>
-            {carouselImages.map((image, index) => (
-              <CarouselItem key={index}>
-                <div 
-                  className="relative w-full h-[70vh] bg-cover bg-center bg-no-repeat"
-                  style={{ backgroundImage: `url(${image.src})` }}
-                >
-                  <div className="absolute inset-0 bg-black/60"></div>
-                  <div className="relative z-10 container mx-auto px-4 h-full flex items-center justify-center">
-                    <div className="text-center text-white">
-                      <h1 className="text-4xl md:text-5xl font-garet mb-8 uppercase font-normal">
-                        Consultora especializada en agua, saneamiento, energía y medioambiente
-                      </h1>
-                      <p className="text-xl md:text-2xl max-w-4xl mx-auto font-light leading-relaxed">
-                        Integramos experiencia técnica y tecnologías inteligentes para diseñar soluciones sostenibles e innovadoras que generan impacto real.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="left-4" />
-          <CarouselNext className="right-4" />
-        </Carousel>
-      </section>
+      {/* Header Section */}
+      <div className="relative pt-28 md:pt-32 pb-6 bg-gradient-to-b from-muted/50 to-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h1 className="section-title text-4xl md:text-5xl font-garet mb-8 uppercase font-normal" style={{color: '#737373'}}>
+              Consultora especializada en agua, saneamiento, energía y medioambiente
+            </h1>
+            <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed mb-2" style={{color: '#737373'}}>
+              Integramos experiencia técnica y tecnologías inteligentes para diseñar soluciones sostenibles e innovadoras que generan impacto real.
+            </p>
+          </div>
+        </div>
+      </div>
 
       {/* Main Content */}
       <div className="container mx-auto px-4 pt-0 pb-12">
@@ -125,6 +102,28 @@ const Empresa = () => {
             <p className="text-xs md:text-sm font-garet uppercase tracking-wider" style={{color: '#007EA7'}}>
               Nos ocupamos de tus proyectos para que vos te ocupes de crecer
             </p>
+          </div>
+          
+          {/* Navigation Buttons */}
+          <div className="text-center mt-16 space-y-4 md:space-y-0 md:space-x-6 md:flex md:justify-center">
+            <a
+              href="/como-trabajamos"
+              className="inline-block bg-[#003249] hover:bg-[#003249]/90 text-white px-8 py-3 font-light transition-colors"
+            >
+              ¿Cómo Trabajamos?
+            </a>
+            <a
+              href="/servicios"
+              className="inline-block bg-[#007EA7] hover:bg-[#007EA7]/90 text-white px-8 py-3 font-light transition-colors"
+            >
+              Nuestros Servicios
+            </a>
+            <a
+              href="/por-que-qaudal"
+              className="inline-block bg-[#737373] hover:bg-[#737373]/90 text-white px-8 py-3 font-light transition-colors"
+            >
+              ¿Por qué Qaudal?
+            </a>
           </div>
         </div>
       </div>
