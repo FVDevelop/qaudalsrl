@@ -103,7 +103,7 @@ const Empresa = () => {
               {/* Solidez */}
               <div className="text-center">
                 <div className="w-32 h-32 mx-auto mb-4 rounded-full flex items-center justify-center shadow-md" style={{backgroundColor: '#003249'}}>
-                  <span className="text-white font-garet font-normal text-lg uppercase">Solidez</span>
+                  <span className="text-white font-garet font-normal text-sm uppercase">Solidez</span>
                 </div>
                 <p className="text-sm font-light leading-relaxed" style={{color: '#737373'}}>
                   Más de XX años de experiencia en proyectos de ingeniería y ambiente.
@@ -113,7 +113,7 @@ const Empresa = () => {
               {/* Innovación */}
               <div className="text-center">
                 <div className="w-32 h-32 mx-auto mb-4 rounded-full flex items-center justify-center shadow-md" style={{backgroundColor: '#007EA7'}}>
-                  <span className="text-white font-garet font-normal text-lg uppercase">Innovación</span>
+                  <span className="text-white font-garet font-normal text-sm uppercase">Innovación</span>
                 </div>
                 <p className="text-sm font-light leading-relaxed" style={{color: '#737373'}}>
                   Big Data, IA y Machine Learning aplicados al saneamiento y la energía.
@@ -123,7 +123,7 @@ const Empresa = () => {
               {/* Sostenibilidad */}
               <div className="text-center">
                 <div className="w-32 h-32 mx-auto mb-4 rounded-full flex items-center justify-center shadow-md" style={{backgroundColor: '#737373'}}>
-                  <span className="text-white font-garet font-normal text-lg uppercase">Sostenibilidad</span>
+                  <span className="text-white font-garet font-normal text-sm uppercase">Sostenibilidad</span>
                 </div>
                 <p className="text-sm font-light leading-relaxed" style={{color: '#737373'}}>
                   Diseño de soluciones que cuidan los recursos y el medioambiente.
@@ -133,7 +133,7 @@ const Empresa = () => {
               {/* Resultados */}
               <div className="text-center">
                 <div className="w-32 h-32 mx-auto mb-4 rounded-full flex items-center justify-center shadow-md" style={{backgroundColor: '#003249'}}>
-                  <span className="text-white font-garet font-normal text-lg uppercase">Resultados</span>
+                  <span className="text-white font-garet font-normal text-sm uppercase">Resultados</span>
                 </div>
                 <p className="text-sm font-light leading-relaxed" style={{color: '#737373'}}>
                   Proyectos que generan impacto real y medible.

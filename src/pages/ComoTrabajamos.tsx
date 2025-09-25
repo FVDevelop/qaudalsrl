@@ -5,8 +5,10 @@ import WhatsAppCTA from '@/components/WhatsAppCTA';
 import { Card, CardContent } from '@/components/ui/card';
 import { Search, PenTool, Calendar, HardHat, Play, Settings, ArrowRight, ArrowDown } from 'lucide-react';
 
-// Import hero background image
+// Import images
 import heroConsultingBackground from '@/assets/hero-consulting-background.jpg';
+import metodologiaQaudal from '@/assets/metodologia-qaudal.png';
+import workersTeam from '@/assets/workers-engineering-team.jpg';
 
 const ComoTrabajamos = () => {
   useEffect(() => {
@@ -114,66 +116,28 @@ const ComoTrabajamos = () => {
         </div>
       </section>
 
-      {/* Workflow Steps Section */}
+      {/* Methodology Images Section */}
       <section className="py-20 px-4 bg-gradient-to-b from-background to-muted/20">
         <div className="max-w-6xl mx-auto">
-          <div className="space-y-6">
-            {workflowSteps.map((step, index) => (
-              <div 
-                key={step.title} 
-                className="relative bg-white p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300"
-                style={{ 
-                  marginTop: index > 0 ? '-20px' : '0',
-                  zIndex: workflowSteps.length - index 
-                }}
-              >
-                <div className="flex items-start gap-6">
-                  {/* Title Section */}
-                  <div className="flex-shrink-0 w-1/4">
-                    <h3 
-                      className="text-2xl font-bold font-garet uppercase leading-tight"
-                      style={{ color: step.color }}
-                    >
-                      {step.title}
-                    </h3>
-                  </div>
-                  
-                  {/* Content Section */}
-                  <div className="flex-1">
-                    <ul className="space-y-3">
-                      {step.bullets.map((bullet, bulletIndex) => (
-                        <li key={bulletIndex} className="flex items-start text-gray-700 font-garet leading-relaxed">
-                          <span 
-                            className="w-3 h-3 rounded-full mt-1.5 mr-4 flex-shrink-0"
-                            style={{ backgroundColor: step.color }}
-                          ></span>
-                          {bullet}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+            {/* Left: Methodology Diagram */}
+            <div className="flex justify-center">
+              <img 
+                src={metodologiaQaudal} 
+                alt="Metodología Qaudal - Diagrama de procesos integrados para proyectos de agua, saneamiento y energía"
+                className="w-full max-w-md h-auto object-contain"
+              />
+            </div>
+            
+            {/* Right: Team Photo */}
+            <div className="flex justify-center">
+              <img 
+                src={workersTeam} 
+                alt="Equipo de ingenieros trabajando en metodología colaborativa para proyectos de infraestructura hídrica"
+                className="w-full max-w-md h-auto object-cover rounded-lg shadow-lg"
+              />
+            </div>
           </div>
-        </div>
-      </section>
-
-      {/* Por qué Qaudal Section */}
-      <section className="py-16 bg-muted/20">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-garet mb-8 uppercase font-normal" style={{color: '#737373'}}>
-            ¿Por qué Qaudal?
-          </h2>
-          <p className="text-lg max-w-3xl mx-auto font-light leading-relaxed mb-8" style={{color: '#737373'}}>
-            Descubre nuestra propuesta diferencial en consultoría e ingeniería integral
-          </p>
-          <a 
-            href="/por-que-qaudal" 
-            className="inline-block bg-[#003249] text-white px-8 py-3 font-medium hover:bg-[#003249]/90 transition-colors duration-300"
-          >
-            Conocer Más
-          </a>
         </div>
       </section>
 
