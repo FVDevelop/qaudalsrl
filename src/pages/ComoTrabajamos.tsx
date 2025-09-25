@@ -114,154 +114,45 @@ const ComoTrabajamos = () => {
         </div>
       </section>
 
-      {/* Workflow Cards Section */}
+      {/* Workflow Steps Section */}
       <section className="py-20 px-4 bg-gradient-to-b from-background to-muted/20">
-        <div className="max-w-7xl mx-auto">
-          {/* Desktop and Tablet View - 3x2 Grid */}
-          <div className="hidden md:block">
-            {/* First Row */}
-            <div className="grid grid-cols-3 gap-8 mb-8">
-              {workflowSteps.slice(0, 3).map((step, index) => (
-                <div key={step.title} className="relative">
-                  <Card className="h-[400px] overflow-hidden bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 relative group hover:-translate-y-1">
-                    <CardContent className="p-6 h-full flex flex-col">
-                      {/* Top Section - Circle */}
-                      <div className="flex justify-center mb-6">
-                        <div 
-                          className={`w-20 h-20 rounded-full bg-gradient-to-br ${step.gradient} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}
-                        >
-                          <step.icon className="w-10 h-10 text-white" />
-                        </div>
-                      </div>
-                      
-                      {/* Title */}
-                      <h3 className="text-xl font-bold text-gray-800 text-center mb-6 font-garet uppercase">
-                        {step.title}
-                      </h3>
-                      
-                      {/* Bottom Section - Bullets */}
-                      <div className="flex-1 bg-gray-50 rounded-lg p-4 border border-gray-100">
-                        <ul className="space-y-3">
-                          {step.bullets.map((bullet, bulletIndex) => (
-                            <li key={bulletIndex} className="flex items-start text-gray-700 text-sm font-garet leading-relaxed">
-                              <span 
-                                className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"
-                                style={{ backgroundColor: step.color }}
-                              ></span>
-                              {bullet}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </CardContent>
-                  </Card>
-                  
-                  {/* Arrow to next step */}
-                  {index < 2 && (
-                    <div className="absolute -right-4 top-1/2 transform -translate-y-1/2 z-20">
-                      <ArrowRight className="w-8 h-8 text-primary bg-background rounded-full p-1 shadow-lg" />
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-            
-            {/* Connecting Arrow between rows */}
-            <div className="flex justify-center mb-8">
-              <ArrowDown className="w-8 h-8 text-primary bg-background rounded-full p-1 shadow-lg" />
-            </div>
-            
-            {/* Second Row */}
-            <div className="grid grid-cols-3 gap-8">
-              {workflowSteps.slice(3).map((step, index) => (
-                <div key={step.title} className="relative">
-                  <Card className="h-[400px] overflow-hidden bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 relative group hover:-translate-y-1">
-                    <CardContent className="p-6 h-full flex flex-col">
-                      {/* Top Section - Circle */}
-                      <div className="flex justify-center mb-6">
-                        <div 
-                          className={`w-20 h-20 rounded-full bg-gradient-to-br ${step.gradient} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}
-                        >
-                          <step.icon className="w-10 h-10 text-white" />
-                        </div>
-                      </div>
-                      
-                      {/* Title */}
-                      <h3 className="text-xl font-bold text-gray-800 text-center mb-6 font-garet uppercase">
-                        {step.title}
-                      </h3>
-                      
-                      {/* Bottom Section - Bullets */}
-                      <div className="flex-1 bg-gray-50 rounded-lg p-4 border border-gray-100">
-                        <ul className="space-y-3">
-                          {step.bullets.map((bullet, bulletIndex) => (
-                            <li key={bulletIndex} className="flex items-start text-gray-700 text-sm font-garet leading-relaxed">
-                              <span 
-                                className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"
-                                style={{ backgroundColor: step.color }}
-                              ></span>
-                              {bullet}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </CardContent>
-                  </Card>
-                  
-                  {/* Arrow to next step */}
-                  {index < 2 && (
-                    <div className="absolute -right-4 top-1/2 transform -translate-y-1/2 z-20">
-                      <ArrowRight className="w-8 h-8 text-primary bg-background rounded-full p-1 shadow-lg" />
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Mobile View - Vertical Stack */}
-          <div className="block md:hidden space-y-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="space-y-6">
             {workflowSteps.map((step, index) => (
-              <div key={step.title} className="relative">
-                <Card className="h-[350px] overflow-hidden bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 relative group">
-                  <CardContent className="p-6 h-full flex flex-col">
-                    {/* Top Section - Circle */}
-                    <div className="flex justify-center mb-4">
-                      <div 
-                        className={`w-16 h-16 rounded-full bg-gradient-to-br ${step.gradient} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}
-                      >
-                        <step.icon className="w-8 h-8 text-white" />
-                      </div>
-                    </div>
-                    
-                    {/* Title */}
-                    <h3 className="text-lg font-bold text-gray-800 text-center mb-4 font-garet uppercase">
+              <div 
+                key={step.title} 
+                className="relative bg-white p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300"
+                style={{ 
+                  marginTop: index > 0 ? '-20px' : '0',
+                  zIndex: workflowSteps.length - index 
+                }}
+              >
+                <div className="flex items-start gap-6">
+                  {/* Title Section */}
+                  <div className="flex-shrink-0 w-1/4">
+                    <h3 
+                      className="text-2xl font-bold font-garet uppercase leading-tight"
+                      style={{ color: step.color }}
+                    >
                       {step.title}
                     </h3>
-                    
-                    {/* Bottom Section - Bullets */}
-                    <div className="flex-1 bg-gray-50 rounded-lg p-4 border border-gray-100">
-                      <ul className="space-y-2">
-                        {step.bullets.map((bullet, bulletIndex) => (
-                          <li key={bulletIndex} className="flex items-start text-gray-700 text-sm font-garet leading-relaxed">
-                            <span 
-                              className="w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"
-                              style={{ backgroundColor: step.color }}
-                            ></span>
-                            {bullet}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </CardContent>
-                </Card>
-                
-                {/* Arrow to next step */}
-                {index < workflowSteps.length - 1 && (
-                  <div className="flex justify-center mt-4 mb-2">
-                    <ArrowDown className="w-8 h-8 text-primary bg-background rounded-full p-1 shadow-lg" />
                   </div>
-                )}
+                  
+                  {/* Content Section */}
+                  <div className="flex-1">
+                    <ul className="space-y-3">
+                      {step.bullets.map((bullet, bulletIndex) => (
+                        <li key={bulletIndex} className="flex items-start text-gray-700 font-garet leading-relaxed">
+                          <span 
+                            className="w-3 h-3 rounded-full mt-1.5 mr-4 flex-shrink-0"
+                            style={{ backgroundColor: step.color }}
+                          ></span>
+                          {bullet}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

@@ -1,17 +1,50 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import heroBackground from "@/assets/hero-water-sanitation.jpg";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import carouselAgua from "@/assets/carousel-agua.jpg";
+import carouselSaneamiento from "@/assets/carousel-saneamiento.jpg";
+import carouselEnergia from "@/assets/carousel-energia.jpg";
+import carouselObras from "@/assets/carousel-obras.jpg";
 
 const Hero = () => {
+  const carouselImages = [
+    { src: carouselAgua, alt: "Soluciones integrales en agua y tratamiento" },
+    { src: carouselSaneamiento, alt: "Sistemas de saneamiento y depuración" },
+    { src: carouselEnergia, alt: "Energías renovables y eficiencia energética" },
+    { src: carouselObras, alt: "Obras de infraestructura y construcción" }
+  ];
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Carousel */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroBackground} 
-          alt="Tu proyecto. Nuestro caudal - Infraestructura de agua y saneamiento"
-          className="w-full h-full object-cover"
-        />
+        <Carousel
+          className="w-full h-full"
+          plugins={[
+            Autoplay({
+              delay: 5000,
+            }),
+          ]}
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+        >
+          <CarouselContent className="h-screen -ml-0">
+            {carouselImages.map((image, index) => (
+              <CarouselItem key={index} className="pl-0 h-full">
+                <div className="h-full w-full relative">
+                  <img 
+                    src={image.src} 
+                    alt={image.alt}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
         <div className="absolute inset-0 bg-black/20"></div>
       </div>
 
@@ -21,19 +54,15 @@ const Hero = () => {
           {/* Facility Management - left aligned with translucent box */}
           <div className="flex justify-start">
             <div className="bg-black/30 p-8 text-left backdrop-blur-sm max-w-4xl">
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-garet mb-8 tracking-wide leading-tight text-white uppercase font-normal">
-                Tu proyecto. Nuestro caudal.
-                <span className="block text-2xl md:text-3xl lg:text-4xl mt-4 font-normal">
+              <h1 className="text-3xl md:text-4xl font-garet mb-8 tracking-wide leading-tight text-white uppercase font-normal">
+                Consultora especializada en agua, saneamiento, energía y medioambiente
+                <span className="block text-xl md:text-2xl mt-4 font-normal">
                   AGUA • SANEAMIENTO • ENERGÍA • OBRAS
                 </span>
               </h1>
               
-              <p className="text-base md:text-xl mb-8 max-w-4xl font-light leading-relaxed opacity-95 text-white">
-                Soluciones integrales desde estudios y diseño hasta construcción, operación y mejora continua.
-              </p>
-              
-              <p className="text-base md:text-lg mb-12 max-w-4xl font-light leading-relaxed opacity-90 text-white">
-                Alcance Argentina y exterior. Trabajo propio o asociado con terceros.
+              <p className="text-lg md:text-xl mb-12 max-w-4xl font-light leading-relaxed opacity-95 text-white">
+                Integramos experiencia técnica y tecnologías inteligentes para diseñar soluciones sostenibles e innovadoras que generan impacto real.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-start items-start">
