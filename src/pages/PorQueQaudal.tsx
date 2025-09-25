@@ -59,7 +59,7 @@ const PorQueQaudal = () => {
         <div className="relative z-10 container mx-auto px-4">
           <div className="text-center mb-12">
             <h1 className="section-title text-4xl md:text-5xl font-garet mb-8 uppercase font-normal text-white">
-              ¿Por qué Qaudal?
+              Por que <strong>Qaudal</strong>
             </h1>
             <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed mb-2 text-white">
               Nuestra propuesta diferencial en consultoría e ingeniería integral

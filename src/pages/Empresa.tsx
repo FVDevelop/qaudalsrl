@@ -80,7 +80,7 @@ const Empresa = () => {
               </p>
               
               <p className="text-lg font-light leading-relaxed" style={{color: '#737373'}}>
-                En Qaudal, combinamos la profundidad del conocimiento tradicional en ingeniería y arquitectura con la innovación de las tecnologías inteligentes, lo que nos permite ir más allá del análisis convencional.
+                En <strong>Qaudal</strong>, combinamos la profundidad del conocimiento tradicional en ingeniería y arquitectura con la innovación de las tecnologías inteligentes, lo que nos permite ir más allá del análisis convencional.
               </p>
               
               <p className="text-lg font-light leading-relaxed" style={{color: '#737373'}}>
@@ -155,7 +155,7 @@ const Empresa = () => {
               href="/como-trabajamos"
               className="inline-block bg-[#003249] hover:bg-[#003249]/90 text-white px-8 py-3 font-light transition-colors"
             >
-              ¿Cómo Trabajamos?
+              Como Trabajamos
             </a>
             <a
               href="/servicios"
@@ -167,7 +167,7 @@ const Empresa = () => {
               href="/por-que-qaudal"
               className="inline-block bg-[#737373] hover:bg-[#737373]/90 text-white px-8 py-3 font-light transition-colors"
             >
-              ¿Por qué Qaudal?
+              Por que <strong>Qaudal</strong>
             </a>
           </div>
         </div>

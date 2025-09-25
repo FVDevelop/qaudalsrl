@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Twitter, Instagram, MessageCircle } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import qaudalLogo from "@/assets/qaudal-logo-transp.png";
@@ -67,11 +67,58 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/empresa" className={`transition-colors font-light ${
-              isActive("/empresa") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
-            }`}>
-              Empresa
-            </Link>
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="bg-transparent hover:bg-transparent font-light text-foreground/80 hover:text-primary">
+                    Empresa
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[250px] gap-3 p-4">
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <Link
+                            to="/empresa"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="text-sm font-medium leading-none">Quienes Somos</div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              Conoce nuestra empresa y trayectoria
+                            </p>
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <Link
+                            to="/como-trabajamos"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="text-sm font-medium leading-none">Como Trabajamos</div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              Nuestra metodología integral
+                            </p>
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <Link
+                            to="/por-que-qaudal"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="text-sm font-medium leading-none">Por que Elegirnos</div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              Ventajas de trabajar con nosotros
+                            </p>
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
             
             <Link to="/servicios" className={`transition-colors font-light ${
               location.pathname === "/servicios" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
@@ -79,22 +126,25 @@ const Header = () => {
               Servicios
             </Link>
             
-            <Link to="/como-trabajamos" className={`transition-colors font-light ${
-              location.pathname === "/como-trabajamos" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
-            }`}>
-              ¿Cómo Trabajamos?
-            </Link>
-            
-            <Link to="/#beneficios" className={`transition-colors font-light ${
-              isActive("/#beneficios") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
-            }`}>
-              ¿Por qué Elegirnos?
-            </Link>
             <Link to="/#contacto" className={`transition-colors font-light ${
               isActive("/#contacto") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
             }`}>
               Contacto
             </Link>
+            
+            {/* Social Media Icons */}
+            <div className="flex items-center space-x-3">
+              <a href="#" className="text-foreground/60 hover:text-primary transition-colors">
+                <Twitter size={18} />
+              </a>
+              <a href="#" className="text-foreground/60 hover:text-primary transition-colors">
+                <Instagram size={18} />
+              </a>
+              <a href="#" className="text-foreground/60 hover:text-primary transition-colors">
+                <MessageCircle size={18} />
+              </a>
+            </div>
+            
             <Button asChild className="bg-[#003249] hover:bg-[#003249]/90 text-white">
               <Link to="/#contacto">Solicitar Cotización</Link>
             </Button>
@@ -116,22 +166,22 @@ const Header = () => {
               <Link to="/empresa" className={`transition-colors font-light ${
                 isActive("/empresa") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
               }`} onClick={() => setIsMenuOpen(false)}>
-                Empresa
+                Quienes Somos
+              </Link>
+              <Link to="/como-trabajamos" className={`transition-colors font-light ${
+                location.pathname === "/como-trabajamos" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
+              }`} onClick={() => setIsMenuOpen(false)}>
+                Como Trabajamos
+              </Link>
+              <Link to="/por-que-qaudal" className={`transition-colors font-light ${
+                location.pathname === "/por-que-qaudal" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
+              }`} onClick={() => setIsMenuOpen(false)}>
+                Por que Elegirnos
               </Link>
               <Link to="/servicios" className={`transition-colors font-light ${
                 location.pathname === "/servicios" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
               }`} onClick={() => setIsMenuOpen(false)}>
                 Servicios
-              </Link>
-              <Link to="/como-trabajamos" className={`transition-colors font-light ${
-                location.pathname === "/como-trabajamos" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
-              }`} onClick={() => setIsMenuOpen(false)}>
-                ¿Cómo Trabajamos?
-              </Link>
-              <Link to="/#beneficios" className={`transition-colors font-light ${
-                isActive("/#beneficios") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
-              }`} onClick={() => setIsMenuOpen(false)}>
-                ¿Por qué Elegirnos?
               </Link>
               <Link to="/#contacto" className={`transition-colors font-light ${
                 isActive("/#contacto") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
