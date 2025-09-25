@@ -82,7 +82,7 @@ const Header = () => {
             <Link to="/como-trabajamos" className={`transition-colors font-light ${
               location.pathname === "/como-trabajamos" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
             }`}>
-              Cómo Trabajamos
+              ¿Cómo Trabajamos?
             </Link>
             
             <Link to="/#beneficios" className={`transition-colors font-light ${
@@ -126,7 +126,7 @@ const Header = () => {
               <Link to="/como-trabajamos" className={`transition-colors font-light ${
                 location.pathname === "/como-trabajamos" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
               }`} onClick={() => setIsMenuOpen(false)}>
-                Cómo Trabajamos
+                ¿Cómo Trabajamos?
               </Link>
               <Link to="/#beneficios" className={`transition-colors font-light ${
                 isActive("/#beneficios") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"

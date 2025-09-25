@@ -46,7 +46,7 @@ const Empresa = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h1 className="section-title text-4xl md:text-5xl font-garet mb-8 uppercase font-normal" style={{color: '#737373'}}>
-              Consultora especializada en agua, saneamiento, energía y medioambiente
+              Nuestra Empresa
             </h1>
             <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed mb-2" style={{color: '#737373'}}>
               Integramos experiencia técnica y tecnologías inteligentes para diseñar soluciones sostenibles e innovadoras que generan impacto real.
@@ -94,6 +94,51 @@ const Empresa = () => {
               <p className="text-lg font-light leading-relaxed" style={{color: '#737373'}}>
                 Nuestra experiencia abarca la totalidad del ciclo de vida de un proyecto, desde la ejecución de estudios y diagnósticos hasta los diseños conceptuales y proyectos ejecutivos.
               </p>
+            </div>
+          </div>
+
+          {/* Pilares Section */}
+          <div className="mt-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {/* Solidez */}
+              <div className="text-center">
+                <div className="w-32 h-32 mx-auto mb-4 rounded-full flex items-center justify-center shadow-md" style={{backgroundColor: '#003249'}}>
+                  <span className="text-white font-garet font-normal text-lg uppercase">Solidez</span>
+                </div>
+                <p className="text-sm font-light leading-relaxed" style={{color: '#737373'}}>
+                  Más de XX años de experiencia en proyectos de ingeniería y ambiente.
+                </p>
+              </div>
+
+              {/* Innovación */}
+              <div className="text-center">
+                <div className="w-32 h-32 mx-auto mb-4 rounded-full flex items-center justify-center shadow-md" style={{backgroundColor: '#007EA7'}}>
+                  <span className="text-white font-garet font-normal text-lg uppercase">Innovación</span>
+                </div>
+                <p className="text-sm font-light leading-relaxed" style={{color: '#737373'}}>
+                  Big Data, IA y Machine Learning aplicados al saneamiento y la energía.
+                </p>
+              </div>
+
+              {/* Sostenibilidad */}
+              <div className="text-center">
+                <div className="w-32 h-32 mx-auto mb-4 rounded-full flex items-center justify-center shadow-md" style={{backgroundColor: '#737373'}}>
+                  <span className="text-white font-garet font-normal text-lg uppercase">Sostenibilidad</span>
+                </div>
+                <p className="text-sm font-light leading-relaxed" style={{color: '#737373'}}>
+                  Diseño de soluciones que cuidan los recursos y el medioambiente.
+                </p>
+              </div>
+
+              {/* Resultados */}
+              <div className="text-center">
+                <div className="w-32 h-32 mx-auto mb-4 rounded-full flex items-center justify-center shadow-md" style={{backgroundColor: '#003249'}}>
+                  <span className="text-white font-garet font-normal text-lg uppercase">Resultados</span>
+                </div>
+                <p className="text-sm font-light leading-relaxed" style={{color: '#737373'}}>
+                  Proyectos que generan impacto real y medible.
+                </p>
+              </div>
             </div>
           </div>
           

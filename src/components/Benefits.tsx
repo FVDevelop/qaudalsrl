@@ -43,18 +43,8 @@ const Benefits = () => {
   ];
 
   return (
-    <section id="beneficios" className="py-section scroll-mt-28 md:scroll-mt-32 relative">
-      {/* Hero Background */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={benefitsHeroBackground} 
-          alt="Infrastructure and Engineering Solutions" 
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-white/85"></div>
-      </div>
-      
-      <div className="container mx-auto px-4 relative z-10">
+    <section id="beneficios" className="py-section scroll-mt-28 md:scroll-mt-32">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-garet mb-8 uppercase font-normal section-title" style={{color: '#737373'}}>
             Por qué elegirnos?
