@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-import innosphereLogo from "@/assets/innospherelogo-transp.png";
+import qaudalLogo from "@/assets/qaudal-logo-transp.png";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -57,8 +57,8 @@ const Header = () => {
           <div className="flex items-center space-x-2">
             <Link to="/" className="inline-flex items-center">
               <img 
-                src={innosphereLogo} 
-                alt="Innosphere Logo"
+                src={qaudalLogo} 
+                alt="Qaudal Logo"
                 className="h-20 md:h-24 w-auto object-contain shrink-0 block"
                 onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/placeholder.svg'; }}
               />

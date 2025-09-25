@@ -265,6 +265,42 @@ const ComoTrabajamos = () => {
         </div>
       </section>
 
+      {/* Por qué Qaudal Section */}
+      <section className="py-16 bg-muted/20">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-garet mb-8 uppercase font-normal" style={{color: '#737373'}}>
+            ¿Por qué Qaudal?
+          </h2>
+          <p className="text-lg max-w-3xl mx-auto font-light leading-relaxed mb-8" style={{color: '#737373'}}>
+            Descubre nuestra propuesta diferencial en consultoría e ingeniería integral
+          </p>
+          <a 
+            href="/por-que-qaudal" 
+            className="inline-block bg-[#003249] text-white px-8 py-3 font-medium hover:bg-[#003249]/90 transition-colors duration-300"
+          >
+            Conocer Más
+          </a>
+        </div>
+      </section>
+
+      {/* Por qué Qaudal Section */}
+      <section className="py-16 bg-muted/20">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-garet mb-8 uppercase font-normal" style={{color: '#737373'}}>
+            ¿Por qué Qaudal?
+          </h2>
+          <p className="text-lg max-w-3xl mx-auto font-light leading-relaxed mb-8" style={{color: '#737373'}}>
+            Descubre nuestra propuesta diferencial en consultoría e ingeniería integral
+          </p>
+          <a 
+            href="/por-que-qaudal" 
+            className="inline-block bg-[#003249] text-white px-8 py-3 font-medium hover:bg-[#003249]/90 transition-colors duration-300"
+          >
+            Conocer Más
+          </a>
+        </div>
+      </section>
+
       <Footer />
       <WhatsAppCTA />
     </div>

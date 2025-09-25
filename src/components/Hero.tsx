@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import heroBackground from "@/assets/hero-consulting-background.jpg";
+import heroBackground from "@/assets/hero-water-sanitation.jpg";
 
 const Hero = () => {
   return (
@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src={heroBackground} 
-          alt="Infraestructura de agua, saneamiento y energía"
+          alt="Tu proyecto. Nuestro caudal - Infraestructura de agua y saneamiento"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/20"></div>
@@ -22,15 +22,18 @@ const Hero = () => {
           <div className="flex justify-start">
             <div className="bg-black/30 p-8 text-left backdrop-blur-sm max-w-4xl">
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-garet mb-8 tracking-wide leading-tight text-white uppercase font-normal">
-                Consultoría e Ingeniería Integral
+                Tu proyecto. Nuestro caudal.
                 <span className="block text-2xl md:text-3xl lg:text-4xl mt-4 font-normal">
                   AGUA • SANEAMIENTO • ENERGÍA • OBRAS
                 </span>
               </h1>
               
-              <p className="text-base md:text-xl mb-12 max-w-4xl font-light leading-relaxed opacity-95 text-white">
-                Soluciones integrales desde estudios y diseño hasta construcción, operación y mejora continua. 
-                Alcance Argentina y exterior, con equipo propio o en sociedad con terceros.
+              <p className="text-base md:text-xl mb-8 max-w-4xl font-light leading-relaxed opacity-95 text-white">
+                Soluciones integrales desde estudios y diseño hasta construcción, operación y mejora continua.
+              </p>
+              
+              <p className="text-base md:text-lg mb-12 max-w-4xl font-light leading-relaxed opacity-90 text-white">
+                Alcance Argentina y exterior. Trabajo propio o asociado con terceros.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-start items-start">

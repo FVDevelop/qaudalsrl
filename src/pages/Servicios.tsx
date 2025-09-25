@@ -175,7 +175,7 @@ const Servicios = () => {
       {/* Services Grid */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <Card key={index} className="service-card border-0 overflow-hidden group hover:scale-105 transition-transform duration-300">
                 <div className="relative h-64 overflow-hidden">
