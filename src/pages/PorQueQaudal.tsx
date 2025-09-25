@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Target, Users, Zap, Shield } from "lucide-react";
-import whyQaudalBackground from "@/assets/why-qaudal-background.jpg";
+import consultingProfessionals from "@/assets/consulting-professionals.jpg";
 
 const PorQueQaudal = () => {
   useEffect(() => {
@@ -48,49 +48,68 @@ const PorQueQaudal = () => {
     <div className="min-h-screen">
       <Header />
       
-      {/* Hero Section */}
-      <section 
-        className="relative pt-32 pb-20 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${whyQaudalBackground})` }}
-      >
-        <div className="absolute inset-0 bg-black/60"></div>
-        <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="section-title text-4xl md:text-6xl font-garet mb-8 uppercase font-normal text-white">
-            ¿Por qué Qaudal?
-          </h1>
-          <p className="text-xl md:text-2xl max-w-4xl mx-auto font-light leading-relaxed text-white/90">
-            Nuestra propuesta diferencial en consultoría e ingeniería integral
-          </p>
-        </div>
-      </section>
-
-      {/* Reasons Section */}
-      <section className="py-20 bg-gradient-to-b from-background to-muted/20">
+      {/* Header Section */}
+      <div className="relative pt-28 md:pt-32 pb-6 bg-gradient-to-b from-muted/50 to-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="text-center mb-12">
+            <h1 className="section-title text-4xl md:text-5xl font-garet mb-8 uppercase font-normal" style={{color: '#737373'}}>
+              ¿Por qué Qaudal?
+            </h1>
+            <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed mb-2" style={{color: '#737373'}}>
+              Nuestra propuesta diferencial en consultoría e ingeniería integral
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="container mx-auto px-4 pt-0 pb-12">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Left - Image */}
+            <div className="order-2 lg:order-1">
+              <img 
+                src={consultingProfessionals} 
+                alt="Profesionales de consultoría e ingeniería en Qaudal"
+                className="w-full h-[600px] object-cover shadow-strong"
+              />
+            </div>
+            
+            {/* Right - Reasons Cards */}
+            <div className="order-1 lg:order-2 space-y-6">
               {reasons.map((reason, index) => (
-                <Card key={index} className="bg-white border-0 shadow-medium hover:shadow-strong transition-all duration-300 hover:-translate-y-1">
-                  <CardContent className="p-8 text-center">
-                    <div 
-                      className="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full"
-                      style={{backgroundColor: reason.color}}
-                    >
-                      <reason.icon className="h-8 w-8 text-white" />
+                <Card 
+                  key={index} 
+                  className="bg-white border-0 shadow-medium hover:shadow-strong transition-all duration-300 transform hover:-translate-y-1"
+                  style={{
+                    marginLeft: index % 2 === 0 ? '0' : '2rem',
+                    marginRight: index % 2 === 0 ? '2rem' : '0',
+                  }}
+                >
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      <div 
+                        className="w-12 h-12 flex items-center justify-center rounded-full flex-shrink-0"
+                        style={{backgroundColor: reason.color}}
+                      >
+                        <reason.icon className="h-6 w-6 text-white" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-lg font-garet font-normal mb-2 uppercase" style={{color: '#737373'}}>
+                          {reason.title}
+                        </h3>
+                        <p className="text-sm font-light leading-relaxed" style={{color: '#737373'}}>
+                          {reason.description}
+                        </p>
+                      </div>
                     </div>
-                    <h3 className="text-xl font-garet font-normal mb-4 uppercase" style={{color: '#737373'}}>
-                      {reason.title}
-                    </h3>
-                    <p className="font-light leading-relaxed" style={{color: '#737373'}}>
-                      {reason.description}
-                    </p>
                   </CardContent>
                 </Card>
               ))}
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       <Footer />
       <WhatsAppCTA />

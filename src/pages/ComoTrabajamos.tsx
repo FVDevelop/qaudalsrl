@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
@@ -9,6 +9,10 @@ import { Search, PenTool, Calendar, HardHat, Play, Settings, ArrowRight, ArrowDo
 import heroConsultingBackground from '@/assets/hero-consulting-background.jpg';
 
 const ComoTrabajamos = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const workflowSteps = [
     {
       icon: Search,
@@ -101,12 +105,11 @@ const ComoTrabajamos = () => {
       >
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="section-title text-4xl md:text-6xl font-garet mb-8 uppercase font-normal text-white">
+          <h1 className="section-title text-4xl md:text-5xl font-garet mb-8 uppercase font-normal text-white">
             Cómo Trabajamos
           </h1>
-          <p className="text-xl md:text-2xl max-w-4xl mx-auto font-light leading-relaxed text-white/90">
-            Nuestro proceso integral garantiza la excelencia desde el diagnóstico inicial 
-            hasta la operación y mejora continua de cada proyecto.
+          <p className="text-xl max-w-4xl mx-auto font-light leading-relaxed text-white/90">
+            Metodología integral para proyectos de agua, saneamiento y energía
           </p>
         </div>
       </section>
@@ -283,23 +286,6 @@ const ComoTrabajamos = () => {
         </div>
       </section>
 
-      {/* Por qué Qaudal Section */}
-      <section className="py-16 bg-muted/20">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-garet mb-8 uppercase font-normal" style={{color: '#737373'}}>
-            ¿Por qué Qaudal?
-          </h2>
-          <p className="text-lg max-w-3xl mx-auto font-light leading-relaxed mb-8" style={{color: '#737373'}}>
-            Descubre nuestra propuesta diferencial en consultoría e ingeniería integral
-          </p>
-          <a 
-            href="/por-que-qaudal" 
-            className="inline-block bg-[#003249] text-white px-8 py-3 font-medium hover:bg-[#003249]/90 transition-colors duration-300"
-          >
-            Conocer Más
-          </a>
-        </div>
-      </section>
 
       <Footer />
       <WhatsAppCTA />

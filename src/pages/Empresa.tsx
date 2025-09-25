@@ -2,29 +2,81 @@ import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import workersImage from "@/assets/workers-engineering-team.jpg";
+import carouselAgua from "@/assets/carousel-agua.jpg";
+import carouselSaneamiento from "@/assets/carousel-saneamiento.jpg";
+import carouselEnergia from "@/assets/carousel-energia.jpg";
+import carouselObras from "@/assets/carousel-obras.jpg";
 
 const Empresa = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const carouselImages = [
+    {
+      src: carouselAgua,
+      alt: "Infraestructura de tratamiento de agua",
+      title: "Agua"
+    },
+    {
+      src: carouselSaneamiento,
+      alt: "Sistemas de saneamiento y tratamiento",
+      title: "Saneamiento"
+    },
+    {
+      src: carouselEnergia,
+      alt: "Energías renovables y sostenibles",
+      title: "Energía"
+    },
+    {
+      src: carouselObras,
+      alt: "Obras de infraestructura y construcción",
+      title: "Obras"
+    }
+  ];
+
   return (
     <div className="min-h-screen">
       <Header />
-      {/* Hero Section */}
-      <div className="relative pt-28 md:pt-32 pb-6 bg-gradient-to-b from-muted/50 to-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h1 className="section-title text-4xl md:text-5xl font-garet mb-8 uppercase font-normal" style={{color: '#737373'}}>
-              Empresa
-            </h1>
-            <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed mb-2" style={{color: '#737373'}}>
-              Especialistas en agua, saneamiento y energía con compromiso hacia la excelencia operativa
-            </p>
-          </div>
-        </div>
-      </div>
+      {/* Hero Section with Carousel */}
+      <section className="relative pt-32 pb-20">
+        <Carousel 
+          className="w-full h-[70vh]" 
+          plugins={[Autoplay({ delay: 5000 })]}
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+        >
+          <CarouselContent>
+            {carouselImages.map((image, index) => (
+              <CarouselItem key={index}>
+                <div 
+                  className="relative w-full h-[70vh] bg-cover bg-center bg-no-repeat"
+                  style={{ backgroundImage: `url(${image.src})` }}
+                >
+                  <div className="absolute inset-0 bg-black/60"></div>
+                  <div className="relative z-10 container mx-auto px-4 h-full flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <h1 className="text-4xl md:text-5xl font-garet mb-8 uppercase font-normal">
+                        Consultora especializada en agua, saneamiento, energía y medioambiente
+                      </h1>
+                      <p className="text-xl md:text-2xl max-w-4xl mx-auto font-light leading-relaxed">
+                        Integramos experiencia técnica y tecnologías inteligentes para diseñar soluciones sostenibles e innovadoras que generan impacto real.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-4" />
+          <CarouselNext className="right-4" />
+        </Carousel>
+      </section>
 
       {/* Main Content */}
       <div className="container mx-auto px-4 pt-0 pb-12">
