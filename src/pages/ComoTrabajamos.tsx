@@ -50,9 +50,9 @@ const ComoTrabajamos = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-b from-muted/50 to-background">
+      <section className="relative pt-32 pb-12 bg-gradient-to-b from-muted/50 to-background">
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="section-title text-4xl md:text-5xl font-garet mb-8 uppercase font-normal" style={{color: '#737373'}}>
+          <h1 className="section-title text-4xl md:text-5xl font-garet mb-6 uppercase font-normal" style={{color: '#737373'}}>
             Como Trabajamos
           </h1>
           <p className="text-xl max-w-4xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
@@ -62,9 +62,9 @@ const ComoTrabajamos = () => {
       </section>
 
       {/* Diagrama de Metodología - Parte Superior */}
-      <section className="py-16 px-4 bg-gradient-to-b from-background to-muted/20">
+      <section className="py-12 px-4 bg-gradient-to-b from-background to-muted/20">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-4xl font-garet font-normal uppercase mb-4" style={{color: '#003249'}}>
               Nuestra Metodología
             </h2>
@@ -79,7 +79,7 @@ const ComoTrabajamos = () => {
       </section>
 
       {/* Casos Típicos - Parte Inferior */}
-      <section className="py-16 px-4 bg-muted/30">
+      <section className="py-12 px-4 bg-muted/30">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-garet font-normal uppercase mb-4" style={{color: '#003249'}}>

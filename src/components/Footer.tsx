@@ -1,21 +1,24 @@
 import { MapPin, Phone, Mail, Linkedin, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
-import logoBlanco from "@/assets/logoinnblanco.svg";
+import qaudalLogo from "@/assets/qaudal-logo-transp.png";
 
 const Footer = () => {
   const quickLinks = [
-    { name: "Servicios", href: "/#servicios" },
-    { name: "Empresa", href: "/empresa" },
-    { name: "Metodología", href: "/#metodologia" },
+    { name: "Quienes Somos", href: "/empresa" },
+    { name: "Servicios", href: "/servicios" },
+    { name: "Como Trabajamos", href: "/como-trabajamos" },
+    { name: "Sectores", href: "/sectores" },
+    { name: "Noticias", href: "/noticias" },
+    { name: "FAQ's", href: "/faqs" },
     { name: "Contacto", href: "/#contacto" }
   ];
 
   const services = [
-    "Mantenimiento Edilicio",
-    "Gestión de Instalaciones",
-    "Seguridad e Higiene",
-    "Gestión Tecnológica",
-    "Diseño de Espacios"
+    "Agua y Saneamiento",
+    "Energía Sustentable",
+    "Obras Civiles",
+    "Consultoría Técnica",
+    "Gestión de Proyectos"
   ];
 
   return (
@@ -26,15 +29,15 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="inline-flex items-center w-fit leading-none">
               <img 
-                src={logoBlanco} 
-                alt="Innosphere Logo"
+                src={qaudalLogo} 
+                alt="Qaudal Logo"
                 className="block h-16 md:h-20 w-auto object-contain"
                 onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/placeholder.svg'; }}
               />
             </div>
             <p className="text-white/80 font-light leading-relaxed">
-              Soluciones integrales de Facility Management que transforman 
-              espacios de trabajo en entornos productivos y eficientes.
+              Soluciones integrales en agua, saneamiento, energía y obras civiles. 
+              Transformamos infraestructura con tecnología y eficiencia sustentable.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -122,7 +125,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <Mail className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" strokeLinecap="square" strokeLinejoin="miter" />
                 <div className="text-white/80 font-light">
-                  info@innosphere.com.ar
+                  info@qaudal.com.ar
                 </div>
               </div>
               
