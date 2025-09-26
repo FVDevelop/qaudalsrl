@@ -126,29 +126,47 @@ const Header = () => {
               Servicios
             </Link>
             
+            <Link to="/sectores" className={`transition-colors font-light ${
+              location.pathname === "/sectores" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
+            }`}>
+              Sectores
+            </Link>
+            
+            <Link to="/noticias" className={`transition-colors font-light ${
+              location.pathname === "/noticias" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
+            }`}>
+              Noticias
+            </Link>
+            
+            <Link to="/faqs" className={`transition-colors font-light ${
+              location.pathname === "/faqs" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
+            }`}>
+              FAQ's
+            </Link>
+            
             <Link to="/#contacto" className={`transition-colors font-light ${
               isActive("/#contacto") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
             }`}>
               Contacto
             </Link>
+          </nav>
+
+          {/* Social Media Icons - Separated */}
+          <div className="hidden md:flex items-center space-x-3 ml-4">
+            <a href="#" className="text-foreground/60 hover:text-primary transition-colors">
+              <Twitter size={18} />
+            </a>
+            <a href="#" className="text-foreground/60 hover:text-primary transition-colors">
+              <Instagram size={18} />
+            </a>
+            <a href="#" className="text-foreground/60 hover:text-primary transition-colors">
+              <MessageCircle size={18} />
+            </a>
             
-            {/* Social Media Icons */}
-            <div className="flex items-center space-x-3">
-              <a href="#" className="text-foreground/60 hover:text-primary transition-colors">
-                <Twitter size={18} />
-              </a>
-              <a href="#" className="text-foreground/60 hover:text-primary transition-colors">
-                <Instagram size={18} />
-              </a>
-              <a href="#" className="text-foreground/60 hover:text-primary transition-colors">
-                <MessageCircle size={18} />
-              </a>
-            </div>
-            
-            <Button asChild className="bg-[#003249] hover:bg-[#003249]/90 text-white">
+            <Button asChild className="bg-[#003249] hover:bg-[#003249]/90 text-white ml-4">
               <Link to="/#contacto">Solicitar Cotización</Link>
             </Button>
-          </nav>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -182,6 +200,21 @@ const Header = () => {
                 location.pathname === "/servicios" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
               }`} onClick={() => setIsMenuOpen(false)}>
                 Servicios
+              </Link>
+              <Link to="/sectores" className={`transition-colors font-light ${
+                location.pathname === "/sectores" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
+              }`} onClick={() => setIsMenuOpen(false)}>
+                Sectores
+              </Link>
+              <Link to="/noticias" className={`transition-colors font-light ${
+                location.pathname === "/noticias" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
+              }`} onClick={() => setIsMenuOpen(false)}>
+                Noticias
+              </Link>
+              <Link to="/faqs" className={`transition-colors font-light ${
+                location.pathname === "/faqs" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
+              }`} onClick={() => setIsMenuOpen(false)}>
+                FAQ's
               </Link>
               <Link to="/#contacto" className={`transition-colors font-light ${
                 isActive("/#contacto") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"

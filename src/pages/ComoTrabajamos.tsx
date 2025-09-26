@@ -4,8 +4,8 @@ import Footer from '@/components/Footer';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import { Card, CardContent } from '@/components/ui/card';
 
-// Import images
-import metodologiaQaudal from '@/assets/metodologia-qaudal.png';
+// Import images and components
+import MethodologyDiagram from '@/components/MethodologyDiagram';
 import carouselAgua from '@/assets/carousel-agua.jpg';
 import construccionMontaje from '@/assets/construccion-montaje.jpg';
 import gestionTecnologica from '@/assets/gestion-tecnologica-it.jpg';
@@ -62,28 +62,24 @@ const ComoTrabajamos = () => {
       </section>
 
       {/* Main Content Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-background to-muted/20">
+      <section className="py-16 px-4 bg-gradient-to-b from-background to-muted/20">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             {/* Left: Methodology Diagram - Larger */}
             <div className="flex justify-center lg:justify-start">
-              <img 
-                src={metodologiaQaudal} 
-                alt="Metodología **Qaudal** - Diagrama de procesos integrados para proyectos de agua, saneamiento y energía"
-                className="w-full max-w-xl h-auto object-contain"
-              />
+              <MethodologyDiagram />
             </div>
             
             {/* Right: Casos Típicos */}
-            <div className="space-y-8">
-              <h2 className="text-3xl font-garet font-normal uppercase mb-8" style={{color: '#003249'}}>
+            <div className="space-y-6">
+              <h2 className="text-3xl font-garet font-normal uppercase mb-6" style={{color: '#003249'}}>
                 Casos Típicos
               </h2>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {casosTypicos.map((caso, index) => (
                   <Card key={index} className="overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                    <div className="relative h-32">
+                    <div className="relative h-24">
                       <img 
                         src={caso.image}
                         alt={`${caso.title} ${caso.subtitle}`}
@@ -91,8 +87,8 @@ const ComoTrabajamos = () => {
                       />
                       <div className="absolute inset-0 bg-black/40"></div>
                     </div>
-                    <CardContent className="p-4">
-                      <h3 className="font-medium text-sm mb-1" style={{color: '#003249'}}>
+                    <CardContent className="p-3">
+                      <h3 className="font-medium text-xs mb-1" style={{color: '#003249'}}>
                         {caso.title}
                       </h3>
                       <p className="text-xs font-light" style={{color: '#737373'}}>
