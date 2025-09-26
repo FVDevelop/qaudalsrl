@@ -56,9 +56,6 @@ const Hero = () => {
             <div className="bg-black/30 p-8 text-left backdrop-blur-sm max-w-4xl">
               <h1 className="text-3xl md:text-4xl font-garet mb-8 tracking-wide leading-tight text-white uppercase font-normal">
                 Consultora especializada en agua, saneamiento, energía y medioambiente
-                <span className="block text-xl md:text-2xl mt-4 font-normal">
-                  AGUA • SANEAMIENTO • ENERGÍA • OBRAS
-                </span>
               </h1>
               
               <p className="text-lg md:text-xl mb-12 max-w-4xl font-light leading-relaxed opacity-95 text-white">
