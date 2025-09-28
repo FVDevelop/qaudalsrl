@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown, Twitter, Instagram, MessageCircle } from "lucide-react";
+import { Menu, X, ChevronDown, Linkedin, Instagram, MessageCircle } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import qaudalLogo from "@/assets/qaudal-logo-transp.png";
@@ -19,7 +19,7 @@ const Header = () => {
   const servicesRef = useRef<HTMLDivElement>(null);
   
   const isActive = (path: string) => {
-    if (path === "/empresa" && location.pathname === "/empresa") return true;
+    if (path === "/empresa" && (location.pathname === "/empresa" || location.pathname === "/como-trabajamos" || location.pathname === "/por-que-qaudal")) return true;
     if (path.startsWith("/#") && location.hash === path.substring(1)) return true;
     if (path === "servicios" && (location.hash.startsWith("#servicios") || location.hash === "#servicios")) return true;
     return false;
@@ -70,7 +70,11 @@ const Header = () => {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent hover:bg-transparent font-light text-foreground/80 hover:text-primary">
+                  <NavigationMenuTrigger className={`bg-transparent hover:bg-transparent font-light hover:text-primary ${
+                    location.pathname === "/empresa" || location.pathname === "/como-trabajamos" || location.pathname === "/por-que-qaudal" 
+                      ? "text-[#003249]" 
+                      : "text-foreground/80"
+                  }`}>
                     Empresa
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -154,7 +158,7 @@ const Header = () => {
           {/* Social Media Icons - Separated */}
           <div className="hidden md:flex items-center space-x-3 ml-4">
             <a href="#" className="text-foreground/60 hover:text-primary transition-colors">
-              <Twitter size={18} />
+              <Linkedin size={18} />
             </a>
             <a href="#" className="text-foreground/60 hover:text-primary transition-colors">
               <Instagram size={18} />

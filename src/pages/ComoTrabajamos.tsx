@@ -50,19 +50,31 @@ const ComoTrabajamos = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-12 bg-gradient-to-b from-muted/50 to-background">
+      <section className="relative pt-32 pb-16 bg-gradient-to-b from-muted/50 to-background">
         <div className="relative z-10 container mx-auto px-4 text-center">
           <h1 className="section-title text-4xl md:text-5xl font-garet mb-6 uppercase font-normal" style={{color: '#737373'}}>
             Como Trabajamos
           </h1>
-          <p className="text-xl max-w-4xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
+          <p className="text-xl max-w-4xl mx-auto font-light leading-relaxed mb-8" style={{color: '#737373'}}>
             Metodología integral para proyectos de agua, saneamiento y energía
           </p>
         </div>
       </section>
 
-      {/* Diagrama de Metodología - Parte Superior */}
-      <section className="py-12 px-4 bg-gradient-to-b from-background to-muted/20">
+      {/* Descripción General */}
+      <section className="py-16 px-4 bg-background">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-lg font-light leading-relaxed" style={{color: '#737373'}}>
+            En Qaudal aplicamos una metodología integral que nos permite abordar cada proyecto 
+            desde una perspectiva 360°. Nuestro enfoque combina experiencia técnica multidisciplinaria 
+            con las mejores prácticas de la industria, garantizando soluciones eficientes y sostenibles 
+            en agua, saneamiento, energía y obras civiles.
+          </p>
+        </div>
+      </section>
+
+      {/* Diagrama de Metodología */}
+      <section className="py-16 px-4 bg-gradient-to-b from-background to-muted/20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-4xl font-garet font-normal uppercase mb-4" style={{color: '#003249'}}>
@@ -78,8 +90,8 @@ const ComoTrabajamos = () => {
         </div>
       </section>
 
-      {/* Casos Típicos - Parte Inferior */}
-      <section className="py-12 px-4 bg-muted/30">
+      {/* Casos Típicos */}
+      <section className="py-16 px-4 bg-muted/30">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-garet font-normal uppercase mb-4" style={{color: '#003249'}}>

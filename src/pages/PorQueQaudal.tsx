@@ -48,20 +48,14 @@ const PorQueQaudal = () => {
     <div className="min-h-screen">
       <Header />
       
-      {/* Header Section with Image */}
-      <div className="relative pt-28 md:pt-32 pb-6">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${consultingProfessionals})` }}
-        >
-          <div className="absolute inset-0 bg-black/60"></div>
-        </div>
+      {/* Header Section */}
+      <div className="relative pt-28 md:pt-32 pb-16 bg-gradient-to-b from-muted/50 to-background">
         <div className="relative z-10 container mx-auto px-4">
           <div className="text-center mb-12">
-            <h1 className="section-title text-4xl md:text-5xl font-garet mb-8 uppercase font-normal text-white">
+            <h1 className="section-title text-4xl md:text-5xl font-garet mb-8 uppercase font-normal" style={{color: '#737373'}}>
               Por que <strong>Qaudal</strong>
             </h1>
-            <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed mb-2 text-white">
+            <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed mb-2" style={{color: '#737373'}}>
               Nuestra propuesta diferencial en consultoría e ingeniería integral
             </p>
           </div>
@@ -93,7 +87,7 @@ const PorQueQaudal = () => {
                   }}
                 >
                   <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
+                    <div className="flex items-center space-x-4">
                       <div 
                         className="w-12 h-12 flex items-center justify-center rounded-full flex-shrink-0"
                         style={{backgroundColor: reason.color}}
