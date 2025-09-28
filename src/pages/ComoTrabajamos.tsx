@@ -50,7 +50,7 @@ const ComoTrabajamos = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16 bg-gradient-to-b from-muted/50 to-background">
+      <section className="relative pt-32 pb-8 bg-gradient-to-b from-muted/50 to-background">
         <div className="relative z-10 container mx-auto px-4 text-center">
           <h1 className="section-title text-4xl md:text-5xl font-garet mb-6 uppercase font-normal" style={{color: '#737373'}}>
             Como Trabajamos
@@ -62,21 +62,22 @@ const ComoTrabajamos = () => {
       </section>
 
       {/* Descripción General */}
-      <section className="py-16 px-4 bg-background">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-lg font-light leading-relaxed" style={{color: '#737373'}}>
+      <section className="py-8 px-4 bg-background">
+        <div className="max-w-5xl mx-auto text-center">
+          <p className="text-xl font-light leading-relaxed mb-4" style={{color: '#737373'}}>
             En Qaudal aplicamos una metodología integral que nos permite abordar cada proyecto 
             desde una perspectiva 360°. Nuestro enfoque combina experiencia técnica multidisciplinaria 
             con las mejores prácticas de la industria, garantizando soluciones eficientes y sostenibles 
             en agua, saneamiento, energía y obras civiles.
           </p>
+          <div className="w-20 h-1 bg-gradient-to-r from-[#007EA7] to-[#003249] mx-auto"></div>
         </div>
       </section>
 
       {/* Diagrama de Metodología */}
-      <section className="py-16 px-4 bg-gradient-to-b from-background to-muted/20">
+      <section className="py-8 px-4 bg-gradient-to-b from-background to-muted/20">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-8">
+          <div className="text-center mb-6">
             <h2 className="text-4xl font-garet font-normal uppercase mb-4" style={{color: '#003249'}}>
               Nuestra Metodología
             </h2>
@@ -91,9 +92,9 @@ const ComoTrabajamos = () => {
       </section>
 
       {/* Casos Típicos */}
-      <section className="py-16 px-4 bg-muted/30">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
+      <section className="py-8 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-8">
             <h2 className="text-4xl font-garet font-normal uppercase mb-4" style={{color: '#003249'}}>
               Casos Típicos
             </h2>
@@ -101,10 +102,10 @@ const ComoTrabajamos = () => {
               Ejemplos representativos de nuestras soluciones especializadas
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {casosTypicos.map((caso, index) => (
-              <Card key={index} className="overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                <div className="relative h-48">
+              <Card key={index} className="overflow-hidden shadow-md hover:shadow-lg transition-shadow rounded-none border-0">
+                <div className="relative h-40">
                   <img 
                     src={caso.image}
                     alt={`${caso.title} ${caso.subtitle}`}
@@ -112,11 +113,11 @@ const ComoTrabajamos = () => {
                   />
                   <div className="absolute inset-0 bg-black/40"></div>
                 </div>
-                <CardContent className="p-6">
+                <CardContent className="p-4">
                   <h3 className="font-semibold text-lg mb-2" style={{color: '#003249'}}>
                     {caso.title}
                   </h3>
-                  <p className="text-base font-light" style={{color: '#737373'}}>
+                  <p className="text-sm font-light" style={{color: '#737373'}}>
                     {caso.subtitle}
                   </p>
                 </CardContent>

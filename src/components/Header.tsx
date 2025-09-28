@@ -70,23 +70,23 @@ const Header = () => {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className={`bg-transparent hover:bg-transparent font-light hover:text-primary ${
+                  <NavigationMenuTrigger className={`bg-transparent hover:bg-transparent font-light hover:text-primary rounded-none border-0 ${
                     location.pathname === "/empresa" || location.pathname === "/como-trabajamos" || location.pathname === "/por-que-qaudal" 
-                      ? "text-[#003249]" 
+                      ? "text-[#003249] font-medium" 
                       : "text-foreground/80"
                   }`}>
                     Empresa
                   </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-[250px] gap-3 p-4">
+                  <NavigationMenuContent className="bg-[#007EA7]/95 backdrop-blur-sm border-0 rounded-none shadow-lg">
+                    <ul className="grid w-[320px] gap-1 p-4">
                       <li>
                         <NavigationMenuLink asChild>
                           <Link
                             to="/empresa"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block select-none space-y-1 p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 rounded-none"
                           >
-                            <div className="text-sm font-medium leading-none">Quienes Somos</div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                            <div className="text-sm font-medium leading-none text-white">Quienes Somos</div>
+                            <p className="line-clamp-2 text-sm leading-snug text-white/80">
                               Conoce nuestra empresa y trayectoria
                             </p>
                           </Link>
@@ -96,10 +96,10 @@ const Header = () => {
                         <NavigationMenuLink asChild>
                           <Link
                             to="/como-trabajamos"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block select-none space-y-1 p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 rounded-none"
                           >
-                            <div className="text-sm font-medium leading-none">Como Trabajamos</div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                            <div className="text-sm font-medium leading-none text-white">Como Trabajamos</div>
+                            <p className="line-clamp-2 text-sm leading-snug text-white/80">
                               Nuestra metodología integral
                             </p>
                           </Link>
@@ -109,10 +109,10 @@ const Header = () => {
                         <NavigationMenuLink asChild>
                           <Link
                             to="/por-que-qaudal"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block select-none space-y-1 p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 rounded-none"
                           >
-                            <div className="text-sm font-medium leading-none">Por que Elegirnos</div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                            <div className="text-sm font-medium leading-none text-white">Por que Elegirnos</div>
+                            <p className="line-clamp-2 text-sm leading-snug text-white/80">
                               Ventajas de trabajar con nosotros
                             </p>
                           </Link>

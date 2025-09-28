@@ -1,11 +1,11 @@
-import { TrendingDown, Shield, Clock, ShieldCheck, ArrowUpRight, TrendingUp } from "lucide-react";
+import { Award, CheckCircle2, Star, Trophy, Shield, Zap } from "lucide-react";
 import benefitsHeroBackground from "@/assets/benefits-hero-background.jpg";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Benefits = () => {
   const benefits = [
     {
-      icon: TrendingDown,
+      icon: Award,
       title: "Menores costos operativos",
       description: "por optimización y eficiencia energética.",
       highlight: "Eficiencia energética"
@@ -17,25 +17,25 @@ const Benefits = () => {
       highlight: "Continuidad garantizada"
     },
     {
-      icon: Clock,
+      icon: CheckCircle2,
       title: "Tiempos de ejecución más cortos",
       description: "por gestión integral del ciclo de vida.",
       highlight: "Gestión integral"
     },
     {
-      icon: ShieldCheck,
+      icon: Trophy,
       title: "Reducción de riesgos",
       description: "técnicos, ambientales y regulatorios.",
       highlight: "Mitigación de riesgos"
     },
     {
-      icon: ArrowUpRight,
+      icon: Star,
       title: "Escalabilidad de soluciones",
       description: "y tecnologías según demanda.",
       highlight: "Crecimiento adaptable"
     },
     {
-      icon: TrendingUp,
+      icon: Zap,
       title: "Mejoras operativas",
       description: "de los sistemas.",
       highlight: "Mejora continua"
@@ -54,53 +54,25 @@ const Benefits = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {/* First row: 3 items */}
-          {benefits.slice(0, 3).map((benefit, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {benefits.map((benefit, index) => (
             <Card key={index} className="bg-white border-0 text-center group rounded-none shadow-md hover:shadow-lg transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-[#007EA7] to-[#007EA7]/80 rounded-none flex items-center justify-center shadow-medium group-hover:shadow-strong transition-all duration-300">
-                  <benefit.icon className="h-10 w-10 text-white" />
+              <CardContent className="p-6">
+                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-[#007EA7] to-[#007EA7]/80 rounded-full flex items-center justify-center shadow-medium group-hover:shadow-strong transition-all duration-300">
+                  <benefit.icon className="h-8 w-8 text-white" />
                 </div>
                 
-                <div className="mb-4">
-                  <span className="inline-block px-3 py-1 text-sm font-medium rounded-full bg-accent/10 text-accent">
+                <div className="mb-3">
+                  <span className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-accent/10 text-accent">
                     {benefit.highlight}
                   </span>
                 </div>
                 
-                <h3 className="text-xl font-garet font-normal mb-4 uppercase" style={{color: '#737373'}}>
+                <h3 className="text-lg font-garet font-normal mb-3 uppercase" style={{color: '#737373'}}>
                   {benefit.title}
                 </h3>
                 
-                <p className="font-light leading-relaxed" style={{color: '#003249'}}>
-                  {benefit.description}
-                </p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-        
-        {/* Second row: 3 items centered */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto mt-8">
-          {benefits.slice(3, 6).map((benefit, index) => (
-            <Card key={index + 3} className="bg-white border-0 text-center group rounded-none shadow-md hover:shadow-lg transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-[#007EA7] to-[#007EA7]/80 rounded-none flex items-center justify-center shadow-medium group-hover:shadow-strong transition-all duration-300">
-                  <benefit.icon className="h-10 w-10 text-white" />
-                </div>
-                
-                <div className="mb-4">
-                  <span className="inline-block px-3 py-1 text-sm font-medium rounded-full bg-accent/10 text-accent">
-                    {benefit.highlight}
-                  </span>
-                </div>
-                
-                <h3 className="text-xl font-garet font-normal mb-4 uppercase" style={{color: '#737373'}}>
-                  {benefit.title}
-                </h3>
-                
-                <p className="font-light leading-relaxed" style={{color: '#003249'}}>
+                <p className="font-light leading-relaxed text-sm" style={{color: '#003249'}}>
                   {benefit.description}
                 </p>
               </CardContent>
