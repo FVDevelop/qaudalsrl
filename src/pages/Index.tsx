@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-
-import Benefits from "@/components/Benefits";
+import EmpresaContent from "@/components/EmpresaContent";
 import ContactForm from "@/components/ContactForm";
 import Trust from "@/components/Trust";
 import Footer from "@/components/Footer";
@@ -30,7 +29,7 @@ const Index = () => {
       <Header />
       <Hero />
       <div className="homepage-content">
-        <Benefits />
+        <EmpresaContent />
         <ContactForm />
         <Footer />
         <WhatsAppCTA />

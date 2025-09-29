@@ -102,7 +102,7 @@ Esta es una solicitud de cotización enviada desde el sitio web de Qaudal.
       </div>
 
       {/* Subtitle outside header */}
-      <div className="container mx-auto px-4 pt-8 pb-4">
+      <div className="container mx-auto px-4 pt-6 pb-4">
         <div className="text-center">
           <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#007EA7'}}>
             Estamos listos para transformar la gestión de tus instalaciones. 

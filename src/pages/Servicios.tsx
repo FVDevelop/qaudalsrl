@@ -163,7 +163,7 @@ const Servicios = () => {
       <Header />
       
       {/* Hero Section with Gradient Background */}
-      <section className="relative pt-32 pb-12 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95 overflow-hidden">
+      <section className="relative py-12 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img 
             src={renewableEnergyBackground}
@@ -179,7 +179,7 @@ const Servicios = () => {
       </section>
 
       {/* Subtitle outside header */}
-      <div className="container mx-auto px-4 pt-8 pb-4">
+      <div className="container mx-auto px-4 pt-6 pb-4">
         <div className="text-center">
           <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#007EA7'}}>
             Soluciones integrales para agua, saneamiento y energía
