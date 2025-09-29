@@ -55,9 +55,6 @@ const Faqs = () => {
           <h1 className="section-title text-4xl md:text-5xl font-garet mb-6 uppercase font-normal text-white">
             Preguntas Frecuentes
           </h1>
-          <p className="text-xl max-w-4xl mx-auto font-light leading-relaxed text-white/90">
-            Respuestas a las consultas más comunes sobre nuestros servicios
-          </p>
           <div className="w-20 h-1 bg-white mx-auto mt-6"></div>
         </div>
       </section>

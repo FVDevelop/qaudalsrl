@@ -175,9 +175,6 @@ const Servicios = () => {
           <h1 className="section-title text-4xl md:text-5xl font-garet mb-6 uppercase font-normal text-white">
             Servicios
           </h1>
-          <p className="text-xl max-w-4xl mx-auto font-light leading-relaxed text-white/90">
-            Soluciones integrales en consultoría e ingeniería para proyectos de agua, saneamiento y energía
-          </p>
           <div className="w-20 h-1 bg-white mx-auto mt-6"></div>
         </div>
       </section>
@@ -230,7 +227,7 @@ const Servicios = () => {
                 </div>
                 
                 <CardContent className="p-6">
-                  <h3 className="font-semibold text-lg mb-4" style={{color: '#003249'}}>
+                  <h3 className="font-garet font-normal text-lg mb-4" style={{color: '#003249'}}>
                     {service.title}
                   </h3>
                   
@@ -253,18 +250,6 @@ const Servicios = () => {
         </div>
       </section>
 
-      {/* Contact Specialist Button */}
-      <section className="py-8 bg-muted/20">
-        <div className="container mx-auto px-4 text-center">
-          <Link to="/#contacto">
-            <Button 
-              className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-none px-12 py-4 text-lg font-medium"
-            >
-              Contactar a un especialista
-            </Button>
-          </Link>
-        </div>
-      </section>
 
       <Footer />
       <WhatsAppCTA />

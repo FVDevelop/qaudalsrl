@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Calendar, ArrowRight } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
+import communicationBackground from "@/assets/communication-background.jpg";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Nombre es requerido").max(100, "Nombre muy largo"),
@@ -82,17 +83,36 @@ Esta es una solicitud de cotización enviada desde el sitio web de Qaudal.
   };
 
   return (
-    <section id="contacto" className="py-8 bg-white scroll-mt-28 md:scroll-mt-32">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-8">
-          <h2 className="text-4xl md:text-5xl font-garet font-normal mb-6 uppercase section-title" style={{color: '#737373'}}>
+    <section id="contacto" className="scroll-mt-28 md:scroll-mt-32">
+      {/* Header with gradient and background */}
+      <div className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src={communicationBackground} 
+            alt="Contacto" 
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95"></div>
+        </div>
+        <div className="relative container mx-auto px-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-garet font-normal mb-6 text-white uppercase">
             Hablemos de tu proyecto
           </h2>
-          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
+        </div>
+      </div>
+
+      {/* Subtitle outside header */}
+      <div className="container mx-auto px-4 pt-8 pb-4">
+        <div className="text-center">
+          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#007EA7'}}>
             Estamos listos para transformar la gestión de tus instalaciones. 
             Contactanos para una consulta gratuita.
           </p>
         </div>
+      </div>
+
+      <div className="bg-white py-8">
+      <div className="container mx-auto px-4">
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
           {/* Contact Form */}
@@ -276,6 +296,7 @@ Esta es una solicitud de cotización enviada desde el sitio web de Qaudal.
             </Card>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

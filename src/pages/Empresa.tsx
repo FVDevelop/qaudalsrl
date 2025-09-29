@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import { Card, CardContent } from '@/components/ui/card';
-import { CheckCircle, Target, Users, Zap, Shield } from 'lucide-react';
+import { CheckCircle, Target, Users, Zap, Shield, Award } from 'lucide-react';
 import MethodologyDiagram from '@/components/MethodologyDiagram';
 import workersImage from "@/assets/workers-engineering-team.jpg";
 import carouselAgua from "@/assets/carousel-agua.jpg";
@@ -98,14 +98,20 @@ const Empresa = () => {
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center">
           <h1 className="section-title text-4xl md:text-5xl font-garet mb-6 uppercase font-normal text-white">
-            Tu proyecto. Nuestro <strong>caudal</strong>
+            Quienes Somos
           </h1>
-          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed text-white/90">
-            Un flujo constante de soluciones para la gestión del agua, saneamiento y energía
-          </p>
           <div className="w-20 h-1 bg-white mx-auto mt-6"></div>
         </div>
       </section>
+
+      {/* Subtitle outside header */}
+      <div className="container mx-auto px-4 pt-8 pb-4">
+        <div className="text-center">
+          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#007EA7'}}>
+            Un flujo constante de soluciones para la gestión del agua, saneamiento y energía
+          </p>
+        </div>
+      </div>
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12 bg-gradient-to-b from-background to-muted/20">
@@ -234,60 +240,52 @@ const Empresa = () => {
         </div>
       </section>
 
-      {/* Por Que Qaudal Section */}
-      <section className="relative py-12 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <img 
-            src={waterTreatmentBackground}
-            alt="Water Treatment Background"
-            className="w-full h-full object-cover object-right"
-          />
+        <div className="relative py-20 overflow-hidden">
+          <div className="absolute inset-0">
+            <img 
+              src={waterTreatmentBackground} 
+              alt="Por que Qaudal" 
+              className="w-full h-full object-cover opacity-20"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95"></div>
+          </div>
+          <div className="relative container mx-auto px-4 text-center">
+            <h2 className="text-4xl md:text-5xl font-garet font-normal mb-6 text-white uppercase">
+              Por Qué Qaudal
+            </h2>
+          </div>
         </div>
-        <div className="relative z-10 container mx-auto px-4 text-center">
-          <h2 className="section-title text-4xl md:text-5xl font-garet mb-6 uppercase font-normal text-white">
-            Por que <strong>Qaudal</strong>
-          </h2>
-          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed text-white/90">
-            Nuestra propuesta diferencial en consultoría e ingeniería integral
-          </p>
-          <div className="w-20 h-1 bg-white mx-auto mt-6"></div>
-        </div>
-      </section>
 
-      {/* Por Que Qaudal Content */}
-      <section className="py-8 bg-gradient-to-b from-background to-muted/20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-              {/* Left - Image */}
-              <div className="relative">
-                <img 
-                  src={consultingProfessionals} 
-                  alt="Profesionales de consultoría e ingeniería en Qaudal"
-                  className="w-full h-[500px] object-cover shadow-strong"
-                />
-              </div>
-              
-              {/* Right - Reasons Cards - Overlapping 10% on image */}
-              <div className="space-y-4 lg:-ml-16 lg:mt-8 relative z-10">
+        {/* Subtitle outside header */}
+        <div className="container mx-auto px-4 pt-8 pb-4">
+          <div className="text-center">
+            <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed font-light" style={{color: '#007EA7'}}>
+              Nuestra propuesta de valor diferencial para tu organización
+            </p>
+          </div>
+        </div>
+
+        {/* Two Column Layout */}
+        <div className="container mx-auto px-4 py-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {/* Column 1: Diferenciales */}
+            <div>
+              <h3 className="text-2xl md:text-3xl font-garet font-normal mb-8 uppercase text-center" style={{color: '#737373'}}>
+                Diferenciales
+              </h3>
+              <div className="space-y-6">
                 {reasons.map((reason, index) => (
-                  <Card 
-                    key={index} 
-                    className="bg-white border-0 shadow-medium hover:shadow-strong transition-all duration-300 transform hover:-translate-y-1 rounded-none"
-                  >
-                    <CardContent className="p-4">
-                      <div className="flex items-center space-x-4">
-                        <div 
-                          className="w-10 h-10 flex items-center justify-center rounded-full flex-shrink-0"
-                          style={{backgroundColor: reason.color}}
-                        >
-                          <reason.icon className="h-5 w-5 text-white" />
+                  <Card key={index} className="bg-white border-0 group rounded-none shadow-md hover:shadow-lg transition-all duration-300">
+                    <CardContent className="p-6">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-12 h-12 bg-gradient-to-br from-[#007EA7] to-[#007EA7]/80 rounded-full flex items-center justify-center shadow-medium group-hover:shadow-strong transition-all duration-300 flex-shrink-0">
+                          <reason.icon className="h-6 w-6 text-white" />
                         </div>
-                        <div className="flex-1">
-                          <h4 className="text-lg font-garet font-normal mb-2 uppercase" style={{color: '#737373'}}>
+                        <div>
+                          <h4 className="text-lg font-garet font-normal mb-2" style={{color: '#737373'}}>
                             {reason.title}
                           </h4>
-                          <p className="text-sm font-light leading-relaxed" style={{color: '#737373'}}>
+                          <p className="font-light leading-relaxed text-sm" style={{color: '#003249'}}>
                             {reason.description}
                           </p>
                         </div>
@@ -297,9 +295,124 @@ const Empresa = () => {
                 ))}
               </div>
             </div>
+
+            {/* Column 2: Beneficios para tu organización */}
+            <div>
+              <h3 className="text-2xl md:text-3xl font-garet font-normal mb-8 uppercase text-center" style={{color: '#737373'}}>
+                Beneficios para tu organización
+              </h3>
+              <div className="space-y-6">
+                <Card className="bg-white border-0 group rounded-none shadow-md hover:shadow-lg transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#007EA7] to-[#007EA7]/80 rounded-full flex items-center justify-center shadow-medium group-hover:shadow-strong transition-all duration-300 flex-shrink-0">
+                        <Award className="h-6 w-6 text-white" />
+                      </div>
+                      <div>
+                        <h4 className="text-lg font-garet font-normal mb-2" style={{color: '#737373'}}>
+                          Menores costos operativos
+                        </h4>
+                        <p className="font-light leading-relaxed text-sm" style={{color: '#003249'}}>
+                          por optimización y eficiencia energética.
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white border-0 group rounded-none shadow-md hover:shadow-lg transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#007EA7] to-[#007EA7]/80 rounded-full flex items-center justify-center shadow-medium group-hover:shadow-strong transition-all duration-300 flex-shrink-0">
+                        <Shield className="h-6 w-6 text-white" />
+                      </div>
+                      <div>
+                        <h4 className="text-lg font-garet font-normal mb-2" style={{color: '#737373'}}>
+                          Mayor confiabilidad y continuidad
+                        </h4>
+                        <p className="font-light leading-relaxed text-sm" style={{color: '#003249'}}>
+                          de servicio por mantenimiento planificado.
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white border-0 group rounded-none shadow-md hover:shadow-lg transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#007EA7] to-[#007EA7]/80 rounded-full flex items-center justify-center shadow-medium group-hover:shadow-strong transition-all duration-300 flex-shrink-0">
+                        <CheckCircle className="h-6 w-6 text-white" />
+                      </div>
+                      <div>
+                        <h4 className="text-lg font-garet font-normal mb-2" style={{color: '#737373'}}>
+                          Tiempos de ejecución más cortos
+                        </h4>
+                        <p className="font-light leading-relaxed text-sm" style={{color: '#003249'}}>
+                          por gestión integral del ciclo de vida.
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white border-0 group rounded-none shadow-md hover:shadow-lg transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#007EA7] to-[#007EA7]/80 rounded-full flex items-center justify-center shadow-medium group-hover:shadow-strong transition-all duration-300 flex-shrink-0">
+                        <Target className="h-6 w-6 text-white" />
+                      </div>
+                      <div>
+                        <h4 className="text-lg font-garet font-normal mb-2" style={{color: '#737373'}}>
+                          Reducción de riesgos
+                        </h4>
+                        <p className="font-light leading-relaxed text-sm" style={{color: '#003249'}}>
+                          técnicos, ambientales y regulatorios.
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white border-0 group rounded-none shadow-md hover:shadow-lg transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#007EA7] to-[#007EA7]/80 rounded-full flex items-center justify-center shadow-medium group-hover:shadow-strong transition-all duration-300 flex-shrink-0">
+                        <Users className="h-6 w-6 text-white" />
+                      </div>
+                      <div>
+                        <h4 className="text-lg font-garet font-normal mb-2" style={{color: '#737373'}}>
+                          Escalabilidad de soluciones
+                        </h4>
+                        <p className="font-light leading-relaxed text-sm" style={{color: '#003249'}}>
+                          y tecnologías según demanda.
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white border-0 group rounded-none shadow-md hover:shadow-lg transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#007EA7] to-[#007EA7]/80 rounded-full flex items-center justify-center shadow-medium group-hover:shadow-strong transition-all duration-300 flex-shrink-0">
+                        <Zap className="h-6 w-6 text-white" />
+                      </div>
+                      <div>
+                        <h4 className="text-lg font-garet font-normal mb-2" style={{color: '#737373'}}>
+                          Mejoras operativas
+                        </h4>
+                        <p className="font-light leading-relaxed text-sm" style={{color: '#003249'}}>
+                          de los sistemas.
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
 
       <Footer />
       <WhatsAppCTA />
