@@ -10,9 +10,12 @@ import {
   Package
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import WhatsAppCTA from "@/components/WhatsAppCTA";
+import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import WhatsAppCTA from '@/components/WhatsAppCTA';
+import renewableEnergyBackground from '@/assets/renewable-energy-background.png';
 
 // Import service images
 import consultoriaEstudiosImage from "@/assets/consultoria-estudios.jpg";
@@ -159,16 +162,55 @@ const Servicios = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-16 bg-gradient-to-b from-muted/30 to-background">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="section-title text-4xl md:text-5xl font-garet mb-8 uppercase font-normal" style={{color: '#737373'}}>
-            Nuestros Servicios
+      {/* Hero Section with Gradient Background */}
+      <section className="relative pt-32 pb-12 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <img 
+            src={renewableEnergyBackground}
+            alt="Renewable Energy Background"
+            className="w-full h-full object-cover object-right"
+          />
+        </div>
+        <div className="relative z-10 container mx-auto px-4 text-center">
+          <h1 className="section-title text-4xl md:text-5xl font-garet mb-6 uppercase font-normal text-white">
+            Servicios
           </h1>
-          <p className="text-xl max-w-4xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
-            Consultoría e ingeniería integral para agua, saneamiento, energía y obras. 
-            Desde estudios hasta construcción, operación y mejora continua.
+          <p className="text-xl max-w-4xl mx-auto font-light leading-relaxed text-white/90">
+            Soluciones integrales en consultoría e ingeniería para proyectos de agua, saneamiento y energía
           </p>
+          <div className="w-20 h-1 bg-white mx-auto mt-6"></div>
+        </div>
+      </section>
+
+      {/* Navigation Buttons */}
+      <section className="py-8 bg-gradient-to-b from-background to-muted/20">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
+            <Link to="/como-trabajamos">
+              <Button 
+                variant="outline"
+                className="w-full sm:w-auto border-2 hover:bg-primary hover:text-primary-foreground transition-all duration-300 rounded-none px-8 py-3"
+                style={{
+                  borderColor: '#003249',
+                  color: '#003249',
+                }}
+              >
+                Como Trabajamos
+              </Button>
+            </Link>
+            <Link to="/#contacto">
+              <Button 
+                variant="outline"
+                className="w-full sm:w-auto border-2 hover:bg-primary hover:text-primary-foreground transition-all duration-300 rounded-none px-8 py-3"
+                style={{
+                  borderColor: '#003249',
+                  color: '#003249',
+                }}
+              >
+                Contactar a un especialista
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -178,13 +220,13 @@ const Servicios = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <Card key={index} className="service-card border-0 overflow-hidden group hover:scale-105 transition-transform duration-300">
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-48 overflow-hidden">
                   <img 
                     src={service.image} 
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-black/20"></div>
+                  <div className="absolute inset-0 bg-black/10"></div>
                 </div>
                 
                 <CardContent className="p-6">
@@ -211,39 +253,16 @@ const Servicios = () => {
         </div>
       </section>
 
-      {/* Navigation Buttons */}
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 md:space-y-0 md:space-x-6 md:flex md:justify-center">
-            <a
-              href="/como-trabajamos"
-              className="inline-block bg-[#003249] hover:bg-[#003249]/90 text-white px-8 py-3 font-light transition-colors"
-            >
-              Como Trabajamos
-            </a>
-            <a
-              href="/servicios"
-              className="inline-block bg-[#007EA7] hover:bg-[#007EA7]/90 text-white px-8 py-3 font-light transition-colors"
-            >
-              Nuestros Servicios
-            </a>
-            <a
-              href="/por-que-qaudal"
-              className="inline-block bg-[#737373] hover:bg-[#737373]/90 text-white px-8 py-3 font-light transition-colors"
-            >
-              Por que <strong>Qaudal</strong>
-            </a>
-          </div>
-          
-          {/* Contact Specialist Button */}
-          <div className="text-center mt-12">
-            <a
-              href="/contacto"
-              className="inline-block bg-[#007EA7] hover:bg-[#007EA7]/90 text-white px-10 py-4 font-light transition-colors text-lg"
+      {/* Contact Specialist Button */}
+      <section className="py-8 bg-muted/20">
+        <div className="container mx-auto px-4 text-center">
+          <Link to="/#contacto">
+            <Button 
+              className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-none px-12 py-4 text-lg font-medium"
             >
               Contactar a un especialista
-            </a>
-          </div>
+            </Button>
+          </Link>
         </div>
       </section>
 

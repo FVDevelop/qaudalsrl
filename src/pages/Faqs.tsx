@@ -8,6 +8,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import waterTreatmentBackground from '@/assets/water-treatment-background.png';
 
 const Faqs = () => {
   useEffect(() => {
@@ -41,15 +42,23 @@ const Faqs = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-b from-muted/50 to-background">
+      {/* Hero Section with Gradient Background */}
+      <section className="relative pt-32 pb-12 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <img 
+            src={waterTreatmentBackground}
+            alt="Water Treatment Background"
+            className="w-full h-full object-cover object-right"
+          />
+        </div>
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="section-title text-4xl md:text-5xl font-garet mb-8 uppercase font-normal" style={{color: '#737373'}}>
+          <h1 className="section-title text-4xl md:text-5xl font-garet mb-6 uppercase font-normal text-white">
             Preguntas Frecuentes
           </h1>
-          <p className="text-xl max-w-4xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
+          <p className="text-xl max-w-4xl mx-auto font-light leading-relaxed text-white/90">
             Respuestas a las consultas más comunes sobre nuestros servicios
           </p>
+          <div className="w-20 h-1 bg-white mx-auto mt-6"></div>
         </div>
       </section>
 

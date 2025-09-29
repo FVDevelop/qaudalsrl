@@ -2,61 +2,113 @@ import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
+import { Card, CardContent } from '@/components/ui/card';
+import { CheckCircle, Target, Users, Zap, Shield } from 'lucide-react';
+import MethodologyDiagram from '@/components/MethodologyDiagram';
 import workersImage from "@/assets/workers-engineering-team.jpg";
 import carouselAgua from "@/assets/carousel-agua.jpg";
 import carouselSaneamiento from "@/assets/carousel-saneamiento.jpg";
 import carouselEnergia from "@/assets/carousel-energia.jpg";
 import carouselObras from "@/assets/carousel-obras.jpg";
+import waterTreatmentBackground from '@/assets/water-treatment-background.png';
+import consultingProfessionals from '@/assets/consulting-professionals.jpg';
+import construccionMontaje from '@/assets/construccion-montaje.jpg';
+import gestionTecnologica from '@/assets/gestion-tecnologica-it.jpg';
+import energiaRenovables from '@/assets/energia-renovables.jpg';
+import ambienteSeguridad from '@/assets/ambiente-seguridad.jpg';
 
 const Empresa = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const carouselImages = [
+  const casosTypicos = [
     {
-      src: carouselAgua,
-      alt: "Infraestructura de tratamiento de agua",
-      title: "Agua"
+      title: "Rediseño/expansión de plantas",
+      subtitle: "de tratamiento y redes",
+      image: carouselAgua
     },
     {
-      src: carouselSaneamiento,
-      alt: "Sistemas de saneamiento y tratamiento",
-      title: "Saneamiento"
+      title: "Estaciones de bombeo",
+      subtitle: "y sistemas de impulsión",
+      image: construccionMontaje
     },
     {
-      src: carouselEnergia,
-      alt: "Energías renovables y sostenibles",
-      title: "Energía"
+      title: "Implementación de SCADA",
+      subtitle: "automatización y telemetría",
+      image: gestionTecnologica
     },
     {
-      src: carouselObras,
-      alt: "Obras de infraestructura y construcción",
-      title: "Obras"
+      title: "Programas de eficiencia energética",
+      subtitle: "con M&V",
+      image: energiaRenovables
+    },
+    {
+      title: "Monitoreo ambiental",
+      subtitle: "(olores, ruido) y gestión de pasivos",
+      image: ambienteSeguridad
+    }
+  ];
+
+  const reasons = [
+    {
+      icon: Target,
+      title: "Cobertura end‑to‑end",
+      description: "estudio → diseño → obra → operación → mejora.",
+      color: "#007EA7"
+    },
+    {
+      icon: Users,
+      title: "Multidisciplina",
+      description: "hidráulica, eléctrica, control/automatización, ambiente, energía.",
+      color: "#003249"
+    },
+    {
+      icon: CheckCircle,
+      title: "Flexibilidad de contratación",
+      description: "ejecución propia o en alianza con terceros habilitados.",
+      color: "#007EA7"
+    },
+    {
+      icon: Zap,
+      title: "Enfoque en eficiencia",
+      description: "optimización de energía, M&V y mejora continua.",
+      color: "#003249"
+    },
+    {
+      icon: Shield,
+      title: "Cumplimiento normativo",
+      description: "y buenas prácticas en HSE.",
+      color: "#007EA7"
     }
   ];
 
   return (
     <div className="min-h-screen">
       <Header />
-      {/* Header Section */}
-      <div className="relative pt-28 md:pt-32 pb-6 bg-gradient-to-b from-muted/50 to-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h1 className="section-title text-4xl md:text-5xl font-garet mb-8 uppercase font-normal" style={{color: '#737373'}}>
-              Nuestra Empresa
-            </h1>
-            <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed mb-2" style={{color: '#737373'}}>
-              Integramos experiencia técnica y tecnologías inteligentes para diseñar soluciones sostenibles e innovadoras que generan impacto real.
-            </p>
-          </div>
+      
+      {/* Header Section with Gradient Background */}
+      <section className="relative pt-32 pb-12 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <img 
+            src={waterTreatmentBackground}
+            alt="Water Treatment Background"
+            className="w-full h-full object-cover object-right"
+          />
         </div>
-      </div>
+        <div className="relative z-10 container mx-auto px-4 text-center">
+          <h1 className="section-title text-4xl md:text-5xl font-garet mb-6 uppercase font-normal text-white">
+            Tu proyecto. Nuestro <strong>caudal</strong>
+          </h1>
+          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed text-white/90">
+            Un flujo constante de soluciones para la gestión del agua, saneamiento y energía
+          </p>
+          <div className="w-20 h-1 bg-white mx-auto mt-6"></div>
+        </div>
+      </section>
 
       {/* Main Content */}
-      <div className="container mx-auto px-4 pt-0 pb-12">
+      <div className="container mx-auto px-4 py-12 bg-gradient-to-b from-background to-muted/20">
         <div className="max-w-6xl mx-auto">
           {/* Tu proyecto. Nuestro caudal Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
@@ -98,13 +150,157 @@ const Empresa = () => {
           </div>
 
           {/* Tagline */}
-          <div className="text-center mt-12">
+          <div className="text-center mb-12">
             <p className="text-xs md:text-sm font-garet uppercase tracking-wider" style={{color: '#007EA7'}}>
               Nos ocupamos de tus proyectos para que vos te ocupes de crecer
             </p>
           </div>
         </div>
       </div>
+
+      {/* Cómo Trabajamos Section */}
+      <section className="relative py-12 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <img 
+            src={waterTreatmentBackground}
+            alt="Water Treatment Background"
+            className="w-full h-full object-cover object-right"
+          />
+        </div>
+        <div className="relative z-10 container mx-auto px-4 text-center">
+          <h2 className="section-title text-4xl md:text-5xl font-garet mb-6 uppercase font-normal text-white">
+            Como Trabajamos
+          </h2>
+          <p className="text-xl max-w-5xl mx-auto font-light leading-relaxed text-white/90">
+            En Qaudal aplicamos una metodología integral que nos permite abordar cada proyecto 
+            desde una perspectiva 360°. Nuestro enfoque combina experiencia técnica multidisciplinaria 
+            con las mejores prácticas de la industria, garantizando soluciones eficientes y sostenibles 
+            en agua, saneamiento, energía y obras civiles.
+          </p>
+          <div className="w-20 h-1 bg-white mx-auto mt-6"></div>
+        </div>
+      </section>
+
+      {/* Diagrama de Metodología */}
+      <section className="py-12 px-4 bg-gradient-to-b from-background to-muted/20">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-6">
+            <h3 className="text-4xl font-garet font-normal uppercase mb-4" style={{color: '#003249'}}>
+              Nuestra Metodología
+            </h3>
+            <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
+              Proceso integral que garantiza la excelencia en cada etapa del proyecto
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <MethodologyDiagram />
+          </div>
+        </div>
+      </section>
+
+      {/* Casos Típicos */}
+      <section className="py-12 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10">
+            <h3 className="text-4xl font-garet font-normal uppercase mb-4" style={{color: '#003249'}}>
+              Casos Típicos
+            </h3>
+            <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
+              Ejemplos representativos de nuestras soluciones especializadas
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {casosTypicos.map((caso, index) => (
+              <Card key={index} className="overflow-hidden shadow-md hover:shadow-lg transition-shadow rounded-none border-0">
+                <div className="relative h-40">
+                  <img 
+                    src={caso.image}
+                    alt={`${caso.title} ${caso.subtitle}`}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/40"></div>
+                </div>
+                <CardContent className="p-4">
+                  <h4 className="font-semibold text-lg mb-2" style={{color: '#003249'}}>
+                    {caso.title}
+                  </h4>
+                  <p className="text-sm font-light" style={{color: '#737373'}}>
+                    {caso.subtitle}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Por Que Qaudal Section */}
+      <section className="relative py-12 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <img 
+            src={waterTreatmentBackground}
+            alt="Water Treatment Background"
+            className="w-full h-full object-cover object-right"
+          />
+        </div>
+        <div className="relative z-10 container mx-auto px-4 text-center">
+          <h2 className="section-title text-4xl md:text-5xl font-garet mb-6 uppercase font-normal text-white">
+            Por que <strong>Qaudal</strong>
+          </h2>
+          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed text-white/90">
+            Nuestra propuesta diferencial en consultoría e ingeniería integral
+          </p>
+          <div className="w-20 h-1 bg-white mx-auto mt-6"></div>
+        </div>
+      </section>
+
+      {/* Por Que Qaudal Content */}
+      <section className="py-8 bg-gradient-to-b from-background to-muted/20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+              {/* Left - Image */}
+              <div className="relative">
+                <img 
+                  src={consultingProfessionals} 
+                  alt="Profesionales de consultoría e ingeniería en Qaudal"
+                  className="w-full h-[500px] object-cover shadow-strong"
+                />
+              </div>
+              
+              {/* Right - Reasons Cards - Overlapping 10% on image */}
+              <div className="space-y-4 lg:-ml-16 lg:mt-8 relative z-10">
+                {reasons.map((reason, index) => (
+                  <Card 
+                    key={index} 
+                    className="bg-white border-0 shadow-medium hover:shadow-strong transition-all duration-300 transform hover:-translate-y-1 rounded-none"
+                  >
+                    <CardContent className="p-4">
+                      <div className="flex items-center space-x-4">
+                        <div 
+                          className="w-10 h-10 flex items-center justify-center rounded-full flex-shrink-0"
+                          style={{backgroundColor: reason.color}}
+                        >
+                          <reason.icon className="h-5 w-5 text-white" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="text-lg font-garet font-normal mb-2 uppercase" style={{color: '#737373'}}>
+                            {reason.title}
+                          </h4>
+                          <p className="text-sm font-light leading-relaxed" style={{color: '#737373'}}>
+                            {reason.description}
+                          </p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
       <WhatsAppCTA />
     </div>

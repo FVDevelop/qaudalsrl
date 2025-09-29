@@ -70,7 +70,7 @@ const Header = () => {
             <Link to="/empresa" className={`transition-colors font-light ${
               location.pathname === "/empresa" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
             }`}>
-              Quienes Somos
+              Empresa
             </Link>
             
             <Link to="/servicios" className={`transition-colors font-light ${
@@ -137,7 +137,7 @@ const Header = () => {
               <Link to="/empresa" className={`transition-colors font-light ${
                 isActive("/empresa") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
               }`} onClick={() => setIsMenuOpen(false)}>
-                Quienes Somos
+                Empresa
               </Link>
               <Link to="/como-trabajamos" className={`transition-colors font-light ${
                 location.pathname === "/como-trabajamos" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
