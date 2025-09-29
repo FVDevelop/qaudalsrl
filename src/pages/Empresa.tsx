@@ -97,10 +97,9 @@ const Empresa = () => {
           />
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="section-title text-4xl md:text-5xl font-garet mb-6 uppercase font-normal text-white">
+          <h1 className="section-title text-4xl md:text-5xl font-garet uppercase font-normal text-white">
             Quienes Somos
           </h1>
-          <div className="w-20 h-1 bg-white mx-auto mt-6"></div>
         </div>
       </section>
 
@@ -174,7 +173,7 @@ const Empresa = () => {
           />
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h2 className="section-title text-4xl md:text-5xl font-garet mb-6 uppercase font-normal text-white">
+          <h2 className="section-title text-4xl md:text-5xl font-garet uppercase font-normal text-white">
             Como Trabajamos
           </h2>
           <p className="text-xl max-w-5xl mx-auto font-light leading-relaxed text-white/90">
@@ -183,7 +182,6 @@ const Empresa = () => {
             con las mejores prácticas de la industria, garantizando soluciones eficientes y sostenibles 
             en agua, saneamiento, energía y obras civiles.
           </p>
-          <div className="w-20 h-1 bg-white mx-auto mt-6"></div>
         </div>
       </section>
 
@@ -240,179 +238,189 @@ const Empresa = () => {
         </div>
       </section>
 
-        <div className="relative py-20 overflow-hidden">
-          <div className="absolute inset-0">
-            <img 
-              src={waterTreatmentBackground} 
-              alt="Por que Qaudal" 
-              className="w-full h-full object-cover opacity-20"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95"></div>
-          </div>
-          <div className="relative container mx-auto px-4 text-center">
-            <h2 className="text-4xl md:text-5xl font-garet font-normal mb-6 text-white uppercase">
-              Por Qué Qaudal
-            </h2>
-          </div>
+      {/* Por Qué Qaudal Section with Header */}
+      <section className="relative py-12 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <img 
+            src={waterTreatmentBackground}
+            alt="Por Qué Qaudal Background"
+            className="w-full h-full object-cover object-right"
+          />
         </div>
-
-        {/* Subtitle outside header */}
-        <div className="container mx-auto px-4 pt-8 pb-4">
-          <div className="text-center">
-            <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed font-light" style={{color: '#007EA7'}}>
-              Nuestra propuesta de valor diferencial para tu organización
-            </p>
-          </div>
+        <div className="relative z-10 container mx-auto px-4 text-center">
+          <h2 className="section-title text-4xl md:text-5xl font-garet uppercase font-normal text-white">
+            Por Qué Qaudal
+          </h2>
         </div>
+      </section>
 
-        {/* Two Column Layout */}
-        <div className="container mx-auto px-4 py-16">
+      {/* Subtitle outside header */}
+      <div className="container mx-auto px-4 pt-8 pb-4">
+        <div className="text-center">
+          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#007EA7'}}>
+            Nuestra propuesta de valor diferencial para tu organización
+          </p>
+        </div>
+      </div>
+
+      {/* Two Large Cards Layout */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            {/* Column 1: Diferenciales */}
-            <div>
-              <h3 className="text-2xl md:text-3xl font-garet font-normal mb-8 uppercase text-center" style={{color: '#737373'}}>
-                Diferenciales
-              </h3>
-              <div className="space-y-6">
-                {reasons.map((reason, index) => (
-                  <Card key={index} className="bg-white border-0 group rounded-none shadow-md hover:shadow-lg transition-all duration-300">
-                    <CardContent className="p-6">
-                      <div className="flex items-start space-x-4">
-                        <div className="w-12 h-12 bg-gradient-to-br from-[#007EA7] to-[#007EA7]/80 rounded-full flex items-center justify-center shadow-medium group-hover:shadow-strong transition-all duration-300 flex-shrink-0">
-                          <reason.icon className="h-6 w-6 text-white" />
-                        </div>
-                        <div>
-                          <h4 className="text-lg font-garet font-normal mb-2" style={{color: '#737373'}}>
-                            {reason.title}
-                          </h4>
-                          <p className="font-light leading-relaxed text-sm" style={{color: '#003249'}}>
-                            {reason.description}
-                          </p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-
-            {/* Column 2: Beneficios para tu organización */}
-            <div>
-              <h3 className="text-2xl md:text-3xl font-garet font-normal mb-8 uppercase text-center" style={{color: '#737373'}}>
-                Beneficios para tu organización
-              </h3>
-              <div className="space-y-6">
-                <Card className="bg-white border-0 group rounded-none shadow-md hover:shadow-lg transition-all duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-[#007EA7] to-[#007EA7]/80 rounded-full flex items-center justify-center shadow-medium group-hover:shadow-strong transition-all duration-300 flex-shrink-0">
-                        <Award className="h-6 w-6 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="text-lg font-garet font-normal mb-2" style={{color: '#737373'}}>
-                          Menores costos operativos
-                        </h4>
-                        <p className="font-light leading-relaxed text-sm" style={{color: '#003249'}}>
-                          por optimización y eficiencia energética.
-                        </p>
-                      </div>
+            {/* Card 1: Diferenciales */}
+            <Card className="bg-white border-0 shadow-lg rounded-none overflow-hidden">
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-garet font-normal mb-8 uppercase text-center" style={{color: '#003249'}}>
+                  Diferenciales
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-3 h-3 rounded-full mt-2 flex-shrink-0" style={{backgroundColor: '#007EA7'}}></div>
+                    <div>
+                      <h4 className="font-semibold text-base mb-1" style={{color: '#003249'}}>
+                        Cobertura end‑to‑end
+                      </h4>
+                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                        estudio → diseño → obra → operación → mejora.
+                      </p>
                     </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-white border-0 group rounded-none shadow-md hover:shadow-lg transition-all duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-[#007EA7] to-[#007EA7]/80 rounded-full flex items-center justify-center shadow-medium group-hover:shadow-strong transition-all duration-300 flex-shrink-0">
-                        <Shield className="h-6 w-6 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="text-lg font-garet font-normal mb-2" style={{color: '#737373'}}>
-                          Mayor confiabilidad y continuidad
-                        </h4>
-                        <p className="font-light leading-relaxed text-sm" style={{color: '#003249'}}>
-                          de servicio por mantenimiento planificado.
-                        </p>
-                      </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
+                    <div className="w-3 h-3 rounded-full mt-2 flex-shrink-0" style={{backgroundColor: '#007EA7'}}></div>
+                    <div>
+                      <h4 className="font-semibold text-base mb-1" style={{color: '#003249'}}>
+                        Multidisciplina
+                      </h4>
+                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                        hidráulica, eléctrica, control/automatización, ambiente, energía.
+                      </p>
                     </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-white border-0 group rounded-none shadow-md hover:shadow-lg transition-all duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-[#007EA7] to-[#007EA7]/80 rounded-full flex items-center justify-center shadow-medium group-hover:shadow-strong transition-all duration-300 flex-shrink-0">
-                        <CheckCircle className="h-6 w-6 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="text-lg font-garet font-normal mb-2" style={{color: '#737373'}}>
-                          Tiempos de ejecución más cortos
-                        </h4>
-                        <p className="font-light leading-relaxed text-sm" style={{color: '#003249'}}>
-                          por gestión integral del ciclo de vida.
-                        </p>
-                      </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
+                    <div className="w-3 h-3 rounded-full mt-2 flex-shrink-0" style={{backgroundColor: '#007EA7'}}></div>
+                    <div>
+                      <h4 className="font-semibold text-base mb-1" style={{color: '#003249'}}>
+                        Flexibilidad de contratación
+                      </h4>
+                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                        ejecución propia o en alianza con terceros habilitados.
+                      </p>
                     </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-white border-0 group rounded-none shadow-md hover:shadow-lg transition-all duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-[#007EA7] to-[#007EA7]/80 rounded-full flex items-center justify-center shadow-medium group-hover:shadow-strong transition-all duration-300 flex-shrink-0">
-                        <Target className="h-6 w-6 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="text-lg font-garet font-normal mb-2" style={{color: '#737373'}}>
-                          Reducción de riesgos
-                        </h4>
-                        <p className="font-light leading-relaxed text-sm" style={{color: '#003249'}}>
-                          técnicos, ambientales y regulatorios.
-                        </p>
-                      </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
+                    <div className="w-3 h-3 rounded-full mt-2 flex-shrink-0" style={{backgroundColor: '#007EA7'}}></div>
+                    <div>
+                      <h4 className="font-semibold text-base mb-1" style={{color: '#003249'}}>
+                        Enfoque en eficiencia
+                      </h4>
+                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                        optimización de energía, M&V y mejora continua.
+                      </p>
                     </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-white border-0 group rounded-none shadow-md hover:shadow-lg transition-all duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-[#007EA7] to-[#007EA7]/80 rounded-full flex items-center justify-center shadow-medium group-hover:shadow-strong transition-all duration-300 flex-shrink-0">
-                        <Users className="h-6 w-6 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="text-lg font-garet font-normal mb-2" style={{color: '#737373'}}>
-                          Escalabilidad de soluciones
-                        </h4>
-                        <p className="font-light leading-relaxed text-sm" style={{color: '#003249'}}>
-                          y tecnologías según demanda.
-                        </p>
-                      </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
+                    <div className="w-3 h-3 rounded-full mt-2 flex-shrink-0" style={{backgroundColor: '#007EA7'}}></div>
+                    <div>
+                      <h4 className="font-semibold text-base mb-1" style={{color: '#003249'}}>
+                        Cumplimiento normativo
+                      </h4>
+                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                        y buenas prácticas en HSE.
+                      </p>
                     </div>
-                  </CardContent>
-                </Card>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
 
-                <Card className="bg-white border-0 group rounded-none shadow-md hover:shadow-lg transition-all duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-[#007EA7] to-[#007EA7]/80 rounded-full flex items-center justify-center shadow-medium group-hover:shadow-strong transition-all duration-300 flex-shrink-0">
-                        <Zap className="h-6 w-6 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="text-lg font-garet font-normal mb-2" style={{color: '#737373'}}>
-                          Mejoras operativas
-                        </h4>
-                        <p className="font-light leading-relaxed text-sm" style={{color: '#003249'}}>
-                          de los sistemas.
-                        </p>
-                      </div>
+            {/* Card 2: Beneficios para tu organización */}
+            <Card className="bg-white border-0 shadow-lg rounded-none overflow-hidden">
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-garet font-normal mb-8 uppercase text-center" style={{color: '#003249'}}>
+                  Beneficios para tu organización
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-3 h-3 rounded-full mt-2 flex-shrink-0" style={{backgroundColor: '#007EA7'}}></div>
+                    <div>
+                      <h4 className="font-semibold text-base mb-1" style={{color: '#003249'}}>
+                        Menores costos operativos
+                      </h4>
+                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                        por optimización y eficiencia energética.
+                      </p>
                     </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
+                    <div className="w-3 h-3 rounded-full mt-2 flex-shrink-0" style={{backgroundColor: '#007EA7'}}></div>
+                    <div>
+                      <h4 className="font-semibold text-base mb-1" style={{color: '#003249'}}>
+                        Mayor confiabilidad y continuidad
+                      </h4>
+                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                        de servicio por mantenimiento planificado.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
+                    <div className="w-3 h-3 rounded-full mt-2 flex-shrink-0" style={{backgroundColor: '#007EA7'}}></div>
+                    <div>
+                      <h4 className="font-semibold text-base mb-1" style={{color: '#003249'}}>
+                        Tiempos de ejecución más cortos
+                      </h4>
+                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                        por gestión integral del ciclo de vida.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
+                    <div className="w-3 h-3 rounded-full mt-2 flex-shrink-0" style={{backgroundColor: '#007EA7'}}></div>
+                    <div>
+                      <h4 className="font-semibold text-base mb-1" style={{color: '#003249'}}>
+                        Reducción de riesgos
+                      </h4>
+                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                        técnicos, ambientales y regulatorios.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
+                    <div className="w-3 h-3 rounded-full mt-2 flex-shrink-0" style={{backgroundColor: '#007EA7'}}></div>
+                    <div>
+                      <h4 className="font-semibold text-base mb-1" style={{color: '#003249'}}>
+                        Escalabilidad de soluciones
+                      </h4>
+                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                        que crecen con tu organización.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
+                    <div className="w-3 h-3 rounded-full mt-2 flex-shrink-0" style={{backgroundColor: '#007EA7'}}></div>
+                    <div>
+                      <h4 className="font-semibold text-base mb-1" style={{color: '#003249'}}>
+                        Mejoras operativas
+                      </h4>
+                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                        continuas y sostenibles en el tiempo.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
+      </section>
 
       <Footer />
       <WhatsAppCTA />

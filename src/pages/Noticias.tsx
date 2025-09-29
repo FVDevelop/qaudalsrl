@@ -23,12 +23,20 @@ const Noticias = () => {
           />
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="section-title text-4xl md:text-5xl font-garet mb-6 uppercase font-normal text-white">
+          <h1 className="section-title text-4xl md:text-5xl font-garet uppercase font-normal text-white">
             Noticias
           </h1>
-          <div className="w-20 h-1 bg-white mx-auto mt-6"></div>
         </div>
       </section>
+
+      {/* Subtitle outside header */}
+      <div className="container mx-auto px-4 pt-8 pb-4">
+        <div className="text-center">
+          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#007EA7'}}>
+            Últimas novedades y actualizaciones del sector
+          </p>
+        </div>
+      </div>
 
       {/* Content Section */}
       <section className="py-20 px-4">

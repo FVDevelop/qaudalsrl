@@ -172,12 +172,20 @@ const Servicios = () => {
           />
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="section-title text-4xl md:text-5xl font-garet mb-6 uppercase font-normal text-white">
+          <h1 className="section-title text-4xl md:text-5xl font-garet uppercase font-normal text-white">
             Servicios
           </h1>
-          <div className="w-20 h-1 bg-white mx-auto mt-6"></div>
         </div>
       </section>
+
+      {/* Subtitle outside header */}
+      <div className="container mx-auto px-4 pt-8 pb-4">
+        <div className="text-center">
+          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#007EA7'}}>
+            Soluciones integrales para agua, saneamiento y energía
+          </p>
+        </div>
+      </div>
 
       {/* Navigation Buttons */}
       <section className="py-8 bg-gradient-to-b from-background to-muted/20">
@@ -185,11 +193,9 @@ const Servicios = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
             <Link to="/como-trabajamos">
               <Button 
-                variant="outline"
-                className="w-full sm:w-auto border-2 hover:bg-primary hover:text-primary-foreground transition-all duration-300 rounded-none px-8 py-3"
+                className="w-full sm:w-auto transition-all duration-300 rounded-none px-8 py-3 text-white hover:opacity-90"
                 style={{
-                  borderColor: '#003249',
-                  color: '#003249',
+                  backgroundColor: '#003249'
                 }}
               >
                 Como Trabajamos
@@ -197,11 +203,9 @@ const Servicios = () => {
             </Link>
             <Link to="/#contacto">
               <Button 
-                variant="outline"
-                className="w-full sm:w-auto border-2 hover:bg-primary hover:text-primary-foreground transition-all duration-300 rounded-none px-8 py-3"
+                className="w-full sm:w-auto transition-all duration-300 rounded-none px-8 py-3 text-white hover:opacity-90"
                 style={{
-                  borderColor: '#003249',
-                  color: '#003249',
+                  backgroundColor: '#003249'
                 }}
               >
                 Contactar a un especialista
@@ -227,7 +231,7 @@ const Servicios = () => {
                 </div>
                 
                 <CardContent className="p-6">
-                  <h3 className="font-garet font-normal text-lg mb-4" style={{color: '#003249'}}>
+                  <h3 className="font-semibold text-lg mb-4" style={{color: '#003249'}}>
                     {service.title}
                   </h3>
                   
