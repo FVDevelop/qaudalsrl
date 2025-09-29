@@ -97,78 +97,11 @@ const Empresa = () => {
             </div>
           </div>
 
-          {/* Pilares Section */}
-          <div className="mt-20">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {/* Solidez */}
-              <div className="text-center">
-                <div className="w-32 h-32 mx-auto mb-4 rounded-full flex items-center justify-center shadow-md" style={{backgroundColor: '#003249'}}>
-                  <span className="text-white font-garet font-normal text-sm uppercase">Solidez</span>
-                </div>
-                <p className="text-sm font-light leading-relaxed" style={{color: '#737373'}}>
-                  Más de XX años de experiencia en proyectos de ingeniería y ambiente.
-                </p>
-              </div>
-
-              {/* Innovación */}
-              <div className="text-center">
-                <div className="w-32 h-32 mx-auto mb-4 rounded-full flex items-center justify-center shadow-md" style={{backgroundColor: '#007EA7'}}>
-                  <span className="text-white font-garet font-normal text-sm uppercase">Innovación</span>
-                </div>
-                <p className="text-sm font-light leading-relaxed" style={{color: '#737373'}}>
-                  Big Data, IA y Machine Learning aplicados al saneamiento y la energía.
-                </p>
-              </div>
-
-              {/* Sostenibilidad */}
-              <div className="text-center">
-                <div className="w-32 h-32 mx-auto mb-4 rounded-full flex items-center justify-center shadow-md" style={{backgroundColor: '#737373'}}>
-                  <span className="text-white font-garet font-normal text-sm uppercase">Sostenibilidad</span>
-                </div>
-                <p className="text-sm font-light leading-relaxed" style={{color: '#737373'}}>
-                  Diseño de soluciones que cuidan los recursos y el medioambiente.
-                </p>
-              </div>
-
-              {/* Resultados */}
-              <div className="text-center">
-                <div className="w-32 h-32 mx-auto mb-4 rounded-full flex items-center justify-center shadow-md" style={{backgroundColor: '#003249'}}>
-                  <span className="text-white font-garet font-normal text-sm uppercase">Resultados</span>
-                </div>
-                <p className="text-sm font-light leading-relaxed" style={{color: '#737373'}}>
-                  Proyectos que generan impacto real y medible.
-                </p>
-              </div>
-            </div>
-          </div>
-          
           {/* Tagline */}
-          <div className="text-center mt-20">
+          <div className="text-center mt-12">
             <p className="text-xs md:text-sm font-garet uppercase tracking-wider" style={{color: '#007EA7'}}>
               Nos ocupamos de tus proyectos para que vos te ocupes de crecer
             </p>
-          </div>
-          
-          {/* Navigation Buttons */}
-          <div className="text-center mt-16 space-y-4 md:space-y-0 md:space-x-6 md:flex md:justify-center">
-            <a
-              href="/como-trabajamos"
-              className="inline-block bg-[#003249] hover:bg-[#003249]/90 text-white px-8 py-3 font-light transition-colors"
-            >
-              Como Trabajamos
-            </a>
-            <a
-              href="/servicios"
-              className="inline-block bg-[#007EA7] hover:bg-[#007EA7]/90 text-white px-8 py-3 font-light transition-colors"
-            >
-              Nuestros Servicios
-            </a>
-            <a
-              href="/por-que-qaudal"
-              className="inline-block bg-[#737373] hover:bg-[#737373]/90 text-white px-8 py-3 font-light transition-colors"
-            >
-              Por que <strong>Qaudal</strong>
-            </a>
           </div>
         </div>
       </div>

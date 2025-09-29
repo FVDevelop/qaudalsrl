@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 // Import images and components
 import MethodologyDiagram from '@/components/MethodologyDiagram';
+import architecturalPlanBackground from '@/assets/architectural-plan-background.png';
 import carouselAgua from '@/assets/carousel-agua.jpg';
 import construccionMontaje from '@/assets/construccion-montaje.jpg';
 import gestionTecnologica from '@/assets/gestion-tecnologica-it.jpg';
@@ -49,33 +50,31 @@ const ComoTrabajamos = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-8 bg-gradient-to-b from-muted/50 to-background">
+      {/* Hero Section with Gradient Background */}
+      <section className="relative pt-32 pb-12 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <img 
+            src={architecturalPlanBackground}
+            alt="Architectural Plan Background"
+            className="w-full h-full object-cover object-right"
+          />
+        </div>
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="section-title text-4xl md:text-5xl font-garet mb-6 uppercase font-normal" style={{color: '#737373'}}>
+          <h1 className="section-title text-4xl md:text-5xl font-garet mb-6 uppercase font-normal text-white">
             Como Trabajamos
           </h1>
-          <p className="text-xl max-w-4xl mx-auto font-light leading-relaxed mb-8" style={{color: '#737373'}}>
-            Metodología integral para proyectos de agua, saneamiento y energía
-          </p>
-        </div>
-      </section>
-
-      {/* Descripción General */}
-      <section className="py-8 px-4 bg-background">
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="text-xl font-light leading-relaxed mb-4" style={{color: '#737373'}}>
+          <p className="text-xl max-w-5xl mx-auto font-light leading-relaxed text-white/90">
             En Qaudal aplicamos una metodología integral que nos permite abordar cada proyecto 
             desde una perspectiva 360°. Nuestro enfoque combina experiencia técnica multidisciplinaria 
             con las mejores prácticas de la industria, garantizando soluciones eficientes y sostenibles 
             en agua, saneamiento, energía y obras civiles.
           </p>
-          <div className="w-20 h-1 bg-gradient-to-r from-[#007EA7] to-[#003249] mx-auto"></div>
+          <div className="w-20 h-1 bg-white mx-auto mt-6"></div>
         </div>
       </section>
 
       {/* Diagrama de Metodología */}
-      <section className="py-8 px-4 bg-gradient-to-b from-background to-muted/20">
+      <section className="py-12 px-4 bg-gradient-to-b from-background to-muted/20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6">
             <h2 className="text-4xl font-garet font-normal uppercase mb-4" style={{color: '#003249'}}>
@@ -92,9 +91,9 @@ const ComoTrabajamos = () => {
       </section>
 
       {/* Casos Típicos */}
-      <section className="py-8 px-4 bg-white">
+      <section className="py-12 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-8">
+          <div className="text-center mb-10">
             <h2 className="text-4xl font-garet font-normal uppercase mb-4" style={{color: '#003249'}}>
               Casos Típicos
             </h2>
@@ -102,7 +101,7 @@ const ComoTrabajamos = () => {
               Ejemplos representativos de nuestras soluciones especializadas
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {casosTypicos.map((caso, index) => (
               <Card key={index} className="overflow-hidden shadow-md hover:shadow-lg transition-shadow rounded-none border-0">
                 <div className="relative h-40">

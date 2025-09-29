@@ -80,24 +80,6 @@ const Benefits = () => {
           ))}
         </div>
 
-        {/* Additional Value Proposition */}
-        <div className="mt-16 text-center">
-          <div className="max-w-4xl mx-auto bg-card rounded-none p-8 shadow-medium">
-            <h3 className="text-2xl md:text-3xl font-garet font-normal text-foreground mb-6" style={{color: '#737373'}}>
-              Más que un consultor, somos tu socio de ingeniería
-            </h3>
-            <p className="text-lg font-light leading-relaxed mb-8" style={{color: '#737373'}}>
-              Trabajamos con equipo propio o en sociedad con terceros, adaptándonos a las necesidades específicas 
-              de cada proyecto de agua, saneamiento, energía y obras de infraestructura.
-            </p>
-            <div className="flex justify-center">
-              <div className="text-center">
-                <div className="text-3xl font-light mb-2" style={{color: '#007EA7'}}>24/7</div>
-                <div className="font-light" style={{color: '#737373'}}>Soporte disponible</div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

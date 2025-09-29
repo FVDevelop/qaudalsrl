@@ -67,62 +67,11 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <NavigationMenu>
-              <NavigationMenuList>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className={`bg-transparent hover:bg-transparent font-light hover:text-primary rounded-none border-0 ${
-                    location.pathname === "/empresa" || location.pathname === "/como-trabajamos" || location.pathname === "/por-que-qaudal" 
-                      ? "text-[#003249] font-medium" 
-                      : "text-foreground/80"
-                  }`}>
-                    Empresa
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent className="bg-[#007EA7]/95 backdrop-blur-sm border-0 rounded-none shadow-lg">
-                    <ul className="grid w-[320px] gap-1 p-4">
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            to="/empresa"
-                            className="block select-none space-y-1 p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 rounded-none"
-                          >
-                            <div className="text-sm font-medium leading-none text-white">Quienes Somos</div>
-                            <p className="line-clamp-2 text-sm leading-snug text-white/80">
-                              Conoce nuestra empresa y trayectoria
-                            </p>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            to="/como-trabajamos"
-                            className="block select-none space-y-1 p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 rounded-none"
-                          >
-                            <div className="text-sm font-medium leading-none text-white">Como Trabajamos</div>
-                            <p className="line-clamp-2 text-sm leading-snug text-white/80">
-                              Nuestra metodología integral
-                            </p>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            to="/por-que-qaudal"
-                            className="block select-none space-y-1 p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 rounded-none"
-                          >
-                            <div className="text-sm font-medium leading-none text-white">Por que Elegirnos</div>
-                            <p className="line-clamp-2 text-sm leading-snug text-white/80">
-                              Ventajas de trabajar con nosotros
-                            </p>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
+            <Link to="/empresa" className={`transition-colors font-light ${
+              location.pathname === "/empresa" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
+            }`}>
+              Quienes Somos
+            </Link>
             
             <Link to="/servicios" className={`transition-colors font-light ${
               location.pathname === "/servicios" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"

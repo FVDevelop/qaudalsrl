@@ -185,13 +185,10 @@ const Servicios = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-black/20"></div>
-                  <div className="absolute top-4 left-4 w-14 h-14 flex items-center justify-center shadow-medium" style={{backgroundColor: '#007EA7'}}>
-                    <service.icon className="h-7 w-7 text-white" />
-                  </div>
                 </div>
                 
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-garet font-normal mb-4 uppercase" style={{color: '#737373'}}>
+                  <h3 className="font-semibold text-lg mb-4" style={{color: '#003249'}}>
                     {service.title}
                   </h3>
                   
@@ -210,6 +207,42 @@ const Servicios = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Navigation Buttons */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center space-y-4 md:space-y-0 md:space-x-6 md:flex md:justify-center">
+            <a
+              href="/como-trabajamos"
+              className="inline-block bg-[#003249] hover:bg-[#003249]/90 text-white px-8 py-3 font-light transition-colors"
+            >
+              Como Trabajamos
+            </a>
+            <a
+              href="/servicios"
+              className="inline-block bg-[#007EA7] hover:bg-[#007EA7]/90 text-white px-8 py-3 font-light transition-colors"
+            >
+              Nuestros Servicios
+            </a>
+            <a
+              href="/por-que-qaudal"
+              className="inline-block bg-[#737373] hover:bg-[#737373]/90 text-white px-8 py-3 font-light transition-colors"
+            >
+              Por que <strong>Qaudal</strong>
+            </a>
+          </div>
+          
+          {/* Contact Specialist Button */}
+          <div className="text-center mt-12">
+            <a
+              href="/contacto"
+              className="inline-block bg-[#007EA7] hover:bg-[#007EA7]/90 text-white px-10 py-4 font-light transition-colors text-lg"
+            >
+              Contactar a un especialista
+            </a>
           </div>
         </div>
       </section>
