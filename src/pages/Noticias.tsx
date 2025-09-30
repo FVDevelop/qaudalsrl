@@ -32,7 +32,7 @@ const Noticias = () => {
       {/* Subtitle outside header */}
       <div className="container mx-auto px-4 pt-6 pb-4">
         <div className="text-center">
-          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#007EA7'}}>
+          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
             Últimas novedades y actualizaciones del sector
           </p>
         </div>

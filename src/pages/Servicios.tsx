@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { 
   FileText, 
   PenTool, 
@@ -29,6 +30,10 @@ import energiaSustentableImage from "@/assets/energia-sustentable.jpg";
 import comercioEquiposImage from "@/assets/comercio-equipos.jpg";
 
 const Servicios = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const services = [
     {
       icon: FileText,
@@ -181,7 +186,7 @@ const Servicios = () => {
       {/* Subtitle outside header */}
       <div className="container mx-auto px-4 pt-6 pb-4">
         <div className="text-center">
-          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#007EA7'}}>
+          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
             Soluciones integrales para agua, saneamiento y energía
           </p>
         </div>
@@ -191,7 +196,7 @@ const Servicios = () => {
       <section className="py-8 bg-gradient-to-b from-background to-muted/20">
         <div className="container mx-auto px-4">
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
-            <Link to="/como-trabajamos">
+            <Link to="/empresa#como-trabajamos">
               <Button 
                 className="w-full sm:w-auto transition-all duration-300 rounded-none px-8 py-3 text-white hover:opacity-90"
                 style={{

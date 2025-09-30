@@ -91,7 +91,7 @@ const EmpresaContent = () => {
       </div>
 
       {/* Cómo Trabajamos Section */}
-      <section className="relative py-12 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95 overflow-hidden">
+      <section id="como-trabajamos" className="relative py-12 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95 overflow-hidden scroll-mt-28 md:scroll-mt-32">
         <div className="absolute inset-0 opacity-20">
           <img 
             src={waterTreatmentBackground}
@@ -109,7 +109,7 @@ const EmpresaContent = () => {
       {/* Subtitle outside header */}
       <div className="container mx-auto px-4 pt-6 pb-4">
         <div className="text-center">
-          <p className="text-xl max-w-5xl mx-auto font-light leading-relaxed" style={{color: '#007EA7'}}>
+          <p className="text-xl max-w-5xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
             En Qaudal aplicamos una metodología integral que nos permite abordar cada proyecto 
             desde una perspectiva 360°. Nuestro enfoque combina experiencia técnica multidisciplinaria 
             con las mejores prácticas de la industria, garantizando soluciones eficientes y sostenibles 
@@ -190,7 +190,7 @@ const EmpresaContent = () => {
       {/* Subtitle outside header */}
       <div className="container mx-auto px-4 pt-6 pb-4">
         <div className="text-center">
-          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#007EA7'}}>
+          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
             Nuestra propuesta de valor diferencial para tu organización
           </p>
         </div>

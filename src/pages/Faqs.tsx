@@ -61,7 +61,7 @@ const Faqs = () => {
       {/* Subtitle outside header */}
       <div className="container mx-auto px-4 pt-6 pb-4">
         <div className="text-center">
-          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#007EA7'}}>
+          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
             Respuestas a las consultas más comunes sobre nuestros servicios
           </p>
         </div>

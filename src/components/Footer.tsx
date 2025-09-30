@@ -1,12 +1,11 @@
 import { MapPin, Phone, Mail, Linkedin, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
-import qaudalLogo from "@/assets/qaudal-logo-transp.png";
+import qaudalLogo from "@/assets/qaudal-blanco-tranparent.jpg";
 
 const Footer = () => {
   const quickLinks = [
     { name: "Quienes Somos", href: "/empresa" },
     { name: "Servicios", href: "/servicios" },
-    { name: "Como Trabajamos", href: "/como-trabajamos" },
     { name: "Sectores", href: "/sectores" },
     { name: "Noticias", href: "/noticias" },
     { name: "FAQ's", href: "/faqs" },
@@ -35,7 +34,7 @@ const Footer = () => {
                 onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/placeholder.svg'; }}
               />
             </div>
-            <p className="text-white/80 font-light leading-relaxed">
+            <p className="text-white/70 text-sm leading-relaxed">
               Soluciones integrales en agua, saneamiento, energía y obras civiles. 
               Transformamos infraestructura con tecnología y eficiencia sustentable.
             </p>
@@ -57,13 +56,13 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-light mb-6">Enlaces Rápidos</h3>
-            <ul className="space-y-3">
+            <h3 className="text-base mb-6">Enlaces Rápidos</h3>
+            <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <Link 
                     to={link.href}
-                    className="text-white/80 hover:text-white transition-colors font-light"
+                    className="text-white/70 text-sm hover:text-white transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -72,7 +71,7 @@ const Footer = () => {
               <li>
                 <a 
                   href="#" 
-                  className="text-white/80 hover:text-white transition-colors font-light"
+                  className="text-white/70 text-sm hover:text-white transition-colors"
                 >
                   Políticas de Privacidad
                 </a>
@@ -80,7 +79,7 @@ const Footer = () => {
               <li>
                 <a 
                   href="#" 
-                  className="text-white/80 hover:text-white transition-colors font-light"
+                  className="text-white/70 text-sm hover:text-white transition-colors"
                 >
                   Trabajá con nosotros
                 </a>
@@ -90,11 +89,11 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-light mb-6">Servicios</h3>
-            <ul className="space-y-3">
+            <h3 className="text-base mb-6">Servicios</h3>
+            <ul className="space-y-2">
               {services.map((service, index) => (
                 <li key={index}>
-                  <span className="text-white/80 font-light">
+                  <span className="text-white/70 text-sm">
                     {service}
                   </span>
                 </li>
@@ -104,34 +103,34 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-light mb-6">Contacto</h3>
-            <div className="space-y-4">
+            <h3 className="text-base mb-6">Contacto</h3>
+            <div className="space-y-3">
               <div className="flex items-start space-x-3">
-                <Phone className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" strokeLinecap="square" strokeLinejoin="miter" />
-                <div className="text-white/80 font-light">
+                <Phone className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" strokeLinecap="square" strokeLinejoin="miter" />
+                <div className="text-white/70 text-sm">
                   <div>Arq. Daniela Figiacone</div>
                   <div>11.6094.1504</div>
                 </div>
               </div>
               
               <div className="flex items-start space-x-3">
-                <Phone className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" strokeLinecap="square" strokeLinejoin="miter" />
-                <div className="text-white/80 font-light">
+                <Phone className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" strokeLinecap="square" strokeLinejoin="miter" />
+                <div className="text-white/70 text-sm">
                   <div>Ing. Alejandro Corea</div>
                   <div>11.5020.5543</div>
                 </div>
               </div>
               
               <div className="flex items-start space-x-3">
-                <Mail className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" strokeLinecap="square" strokeLinejoin="miter" />
-                <div className="text-white/80 font-light">
+                <Mail className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" strokeLinecap="square" strokeLinejoin="miter" />
+                <div className="text-white/70 text-sm">
                   info@qaudal.com.ar
                 </div>
               </div>
               
               <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" strokeLinecap="square" strokeLinejoin="miter" />
-                <div className="text-white/80 font-light">
+                <MapPin className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" strokeLinecap="square" strokeLinejoin="miter" />
+                <div className="text-white/70 text-sm">
                   Ciudad Autónoma de Buenos Aires, Argentina
                 </div>
               </div>
@@ -141,7 +140,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <div className="text-white/60 font-light text-sm">
+          <div className="text-white/60 text-xs">
             © 2024. Todos los derechos reservados.
           </div>
         </div>

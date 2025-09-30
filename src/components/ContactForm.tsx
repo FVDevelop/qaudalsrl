@@ -85,26 +85,28 @@ Esta es una solicitud de cotización enviada desde el sitio web de Qaudal.
   return (
     <section id="contacto" className="scroll-mt-28 md:scroll-mt-32">
       {/* Header with gradient and background */}
-      <div className="relative py-20 overflow-hidden">
+      <div className="relative py-12 overflow-hidden">
         <div className="absolute inset-0">
           <img 
             src={communicationBackground} 
             alt="Contacto" 
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-30"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95"></div>
         </div>
         <div className="relative container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-garet font-normal mb-6 text-white uppercase">
+          <div className="w-16 h-px mx-auto mb-6" style={{backgroundColor: 'rgba(255, 255, 255, 0.3)'}}></div>
+          <h2 className="text-4xl md:text-5xl font-garet font-normal text-white uppercase">
             Hablemos de tu proyecto
           </h2>
+          <div className="w-16 h-px mx-auto mt-6" style={{backgroundColor: 'rgba(255, 255, 255, 0.3)'}}></div>
         </div>
       </div>
 
       {/* Subtitle outside header */}
       <div className="container mx-auto px-4 pt-6 pb-4">
         <div className="text-center">
-          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#007EA7'}}>
+          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
             Estamos listos para transformar la gestión de tus instalaciones. 
             Contactanos para una consulta gratuita.
           </p>
