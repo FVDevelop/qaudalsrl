@@ -85,7 +85,7 @@ Esta es una solicitud de cotización enviada desde el sitio web de Qaudal.
   return (
     <section id="contacto" className="scroll-mt-28 md:scroll-mt-32">
       {/* Header with gradient and background */}
-      <div className="relative py-12 overflow-hidden">
+      <div className="relative py-8 overflow-hidden">
         <div className="absolute inset-0">
           <img 
             src={communicationBackground} 

@@ -170,7 +170,8 @@
   }
 
   /* White text override */
-  .text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6 {
+  .text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6,
+  h1.text-white, h2.text-white, h3.text-white, h4.text-white, h5.text-white, h6.text-white {
     color: white !important;
   }
 
