@@ -132,6 +132,11 @@
   /* Typography */
   h1, h2, h3, h4, h5, h6 {
     @apply font-garet tracking-wide;
+  }
+  
+  /* Default heading colors - can be overridden */
+  h1:not(.text-white), h2:not(.text-white), h3:not(.text-white), 
+  h4:not(.text-white), h5:not(.text-white), h6:not(.text-white) {
     color: #737373;
   }
 
@@ -169,7 +174,7 @@
     bottom: -12px;
   }
 
-  /* White text override */
+  /* White text override - highest priority */
   .text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6,
   h1.text-white, h2.text-white, h3.text-white, h4.text-white, h5.text-white, h6.text-white {
     color: white !important;
