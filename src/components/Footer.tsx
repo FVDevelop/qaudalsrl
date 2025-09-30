@@ -1,6 +1,6 @@
 import { MapPin, Phone, Mail, Linkedin, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
-import qaudalLogo from "@/assets/qaudal-blanco-tranparent.jpg";
+import qaudalLogo from "@/assets/qaudal-logo-transp.png";
 
 const Footer = () => {
   const quickLinks = [

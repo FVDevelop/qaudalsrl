@@ -48,7 +48,7 @@ Esta es una solicitud de cotización enviada desde el sitio web de Qaudal.
       `);
       
       const mailtoLink = `mailto:fedravillamil@yahoo.com?subject=${subject}&body=${body}`;
-      window.open(mailtoLink, '_blank');
+      window.location.href = mailtoLink;
       
       toast({
         title: "Cotización enviada",
@@ -97,7 +97,7 @@ Esta es una solicitud de cotización enviada desde el sitio web de Qaudal.
         <div className="relative container mx-auto px-4 text-center">
           <div className="w-16 h-px mx-auto mb-6" style={{backgroundColor: 'rgba(255, 255, 255, 0.3)'}}></div>
           <h2 className="text-4xl md:text-5xl font-garet font-normal text-white uppercase">
-            Hablemos de tu proyecto
+            Contacta a un asesor
           </h2>
           <div className="w-16 h-px mx-auto mt-6" style={{backgroundColor: 'rgba(255, 255, 255, 0.3)'}}></div>
         </div>
