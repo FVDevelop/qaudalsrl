@@ -4,7 +4,7 @@ const MethodologyDiagram = () => {
   return (
     <div className="w-full max-w-7xl mx-auto">
       <svg
-        viewBox="0 0 1600 600"
+        viewBox="0 0 1740 600"
         className="w-full h-auto"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -87,27 +87,33 @@ const MethodologyDiagram = () => {
           </text>
         </g>
 
-        {/* Arrow down to stage 5 */}
-        <path d="M 1200 250 L 1200 290" stroke="#007EA7" strokeWidth="2" markerEnd="url(#arrowhead)" />
+        {/* Arrow 4 */}
+        <path d="M 1350 150 L 1390 150" stroke="#007EA7" strokeWidth="2" markerEnd="url(#arrowhead)" />
 
         {/* Stage 5: Puesta en marcha */}
         <g>
-          <rect x="1060" y="300" width="280" height="120" rx="12" fill="#8BC34A" />
-          <text x="1200" y="335" textAnchor="middle" fill="white" fontSize="22" fontWeight="bold">
-            5. PUESTA EN MARCHA
+          <rect x="1400" y="60" width="300" height="180" rx="12" fill="#8BC34A" />
+          <text x="1550" y="115" textAnchor="middle" fill="white" fontSize="22" fontWeight="bold">
+            5. PUESTA EN
           </text>
-          <text x="1200" y="365" textAnchor="middle" fill="white" fontSize="18">
-            Comisionamiento y capacitación
+          <text x="1550" y="145" textAnchor="middle" fill="white" fontSize="22" fontWeight="bold">
+            MARCHA
+          </text>
+          <text x="1550" y="180" textAnchor="middle" fill="white" fontSize="18">
+            Comisionamiento y
+          </text>
+          <text x="1550" y="205" textAnchor="middle" fill="white" fontSize="18">
+            capacitación
           </text>
         </g>
 
         {/* Stage 6: Operación y mejora (clean bottom section) */}
         <g>
-          <rect x="40" y="450" width="1520" height="120" rx="12" fill="url(#blueGradient)" />
-          <text x="800" y="490" textAnchor="middle" fill="white" fontSize="26" fontWeight="bold">
+          <rect x="40" y="450" width="1660" height="120" rx="12" fill="url(#blueGradient)" />
+          <text x="870" y="490" textAnchor="middle" fill="white" fontSize="26" fontWeight="bold">
             6. OPERACIÓN Y MEJORA (PROCESO CONTINUO)
           </text>
-          <text x="800" y="525" textAnchor="middle" fill="white" fontSize="20">
+          <text x="870" y="525" textAnchor="middle" fill="white" fontSize="20">
             Monitoreo, M&V, mantenimiento y optimización
           </text>
         </g>
