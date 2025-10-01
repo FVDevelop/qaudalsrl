@@ -108,21 +108,21 @@ const Servicios = () => {
     {
       icon: FileCheck,
       title: "Gestión de contrataciones y licitaciones",
-      description: "Asesoramiento integral en procesos de licitación y contratación para proyectos de infraestructura.",
+      description: "Asesoramiento y desarrollo de licitaciones y concursos de precios: ",
       image: gestionContratacionesImage,
       details: [
-        "Desarrollo de licitaciones, contrataciones y concursos de precios",
+        //"Desarrollo de licitaciones, contrataciones y concursos de precios",
         "Participación como contratista titular",
         "Participación como contratista subtitular en forma asociada",
-        "Servicios como subcontratista para provisión y proyecto",
-        "Dirección y/o mano de obra, materiales, maquinarias",
-        "Suministro de equipos, instrumental y vehículos"
+        "Servicios como subcontratista para provisión,proyecto, Dirección y/o mano de obra, materiales, maquinarias, equipos, instrumental y vehículos",
+        //"Dirección y/o mano de obra, materiales, maquinarias",
+        //"Suministro de equipos, instrumental y vehículos"
       ]
     },
     {
       icon: Shield,
       title: "Ambiente, seguridad e higiene",
-      description: "Consultoría ambiental integral con estudios especializados y monitoreo continuo.",
+      //description: "Consultoría ambiental integral con estudios especializados y monitoreo continuo.",
       image: ambienteSeguridadImage,
       details: [
         "Consultoría ambiental integral; estudios de impacto y pasivos ambientales",
@@ -136,29 +136,29 @@ const Servicios = () => {
     {
       icon: Sun,
       title: "Energía sustentable y eficiencia",
-      description: "Proyectos integrales de energía renovable, auditorías energéticas y sistemas de eficiencia.",
+      //description: "Proyectos integrales de energía renovable, auditorías energéticas y sistemas de eficiencia.",
       image: energiaSustentableImage,
       details: [
-        "Proyectos de energía sustentable, auditorías y eficiencia energética",
-        "Diseño, implementación, operación y mantenimiento de generación renovable",
-        "Sistemas solares, eólicos, biomasa, cogeneración y gestión de la demanda",
-        "Medición y verificación (M&V) de ahorros",
-        "Recuperación y reúso de agua e integración con sistemas hidráulicos",
+        "Proyectos de energía sustentable, auditorías y eficiencia energética (detección de oportunidades, bencharking y planes de mejora",
+        "Diseño, implementación, operación y mantenimiento de generación renovable (solar, eólica, biomasa), cogeneración y gesión de demanda",
+        //"Sistemas solares, eólicos, biomasa, cogeneración y gestión de la demanda",
+        "Medición y verificación (M&V) de ahorros, instrumentación y sistemas de monitorización",
+        "Recuperación y reúso de agua e integración con sistemas hidráulicos y sanitarios",
         "Comercialización e instalación de equipos y tecnologías vinculadas"
       ]
     },
     {
       icon: Package,
       title: "Comercio de equipos y tecnología",
-      description: "Importación, exportación y comercialización de equipos especializados para proyectos de ingeniería.",
+      //description: "Importación, exportación y comercialización de equipos especializados para proyectos de ingeniería.",
       image: comercioEquiposImage,
       details: [
-        "Importación y exportación de insumos y equipos especializados",
-        "Compra y venta de maquinarias para proyectos de agua y saneamiento",
-        "Tecnologías vinculadas a energías renovables",
-        "Equipos de control y automatización",
-        "Instrumental de medición y monitoreo",
-        "Asesoramiento técnico en selección de equipos"
+        "Importación, exportación compra y vena de insumos, equipos, maquinarias y tecnologías vinculadas a las actividades anteriores",
+        //"Compra y venta de maquinarias para proyectos de agua y saneamiento",
+        //"Tecnologías vinculadas a energías renovables",
+        //"Equipos de control y automatización",
+        //"Instrumental de medición y monitoreo",
+        //"Asesoramiento técnico en selección de equipos"
       ]
     }
   ];
