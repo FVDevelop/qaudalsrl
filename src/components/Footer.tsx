@@ -73,7 +73,7 @@ const Footer = () => {
                   href="#" 
                   className="text-white/70 text-sm hover:text-white transition-colors"
                 >
-                  Políticas de Privacidad
+                  {/*Políticas de Privacidad */}
                 </a>
               </li>
               <li>
