@@ -52,13 +52,13 @@ const Servicios = () => {
     {
       icon: PenTool,
       title: "Ingeniería y proyectos",
-      description: "Diseño, cálculo y optimización de sistemas de agua, saneamiento, energía y automatización industrial.",
+      description: "Diseño, cálculo y optimización y documentación técnica de: ",
       image: ingenieriaProyectosImage,
       details: [
         "Redes y sistemas de agua potable, cloacales, riego y drenaje pluvial",
-        "Plantas de tratamiento con múltiples tecnologías",
+        "Plantas de tratamiento (múltiples tecnologías)",
         "Instalaciones eléctricas de MT/BT, fuerza motriz e iluminación",
-        "Sistemas de control y automatización eléctricos, electrónicos, neumáticos",
+        "Sistemas de control y automatización (eléctricos, electrónicos, neumáticos)",
         "Comunicaciones y procesos industriales",
         "Energías renovables: parques solares y eólicos, integración de recursos distribuidos"
       ]
@@ -66,29 +66,29 @@ const Servicios = () => {
     {
       icon: Settings,
       title: "Operación y mejora de sistemas",
-      description: "Gestión operativa especializada y optimización continua de sistemas de agua, saneamiento y energía.",
+      //description: "Gestión operativa especializada y optimización continua de sistemas de agua, saneamiento y energía.",
       image: operacionMejoraImage,
       details: [
         "Operación de sistemas de agua, saneamiento, riego y drenaje",
         "Optimización operativa y gestión de la energía",
         "Estrategias de mantenimiento y planes de mejora",
-        "Monitoreo y control de procesos",
-        "Gestión de la eficiencia energética",
-        "Implementación de mejoras tecnológicas"
+        //"Monitoreo y control de procesos",
+        //"Gestión de la eficiencia energética",
+        //"Implementación de mejoras tecnológicas"
       ]
     },
     {
       icon: Building,
       title: "Construcción, montaje y obras",
-      description: "Ejecución integral de obras civiles e infraestructura de servicios con gestión directa o mediante terceros.",
+      //description: "Ejecución integral de obras civiles e infraestructura de servicios con gestión directa o mediante terceros.",
       image: construccionMontajeImage,
       details: [
-        "Obras civiles e infraestructura de servicios (agua, cloacas, electricidad, drenaje pluvial)",
+        "Estudio, proyecto, dirección ejecutiva y ejecución de obras civiles e infraestructura de servicios (agua, cloacas, electricidad, drenaje pluvial, etc.)",
         "Cómputos métricos, especificaciones y planes de inversión",
         "Ejecución directa o mediante terceros habilitados",
         "Cumplimiento de normativa vigente",
-        "Gestión de cronogramas y recursos",
-        "Control de calidad en obra"
+        //"Gestión de cronogramas y recursos",
+        //"Control de calidad en obra"
       ]
     },
     {
@@ -97,12 +97,12 @@ const Servicios = () => {
       description: "Supervisión técnica integral y administración de la ejecución como representante del comitente.",
       image: direccionInspeccionImage,
       details: [
-        "Dirección e inspección técnica; administración de la ejecución",
-        "Contralor como representante del comitente",
+        "Dirección e inspección técnica; administración de la ejecución; contralor como representante del comitente",
+        //"Contralor como representante del comitente",
         "Control de calidad en campo; informes técnicos, ambientales y sociales",
-        "Certificación y seguimiento de curva de inversiones",
-        "Supervisión de subcontratistas",
-        "Verificación de planes de trabajo"
+        "Certificación y seguimiento de curva de inversiones; supervisión de subcontratistas; verificación de planes de trabajo",
+        //"Supervisión de subcontratistas",
+        //"Verificación de planes de trabajo"
       ]
     },
     {
