@@ -81,7 +81,7 @@ const Footer = () => {
                   href="#" 
                   className="text-white/70 text-sm hover:text-white transition-colors"
                 >
-                  Trabajá con nosotros
+                 {/* Trabajá con nosotros*/}
                 </a>
               </li>
             </ul>
@@ -109,7 +109,7 @@ const Footer = () => {
                 <Phone className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" strokeLinecap="square" strokeLinejoin="miter" />
                 <div className="text-white/70 text-sm">
                   <div>Arq. Daniela Figiacone</div>
-                  <div>11.6094.1504</div>
+                  <div>(+54)9 11 6094 1504</div>
                 </div>
               </div>
               
@@ -117,7 +117,7 @@ const Footer = () => {
                 <Phone className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" strokeLinecap="square" strokeLinejoin="miter" />
                 <div className="text-white/70 text-sm">
                   <div>Ing. Alejandro Corea</div>
-                  <div>11.5020.5543</div>
+                  <div>(+54)9 11 5020 5543</div>
                 </div>
               </div>
               
