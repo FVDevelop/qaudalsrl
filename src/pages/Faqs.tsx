@@ -17,8 +17,8 @@ const Faqs = () => {
 
   const faqs = [
     {
-      question: "¿Qué servicios ofrece **Qaudal**?",
-      answer: "**Qaudal** ofrece servicios integrales en ingeniería de agua, saneamiento y energía, incluyendo consultoría, diseño, construcción, operación y mantenimiento de infraestructura."
+      question: "¿Qué servicios ofrece <strong>Qaudal</strong>?",
+      answer: "<strong>Qaudal</strong> ofrece servicios integrales en ingeniería de agua, saneamiento y energía, incluyendo consultoría, diseño, construcción, operación y mantenimiento de infraestructura."
     },
     {
       question: "¿En qué sectores trabajan?",
