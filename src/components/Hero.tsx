@@ -55,13 +55,14 @@ const Hero = () => {
           <div className="flex justify-start">
             <div className="bg-black/30 p-8 text-left backdrop-blur-sm max-w-4xl">
               <h1 className="text-3xl md:text-4xl font-garet mb-8 tracking-wide leading-tight text-white uppercase font-normal">
-                Consultora especializada en agua, saneamiento, energía y medioambiente
+                 Consultora especializada en agua, saneamiento, energía y medioambiente 
               </h1>
               
               <p className="text-lg md:text-xl mb-12 max-w-4xl font-light leading-relaxed opacity-95 text-white">
-                Integramos experiencia técnica y tecnologías inteligentes para diseñar soluciones sostenibles e innovadoras que generan impacto real.
+               {/* Integramos experiencia técnica y tecnologías inteligentes para diseñar soluciones sostenibles e innovadoras que generan impacto real.*/}
+                  Innovación y experiencia en soluciones sostenibles, en Argentina y el exterior
               </p>
-              
+                           
               <div className="flex flex-col sm:flex-row gap-6 justify-start items-start">
                 <Link to="/#contacto">
                   <Button 
