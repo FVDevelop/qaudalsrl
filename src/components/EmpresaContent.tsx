@@ -110,11 +110,10 @@ const EmpresaContent = () => {
       <div className="container mx-auto px-4 pt-5 pb-5">
         <div className="text-center">
           <p className="text-lg max-w-5xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
-            En Qaudal aplicamos una metodología integral que nos permite abordar cada proyecto 
+            En <strong>Qaudal</strong> aplicamos una metodología integral que nos permite abordar cada proyecto 
             desde una perspectiva 360°. Nuestro enfoque combina experiencia técnica multidisciplinaria 
-            con las mejores prácticas de la industria, garantizando soluciones eficientes y sostenibles 
-            en agua, saneamiento, energía y obras civiles.
-          </p>
+            con las mejores prácticas de la industria, garantizando soluciones eficientes y sostenibles.
+           </p>
         </div>
       </div>
 
