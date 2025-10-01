@@ -17,8 +17,8 @@ const Faqs = () => {
 
   const faqs = [
     {
-      question: "¿Qué servicios ofrece Qaudal?",
-      answer: "Qaudal ofrece servicios integrales en ingeniería de agua, saneamiento y energía, incluyendo consultoría, diseño, construcción, operación y mantenimiento de infraestructura."
+      question: "¿Qué servicios ofrece QAUDAL?",
+      answer: "QAUDAL ofrece servicios integrales en ingeniería de agua, saneamiento y energía, incluyendo consultoría, diseño, construcción, operación y mantenimiento de infraestructura."
 
     },
     {
@@ -26,7 +26,7 @@ const Faqs = () => {
       answer: "Trabajamos con diversos sectores incluyendo industrias, municipios, servicios sanitarios, desarrollos inmobiliarios y proyectos de infraestructura urbana."
     },
     {
-      question: "¿Cómo es el proceso de trabajo de **Qaudal**?",
+      question: "¿Cómo es el proceso de trabajo de QAUDAL?",
       answer: "Nuestro proceso incluye 6 etapas: Diagnóstico, Ingeniería, Plan de obra, Ejecución, Puesta en marcha, y Operación y mejora continua."
     },
     {
