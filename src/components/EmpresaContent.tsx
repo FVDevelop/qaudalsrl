@@ -107,9 +107,9 @@ const EmpresaContent = () => {
       </section>
 
       {/* Subtitle outside header */}
-      <div className="container mx-auto px-4 pt-6 pb-4">
+      <div className="container mx-auto px-4 pt-5 pb-5">
         <div className="text-center">
-          <p className="text-xl max-w-5xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
+          <p className="text-lg max-w-5xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
             En Qaudal aplicamos una metodología integral que nos permite abordar cada proyecto 
             desde una perspectiva 360°. Nuestro enfoque combina experiencia técnica multidisciplinaria 
             con las mejores prácticas de la industria, garantizando soluciones eficientes y sostenibles 
@@ -188,9 +188,9 @@ const EmpresaContent = () => {
       </section>
 
       {/* Subtitle outside header */}
-      <div className="container mx-auto px-4 pt-6 pb-4">
+      <div className="container mx-auto px-4 pt-5 pb-5">
         <div className="text-center">
-          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
+          <p className="text-lg max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
             Nuestra propuesta de valor diferencial para tu organización
           </p>
         </div>
@@ -274,7 +274,7 @@ const EmpresaContent = () => {
             <Card className="bg-white border-0 shadow-lg rounded-none overflow-hidden">
               <CardContent className="p-6">
                 <h3 className="text-2xl font-garet font-normal mb-6 uppercase text-center" style={{color: '#003249'}}>
-                  Beneficios para tu organización
+                  Beneficios
                 </h3>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">

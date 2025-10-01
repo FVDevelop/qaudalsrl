@@ -32,9 +32,9 @@ const Empresa = () => {
       </section>
 
       {/* Subtitle outside header */}
-      <div className="container mx-auto px-4 pt-6 pb-4">
+      <div className="container mx-auto px-4 pt-5 pb-5">
         <div className="text-center">
-          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#007EA7'}}>
+          <p className="text-lg max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#007EA7'}}>
             Un flujo constante de soluciones para la gestión del agua, saneamiento y energía
           </p>
         </div>
