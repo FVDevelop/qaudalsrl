@@ -114,7 +114,7 @@ const Servicios = () => {
         //"Desarrollo de licitaciones, contrataciones y concursos de precios",
         "Participación como contratista titular",
         "Participación como contratista subtitular en forma asociada",
-        "Servicios como subcontratista para provisión,proyecto, Dirección y/o mano de obra, materiales, maquinarias, equipos, instrumental y vehículos",
+        "Servicios como subcontratista para provisión, proyecto, Dirección y/o mano de obra, materiales, maquinarias, equipos, instrumental y vehículos",
         //"Dirección y/o mano de obra, materiales, maquinarias",
         //"Suministro de equipos, instrumental y vehículos"
       ]
