@@ -90,7 +90,7 @@ Esta es una solicitud de cotización enviada desde el sitio web de Qaudal.
           <img 
             src={communicationBackground} 
             alt="Contacto" 
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-60"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95"></div>
         </div>
