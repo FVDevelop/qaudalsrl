@@ -168,7 +168,7 @@ const Servicios = () => {
       <Header />
       
       {/* Hero Section with Gradient Background */}
-      <section className="relative py-12 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95 overflow-hidden">
+      <section className="relative pt-32 pb-12 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img 
             src={renewableEnergyBackground}
