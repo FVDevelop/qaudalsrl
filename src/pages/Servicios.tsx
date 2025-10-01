@@ -139,7 +139,7 @@ const Servicios = () => {
       //description: "Proyectos integrales de energía renovable, auditorías energéticas y sistemas de eficiencia.",
       image: energiaSustentableImage,
       details: [
-        "Proyectos de energía sustentable, auditorías y eficiencia energética (detección de oportunidades, bencharking y planes de mejora",
+        "Proyectos de energía sustentable, auditorías y eficiencia energética (detección de oportunidades, bencharking y planes de mejora)",
         "Diseño, implementación, operación y mantenimiento de generación renovable (solar, eólica, biomasa), cogeneración y gesión de demanda",
         //"Sistemas solares, eólicos, biomasa, cogeneración y gestión de la demanda",
         "Medición y verificación (M&V) de ahorros, instrumentación y sistemas de monitorización",
