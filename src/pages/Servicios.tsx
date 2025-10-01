@@ -94,7 +94,7 @@ const Servicios = () => {
     {
       icon: ClipboardCheck,
       title: "Dirección, inspección y control de obras",
-      description: "Supervisión técnica integral y administración de la ejecución como representante del comitente.",
+      //description: "Supervisión técnica integral y administración de la ejecución como representante del comitente.",
       image: direccionInspeccionImage,
       details: [
         "Dirección e inspección técnica; administración de la ejecución; contralor como representante del comitente",
