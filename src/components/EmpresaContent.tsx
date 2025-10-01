@@ -76,7 +76,7 @@ const EmpresaContent = () => {
               </p>
               
               <p className="text-lg font-light leading-relaxed" style={{color: '#737373'}}>
-                Nuestra experiencia abarca la totalidad del ciclo de vida de un proyecto, desde la ejecución de estudios y diagnósticos hasta los diseños conceptuales y proyectos ejecutivos.
+                Nuestra experiencia abarca la totalidad del ciclo de vida de un proyecto, desde la ejecución de estudios y diagnósticos hasta los diseños conceptuales y proyectos ejecutivos. Trabajamos con personal propio y especialistas externos, con alcance en Argentina y el exterior.
               </p>
             </div>
           </div>
