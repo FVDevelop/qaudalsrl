@@ -59,11 +59,11 @@ const EmpresaContent = () => {
                 Tu proyecto. Nuestro caudal.
               </h2>
               
-              <p className="text-lg font-light leading-relaxed" style={{color: '#737373'}}>
+              <p className="text-lg font-light leading-relaxed" style={{color: '#003249'}}>
                 En un mundo donde la eficiencia y la sostenibilidad son fundamentales, no basta solo con la experiencia; se necesita una visión de futuro.
               </p>
               
-              <p className="text-lg font-normal leading-relaxed" style={{color: '#737373'}}>
+              <p className="text-lg font-light leading-relaxed" style={{color: '#737373'}}>
                 En <strong>Qaudal</strong>, combinamos la profundidad del conocimiento tradicional en ingeniería y arquitectura con la innovación de las tecnologías inteligentes, lo que nos permite ir más allá del análisis convencional.
               </p>
               
