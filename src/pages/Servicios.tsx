@@ -52,7 +52,7 @@ const Servicios = () => {
     {
       icon: PenTool,
       title: "Ingeniería y proyectos",
-      description: "Diseño, cálculo y optimización y documentación técnica de: ",
+      description: "Diseño, cálculo, optimización y documentación técnica de: ",
       image: ingenieriaProyectosImage,
       details: [
         "Redes y sistemas de agua potable, cloacales, riego y drenaje pluvial",
@@ -85,8 +85,8 @@ const Servicios = () => {
       details: [
         "Estudio, proyecto, dirección ejecutiva y ejecución de obras civiles e infraestructura de servicios (agua, cloacas, electricidad, drenaje pluvial, etc.)",
         "Cómputos métricos, especificaciones y planes de inversión",
-        "Ejecución directa o mediante terceros habilitados",
-        "Cumplimiento de normativa vigente",
+        "Ejecución directa o mediante terceros habilitados, conforme normativa vigente",
+        //"Cumplimiento de normativa vigente",
         //"Gestión de cronogramas y recursos",
         //"Control de calidad en obra"
       ]
