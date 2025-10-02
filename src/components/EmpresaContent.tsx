@@ -83,7 +83,7 @@ const EmpresaContent = () => {
 
           {/* Tagline */}
           <div className="text-center mb-8">
-            <p className="text-xs md:text-sm font-garet uppercase tracking-wider" style={{color: '#007EA7'}}>
+            <p className="text-sm md:text-base font-garet font-semibold uppercase tracking-wider" style={{color: '#007EA7'}}>
               Nos ocupamos de tus proyectos para que vos te ocupes de crecer
             </p>
           </div>
@@ -109,7 +109,7 @@ const EmpresaContent = () => {
       {/* Subtitle outside header */}
       <div className="container mx-auto px-4 pt-5 pb-5">
         <div className="text-center">
-          <p className="text-lg max-w-5xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
+          <p className="text-xl max-w-5xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
             En <strong>Qaudal</strong> aplicamos una metodología integral que nos permite abordar cada proyecto 
             desde una perspectiva 360°. Nuestro enfoque combina experiencia técnica multidisciplinaria 
             con las mejores prácticas de la industria, garantizando soluciones eficientes y sostenibles.
@@ -160,7 +160,7 @@ const EmpresaContent = () => {
                   <h4 className="font-semibold text-lg mb-2" style={{color: '#003249'}}>
                     {caso.title}
                   </h4>
-                  <p className="text-sm font-light" style={{color: '#737373'}}>
+                  <p className="text-base font-light" style={{color: '#737373'}}>
                     {caso.subtitle}
                   </p>
                 </CardContent>
@@ -189,7 +189,7 @@ const EmpresaContent = () => {
       {/* Subtitle outside header */}
       <div className="container mx-auto px-4 pt-5 pb-5">
         <div className="text-center">
-          <p className="text-lg max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
+          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
             Esta es nuestra propuesta de valor para tu organización
           </p>
         </div>

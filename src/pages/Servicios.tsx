@@ -186,7 +186,7 @@ const Servicios = () => {
       {/* Subtitle outside header */}
       <div className="container mx-auto px-4 pt-5 pb-5">
         <div className="text-center">
-          <p className="text-lg max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
+          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
             Soluciones integrales para agua, saneamiento y energía
           </p>
         </div>
@@ -248,7 +248,7 @@ const Servicios = () => {
                     {service.details.map((detail, detailIndex) => (
                       <div key={detailIndex} className="flex items-start gap-3">
                         <div className="w-2 h-2 mt-2 flex-shrink-0" style={{backgroundColor: '#003249'}}></div>
-                        <span className="font-light text-sm" style={{color: '#737373'}}>{detail}</span>
+                        <span className="font-light text-base" style={{color: '#737373'}}>{detail}</span>
                       </div>
                     ))}
                   </div>
