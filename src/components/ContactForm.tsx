@@ -225,7 +225,7 @@ Esta es una solicitud de cotización enviada desde el sitio web de Qaudal.
                     </div>
                     <div>
                       <div className="font-medium mb-1 text-sm" style={{color: '#737373'}}>Arq. Daniela Figiacone</div>
-                      <div className="font-light text-sm" style={{color: '#737373'}}>Tel: (+54)9 11 6094 1504</div>
+                      <div className="font-light text-sm" style={{color: '#737373'}}>Tel: 11.6094.1504</div>
                     </div>
                   </div>
                   
@@ -235,7 +235,7 @@ Esta es una solicitud de cotización enviada desde el sitio web de Qaudal.
                     </div>
                     <div>
                       <div className="font-medium mb-1 text-sm" style={{color: '#737373'}}>Ing. Alejandro Corea</div>
-                      <div className="font-light text-sm" style={{color: '#737373'}}>Tel: (+54)9 11 5020 5543</div>
+                      <div className="font-light text-sm" style={{color: '#737373'}}>Tel: 11.5020.5543</div>
                     </div>
                   </div>
                   
@@ -255,7 +255,7 @@ Esta es una solicitud de cotización enviada desde el sitio web de Qaudal.
                     </div>
                     <div>
                       <div className="font-medium mb-1 text-sm" style={{color: '#737373'}}>Oficinas</div>
-                      <div className="font-light text-sm" style={{color: '#737373'}}>Complejo 46 Plaza - Edificio Agora III, oficina 203 - Pilar, Buenos Aires</div>
+                      <div className="font-light text-sm" style={{color: '#737373'}}>Ciudad Autónoma de Buenos Aires</div>
                     </div>
                   </div>
                 </div>
@@ -266,14 +266,15 @@ Esta es una solicitud de cotización enviada desde el sitio web de Qaudal.
             <Card className="service-card border-0">
               <CardContent className="p-0">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.55984284622!2d-58.543312!3d-34.615695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e8!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1234567890"
+                  {/* src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.55984284622!2d-58.543312!3d-34.615695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e8!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1234567890" */}
+                  src="https://www.google.com/maps/place/Alzol+-+agora+3/@-34.4343702,-58.834743,15.53z/data=!4m14!1m7!3m6!1s0x95bc9dd535dddf23:0xd19c759b4697dc0!2sAlzol+-+agora+3!8m2!3d-34.4342082!4d-58.8301479!16s%2Fg%2F11jmxwckmz!3m5!1s0x95bc9dd535dddf23:0xd19c759b4697dc0!8m2!3d-34.4342082!4d-58.8301479!16s%2Fg%2F11jmxwckmz?entry=ttu&g_ep=EgoyMDI1MDkyOS4wIKXMDSoASAFQAw%3D%3D"
                   width="100%"
                   height="200"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Ubicación de Qaudal en Buenos Aires"
+                  title="Ubicación de Qaudal en Pilar"
                 />
               </CardContent>
             </Card>
