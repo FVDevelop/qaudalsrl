@@ -84,7 +84,7 @@ const EmpresaContent = () => {
           {/* Tagline */}
           <div className="text-center mb-8">
             {/*<p className="text-sm md:text-base font-garet font-semibold uppercase tracking-wider" style={{color: '#007EA7'}}>*/}
-              <p className="text-lg md:text-2xl font-garet font-semibold uppercase tracking-wider" style={{color: '#007EA7'}}>  
+              <p className="text-x1 md:text-2xl font-garet font-semibold uppercase tracking-wider" style={{color: '#007EA7'}}>  
               Nos ocupamos de tus proyectos para que vos te ocupes de crecer
             </p>
           </div>
@@ -125,7 +125,7 @@ const EmpresaContent = () => {
             <h3 className="text-4xl font-garet font-normal uppercase mb-4" style={{color: '#003249'}}>
               Nuestra Metodología
             </h3>
-            <p className="text-2xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
+            <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
               Proceso integral que garantiza la excelencia en cada etapa del proyecto
             </p>
           </div>
