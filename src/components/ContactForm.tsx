@@ -266,8 +266,7 @@ Esta es una solicitud de cotización enviada desde el sitio web de Qaudal.
             <Card className="service-card border-0">
               <CardContent className="p-0">
                 <iframe
-                  {/* src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.55984284622!2d-58.543312!3d-34.615695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e8!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1234567890" */}
-                  src="https://www.google.com/maps/place/Alzol+-+agora+3/@-34.4343702,-58.834743,15.53z/data=!4m14!1m7!3m6!1s0x95bc9dd535dddf23:0xd19c759b4697dc0!2sAlzol+-+agora+3!8m2!3d-34.4342082!4d-58.8301479!16s%2Fg%2F11jmxwckmz!3m5!1s0x95bc9dd535dddf23:0xd19c759b4697dc0!8m2!3d-34.4342082!4d-58.8301479!16s%2Fg%2F11jmxwckmz?entry=ttu&g_ep=EgoyMDI1MDkyOS4wIKXMDSoASAFQAw%3D%3D"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.55984284622!2d-58.543312!3d-34.615695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e8!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1234567890"
                   width="100%"
                   height="200"
                   style={{ border: 0 }}
