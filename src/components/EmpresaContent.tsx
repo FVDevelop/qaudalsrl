@@ -110,7 +110,7 @@ const EmpresaContent = () => {
       {/* Subtitle outside header */}
       <div className="container mx-auto px-4 pt-5 pb-5">
         <div className="text-center">
-          <p className="text-2xl max-w-5xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
+          <p className="text-xl max-w-5xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
             En <strong>Qaudal</strong> aplicamos una metodología integral que nos permite abordar cada proyecto 
             desde una perspectiva 360°. Nuestro enfoque combina experiencia técnica multidisciplinaria 
             con las mejores prácticas de la industria, garantizando soluciones eficientes y sostenibles.
@@ -125,7 +125,7 @@ const EmpresaContent = () => {
             <h3 className="text-4xl font-garet font-normal uppercase mb-4" style={{color: '#003249'}}>
               Nuestra Metodología
             </h3>
-            <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
+            <p className="text-2xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
               Proceso integral que garantiza la excelencia en cada etapa del proyecto
             </p>
           </div>
