@@ -135,6 +135,16 @@ const EmpresaContent = () => {
         </div>
       </section>
 
+      {/* Gradient Divider */}
+      <div className="py-8 flex justify-center bg-white">
+        <div 
+          className="h-1 w-3/4 max-w-4xl"
+          style={{
+            background: 'linear-gradient(to right, #003249, #007EA7, #003249)'
+          }}
+        />
+      </div>
+
       {/* Casos Típicos */}
       <section className="py-8 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -197,7 +207,7 @@ const EmpresaContent = () => {
       </div>
 
       {/* Two Large Cards Layout */}
-      <section className="py-12 bg-white">
+      <section className="py-6 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {/* Card 1: Diferenciales */}
@@ -213,7 +223,7 @@ const EmpresaContent = () => {
                       <h4 className="font-semibold text-lg mb-1" style={{color: '#003249'}}>
                         Cobertura end‑to‑end
                       </h4>
-                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                      <p className="font-light text-base leading-relaxed" style={{color: '#737373'}}>
                         estudio → diseño → obra → operación → mejora.
                       </p>
                     </div>
@@ -225,7 +235,7 @@ const EmpresaContent = () => {
                       <h4 className="font-semibold text-lg mb-1" style={{color: '#003249'}}>
                         Multidisciplina
                       </h4>
-                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                      <p className="font-light text-base leading-relaxed" style={{color: '#737373'}}>
                         hidráulica, eléctrica, control/automatización, ambiente, energía.
                       </p>
                     </div>
@@ -237,7 +247,7 @@ const EmpresaContent = () => {
                       <h4 className="font-semibold text-lg mb-1" style={{color: '#003249'}}>
                         Flexibilidad de contratación
                       </h4>
-                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                      <p className="font-light text-base leading-relaxed" style={{color: '#737373'}}>
                         ejecución propia o en alianza con terceros habilitados.
                       </p>
                     </div>
@@ -249,7 +259,7 @@ const EmpresaContent = () => {
                       <h4 className="font-semibold text-lg mb-1" style={{color: '#003249'}}>
                         Enfoque en eficiencia
                       </h4>
-                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                      <p className="font-light text-base leading-relaxed" style={{color: '#737373'}}>
                         optimización de energía, M&V y mejora continua.
                       </p>
                     </div>
@@ -261,7 +271,7 @@ const EmpresaContent = () => {
                       <h4 className="font-semibold text-lg mb-1" style={{color: '#003249'}}>
                         Cumplimiento normativo
                       </h4>
-                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                      <p className="font-light text-base leading-relaxed" style={{color: '#737373'}}>
                         y buenas prácticas en HSE.
                       </p>
                     </div>
@@ -283,7 +293,7 @@ const EmpresaContent = () => {
                       <h4 className="font-semibold text-lg mb-1" style={{color: '#003249'}}>
                         Menores costos operativos
                       </h4>
-                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                      <p className="font-light text-base leading-relaxed" style={{color: '#737373'}}>
                         por optimización y eficiencia energética.
                       </p>
                     </div>
@@ -295,7 +305,7 @@ const EmpresaContent = () => {
                       <h4 className="font-semibold text-lg mb-1" style={{color: '#003249'}}>
                         Mayor confiabilidad y continuidad
                       </h4>
-                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                      <p className="font-light text-base leading-relaxed" style={{color: '#737373'}}>
                         de servicio por mantenimiento planificado.
                       </p>
                     </div>
@@ -307,7 +317,7 @@ const EmpresaContent = () => {
                       <h4 className="font-semibold text-lg mb-1" style={{color: '#003249'}}>
                         Tiempos de ejecución más cortos
                       </h4>
-                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                      <p className="font-light text-base leading-relaxed" style={{color: '#737373'}}>
                         por gestión integral del ciclo de vida.
                       </p>
                     </div>
@@ -319,7 +329,7 @@ const EmpresaContent = () => {
                       <h4 className="font-semibold text-lg mb-1" style={{color: '#003249'}}>
                         Reducción de riesgos
                       </h4>
-                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                      <p className="font-light text-base leading-relaxed" style={{color: '#737373'}}>
                         técnicos, ambientales y regulatorios.
                       </p>
                     </div>
@@ -331,7 +341,7 @@ const EmpresaContent = () => {
                       <h4 className="font-semibold text-lg mb-1" style={{color: '#003249'}}>
                         Escalabilidad de soluciones
                       </h4>
-                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                      <p className="font-light text-base leading-relaxed" style={{color: '#737373'}}>
                         y tecnologías según demanda.
                       </p>
                     </div>
@@ -343,7 +353,7 @@ const EmpresaContent = () => {
                       <h4 className="font-semibold text-lg mb-1" style={{color: '#003249'}}>
                         Mejoras operativas
                       </h4>
-                      <p className="font-light text-sm leading-relaxed" style={{color: '#737373'}}>
+                      <p className="font-light text-base leading-relaxed" style={{color: '#737373'}}>
                         de los sistemas.
                       </p>
                     </div>

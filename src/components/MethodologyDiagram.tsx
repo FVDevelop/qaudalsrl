@@ -4,12 +4,12 @@ const MethodologyDiagram = () => {
   return (
     <div className="w-full max-w-7xl mx-auto">
       <svg
-        viewBox="0 0 1740 600"
+        viewBox="0 0 1740 500"
         className="w-full h-auto"
         xmlns="http://www.w3.org/2000/svg"
       >
         {/* Background */}
-        <rect width="1600" height="600" fill="white" />
+        <rect width="1600" height="500" fill="white" />
         
         {/* Gradient definitions */}
         <defs>
@@ -19,6 +19,12 @@ const MethodologyDiagram = () => {
           </linearGradient>
           <marker id="arrowhead" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto">
             <polygon points="0 0, 12 5, 0 10" fill="#007EA7" />
+          </marker>
+          <marker id="arrowheadGreen" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto">
+            <polygon points="0 0, 12 5, 0 10" fill="#4CAF50" />
+          </marker>
+          <marker id="arrowheadFeedback" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto">
+            <polygon points="0 0, 12 5, 0 10" fill="#FF9800" />
           </marker>
         </defs>
         
@@ -107,16 +113,22 @@ const MethodologyDiagram = () => {
           </text>
         </g>
 
+        {/* Arrow from Stage 5 to Stage 6 (green) */}
+        <path d="M 1550 240 L 1550 340" stroke="#4CAF50" strokeWidth="3" markerEnd="url(#arrowheadGreen)" />
+
         {/* Stage 6: Operación y mejora (clean bottom section) */}
         <g>
-          <rect x="40" y="450" width="1660" height="120" rx="12" fill="url(#blueGradient)" />
-          <text x="870" y="490" textAnchor="middle" fill="white" fontSize="26" fontWeight="bold">
+          <rect x="40" y="350" width="1660" height="120" rx="12" fill="url(#blueGradient)" />
+          <text x="870" y="390" textAnchor="middle" fill="white" fontSize="26" fontWeight="bold">
             6. OPERACIÓN Y MEJORA (PROCESO CONTINUO)
           </text>
-          <text x="870" y="525" textAnchor="middle" fill="white" fontSize="20">
+          <text x="870" y="425" textAnchor="middle" fill="white" fontSize="20">
             Monitoreo, M&V, mantenimiento y optimización
           </text>
         </g>
+
+        {/* Feedback Arrow from Stage 6 to Stage 1 (orange) */}
+        <path d="M 40 350 L 40 320 Q 40 280 10 280 L 10 180 Q 10 150 40 150 L 40 240" stroke="#FF9800" strokeWidth="3" fill="none" markerEnd="url(#arrowheadFeedback)" />
       </svg>
     </div>
   );
