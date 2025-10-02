@@ -200,7 +200,7 @@ const EmpresaContent = () => {
       {/* Subtitle outside header */}
       <div className="container mx-auto px-4 pt-5 pb-5">
         <div className="text-center">
-          <p className="text-lg max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
+          <p className="text-2xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
             Esta es nuestra propuesta de valor para tu organización
           </p>
         </div>
