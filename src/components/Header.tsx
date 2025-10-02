@@ -67,37 +67,37 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/empresa" className={`transition-colors font-light text-base ${
+            <Link to="/empresa" className={`transition-colors font-light text-lg ${
               location.pathname === "/empresa" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
             }`}>
               Empresa
             </Link>
             
-            <Link to="/servicios" className={`transition-colors font-light text-base ${
+            <Link to="/servicios" className={`transition-colors font-light text-lg ${
               location.pathname === "/servicios" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
             }`}>
               Servicios
             </Link>
             
-            <Link to="/sectores" className={`transition-colors font-light text-base ${
+            <Link to="/sectores" className={`transition-colors font-light text-lg ${
               location.pathname === "/sectores" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
             }`}>
               Sectores
             </Link>
             
-            <Link to="/noticias" className={`transition-colors font-light text-base ${
+            <Link to="/noticias" className={`transition-colors font-light text-lg ${
               location.pathname === "/noticias" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
             }`}>
               Noticias
             </Link>
             
-            <Link to="/faqs" className={`transition-colors font-light text-base ${
+            <Link to="/faqs" className={`transition-colors font-light text-lg ${
               location.pathname === "/faqs" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
             }`}>
               FAQ's
             </Link>
             
-            <Link to="/#contacto" className={`transition-colors font-light text-base ${
+            <Link to="/#contacto" className={`transition-colors font-light text-lg ${
               isActive("/#contacto") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
             }`}>
               Contacto
@@ -134,42 +134,42 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 border-t border-border pt-4">
             <div className="flex flex-col space-y-4">
-              <Link to="/empresa" className={`transition-colors font-light text-base ${
+              <Link to="/empresa" className={`transition-colors font-light text-lg ${
                 isActive("/empresa") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
               }`} onClick={() => setIsMenuOpen(false)}>
                 Empresa
               </Link>
-              <Link to="/como-trabajamos" className={`transition-colors font-light text-base ${
+              <Link to="/como-trabajamos" className={`transition-colors font-light text-lg ${
                 location.pathname === "/como-trabajamos" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
               }`} onClick={() => setIsMenuOpen(false)}>
                 Como Trabajamos
               </Link>
-              <Link to="/por-que-qaudal" className={`transition-colors font-light text-base ${
+              <Link to="/por-que-qaudal" className={`transition-colors font-light text-lg ${
                 location.pathname === "/por-que-qaudal" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
               }`} onClick={() => setIsMenuOpen(false)}>
                 Por que Elegirnos
               </Link>
-              <Link to="/servicios" className={`transition-colors font-light text-base ${
+              <Link to="/servicios" className={`transition-colors font-light text-lg ${
                 location.pathname === "/servicios" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
               }`} onClick={() => setIsMenuOpen(false)}>
                 Servicios
               </Link>
-              <Link to="/sectores" className={`transition-colors font-light text-base ${
+              <Link to="/sectores" className={`transition-colors font-light text-lg ${
                 location.pathname === "/sectores" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
               }`} onClick={() => setIsMenuOpen(false)}>
                 Sectores
               </Link>
-              <Link to="/noticias" className={`transition-colors font-light text-base ${
+              <Link to="/noticias" className={`transition-colors font-light text-lg ${
                 location.pathname === "/noticias" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
               }`} onClick={() => setIsMenuOpen(false)}>
                 Noticias
               </Link>
-              <Link to="/faqs" className={`transition-colors font-light text-base ${
+              <Link to="/faqs" className={`transition-colors font-light text-lg ${
                 location.pathname === "/faqs" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
               }`} onClick={() => setIsMenuOpen(false)}>
                 FAQ's
               </Link>
-              <Link to="/#contacto" className={`transition-colors font-light text-base ${
+              <Link to="/#contacto" className={`transition-colors font-light text-lg ${
                 isActive("/#contacto") ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
               }`} onClick={() => setIsMenuOpen(false)}>
                 Contacto

@@ -128,7 +128,7 @@ const MethodologyDiagram = () => {
         </g>
 
         {/* Feedback Arrow from Stage 6 to Stage 1 (orange) */}
-        <path d="M 40 350 L 40 320 Q 40 280 10 280 L 10 180 Q 10 150 40 150 L 40 240" stroke="#FF9800" strokeWidth="3" fill="none" markerEnd="url(#arrowheadFeedback)" />
+        <path d="M 180 350 L 180 240" stroke="#FF9800" strokeWidth="3" markerEnd="url(#arrowheadFeedback)" />
       </svg>
     </div>
   );
