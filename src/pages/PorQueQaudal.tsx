@@ -55,7 +55,7 @@ const PorQueQaudal = () => {
             <h1 className="section-title text-4xl md:text-5xl font-garet mb-6 uppercase font-normal" style={{color: '#737373'}}>
               Por que <strong>Qaudal</strong>
             </h1>
-            <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
+            <p className="text-2xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
               Nuestra propuesta diferencial en consultoría e ingeniería integral
             </p>
           </div>
