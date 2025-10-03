@@ -79,7 +79,7 @@ const Sectores = () => {
       {/* Subtitle outside header */}
       <div className="container mx-auto px-4 pt-5 pb-5">
         <div className="text-center">
-          <p className="text-2xl max-w-3xl mx-auto font-light leading-relaxed text-center" style={{color: '#737373'}}>
+          <p className="text-xl max-w-5xl mx-auto font-semibold leading-relaxed" style={{color: '#007EA7'}}>
             Industrias y mercados donde aplicamos nuestras soluciones
           </p>
         </div>
