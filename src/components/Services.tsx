@@ -216,7 +216,7 @@ const Services = () => {
           <h2 className="section-title text-4xl md:text-5xl font-garet mb-8 uppercase font-normal" style={{color: '#737373'}}>
             Nuestros Servicios Generales
           </h2>
-          <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
+          <p className="text-2xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
             Soluciones integrales para cada necesidad de tu empresa
           </p>
         </div>
