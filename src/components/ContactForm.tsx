@@ -255,7 +255,7 @@ Esta es una solicitud de cotización enviada desde el sitio web de Qaudal.
                     </div>
                     <div>
                       <div className="font-medium mb-1 text-sm" style={{color: '#737373'}}>Oficinas</div>
-                      <div className="font-light text-sm" style={{color: '#737373'}}>Ciudad Autónoma de Buenos Aires</div>
+                      <div className="font-light text-sm" style={{color: '#737373'}}>Complejo 46 Plaza - Edificio Agora III - Of. 203 - Pilar - Buenos Aires - Argentina</div>
                     </div>
                   </div>
                 </div>

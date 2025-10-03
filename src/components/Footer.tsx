@@ -131,7 +131,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" strokeLinecap="square" strokeLinejoin="miter" />
                 <div className="text-white/70 text-sm">
-                  Ciudad Autónoma de Buenos Aires, Argentina
+                  Complejo 46 Plaza - Edificio Agora III - Of. 203 - Pilar - Buenos Aires - Argentina
                 </div>
               </div>
             </div>
