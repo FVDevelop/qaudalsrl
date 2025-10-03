@@ -72,7 +72,7 @@ const Benefits = () => {
                   {benefit.title}
                 </h3>
                 
-                <p className="font-light leading-relaxed text-base" style={{color: '#003249'}}>
+                <p className="font-light leading-relaxed text-sm" style={{color: '#003249'}}>
                   {benefit.description}
                 </p>
               </CardContent>

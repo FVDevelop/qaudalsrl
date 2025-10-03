@@ -94,7 +94,7 @@ const PorQueQaudal = () => {
                         <h3 className="text-lg font-garet font-normal mb-2 uppercase" style={{color: '#737373'}}>
                           {reason.title}
                         </h3>
-                        <p className="text-base font-light leading-relaxed" style={{color: '#737373'}}>
+                        <p className="text-sm font-light leading-relaxed" style={{color: '#737373'}}>
                           {reason.description}
                         </p>
                       </div>

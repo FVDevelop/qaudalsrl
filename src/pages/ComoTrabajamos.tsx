@@ -116,7 +116,7 @@ const ComoTrabajamos = () => {
                   <h3 className="font-semibold text-lg mb-2" style={{color: '#003249'}}>
                     {caso.title}
                   </h3>
-                  <p className="text-base font-light" style={{color: '#737373'}}>
+                  <p className="text-sm font-light" style={{color: '#737373'}}>
                     {caso.subtitle}
                   </p>
                 </CardContent>
