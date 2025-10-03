@@ -153,7 +153,7 @@ const EmpresaContent = () => {
               Casos Típicos
             </h3>
             <p className="text-2xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
-              Ejemplos representativos de nuestras soluciones especializadas
+              Ejemplos representativos de nuestras soluciones
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
