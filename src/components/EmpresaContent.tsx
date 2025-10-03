@@ -84,7 +84,7 @@ const EmpresaContent = () => {
           {/* Tagline */}
           <div className="text-center mb-8">
             {/*<p className="text-sm md:text-base font-garet font-semibold uppercase tracking-wider" style={{color: '#007EA7'}}>*/}
-              <p className="text-sm md:text-xl font-garet font-semibold uppercase tracking-wider" style={{color: '#007EA7'}}>  
+              <p className="text-xs md:text-xl font-garet font-semibold uppercase tracking-wider" style={{color: '#007EA7'}}>  
               Nos ocupamos de tus proyectos para que vos te ocupes de crecer
             </p>
           </div>
