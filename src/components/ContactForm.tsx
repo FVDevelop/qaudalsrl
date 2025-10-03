@@ -225,7 +225,7 @@ Esta es una solicitud de cotización enviada desde el sitio web de Qaudal.
                     </div>
                     <div>
                       <div className="font-medium mb-1 text-sm" style={{color: '#737373'}}>Arq. Daniela Figiacone</div>
-                      <div className="font-light text-sm" style={{color: '#737373'}}>Tel: 11.6094.1504</div>
+                      <div className="font-light text-sm" style={{color: '#737373'}}>Tel: (+54)9 11 6094 1504</div>
                     </div>
                   </div>
                   
@@ -235,7 +235,7 @@ Esta es una solicitud de cotización enviada desde el sitio web de Qaudal.
                     </div>
                     <div>
                       <div className="font-medium mb-1 text-sm" style={{color: '#737373'}}>Ing. Alejandro Corea</div>
-                      <div className="font-light text-sm" style={{color: '#737373'}}>Tel: 11.5020.5543</div>
+                      <div className="font-light text-sm" style={{color: '#737373'}}>Tel: (+54)9 11 5020 5543</div>
                     </div>
                   </div>
                   
