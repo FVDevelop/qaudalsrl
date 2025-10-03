@@ -266,7 +266,7 @@ Esta es una solicitud de cotización enviada desde el sitio web de Qaudal.
             <Card className="service-card border-0">
               <CardContent className="p-0">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!..."
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.655228535666!2d-58.83262332660467!3d-34.435511673015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9c280e8b9d97%3A0xbd133bfb56c6a9e3!2sComplejo%2046%20Plaza!5e0!3m2!1sen!2sar!4v1759525073258!5m2!1sen!2sar"
                   width="100%"
                   height="200"
                   style={{ border: 0 }}
