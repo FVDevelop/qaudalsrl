@@ -80,7 +80,7 @@ const ComoTrabajamos = () => {
             <h2 className="text-4xl font-garet font-normal uppercase mb-4" style={{color: '#003249'}}>
               Nuestra Metodología
             </h2>
-            <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
+            <p className="text-2xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
               Proceso integral que garantiza la excelencia en cada etapa del proyecto
             </p>
           </div>
