@@ -125,7 +125,7 @@ const EmpresaContent = () => {
             <h3 className="text-4xl font-garet font-normal uppercase mb-4" style={{color: '#003249'}}>
               Nuestra Metodología
             </h3>
-            <p className="text-2xl max-w-3xl md:whitespace-nowrap mx-auto font-light mx-auto" style={{color: '#737373'}}>
+            <p className="text-2xl max-w-3xl md:whitespace-nowrap mx-auto font-light" style={{color: '#737373'}}>
               Proceso integral que garantiza la excelencia en cada etapa del proyecto
             </p>
           </div>
