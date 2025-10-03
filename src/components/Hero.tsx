@@ -23,7 +23,7 @@ const Hero = () => {
           className="w-full h-full"
           plugins={[
             Autoplay({
-              delay: 5000,
+              delay: 3000,
             }),
           ]}
           opts={{
