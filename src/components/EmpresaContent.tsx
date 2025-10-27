@@ -11,7 +11,7 @@ import waterTreatmentBackground from "@/assets/water-treatment-background.png";
 const EmpresaContent = () => {
   const casosTypicos = [
     {
-      title: "Rediseño/expansión de plantas",
+      title: "Optimización y ampliación de plantas",
       subtitle: "de tratamiento y redes",
       image: carouselAgua,
     },
@@ -31,9 +31,14 @@ const EmpresaContent = () => {
       image: energiaRenovables,
     },
     {
-      title: "Monitoreo ambiental",
-      subtitle: "(olores, ruido) y gestión de pasivos",
+      title: "Gestión y monitoreo ambiental",
+      subtitle: "<strong>Pasivos ambientales</strong>, olores y ruidos",
       image: ambienteSeguridad,
+    },
+    {
+      title: "Economía circular",
+      subtitle: "Gestión de barros y reuso de aguas residuales",
+      image: carouselAgua,
     },
   ];
 
@@ -126,7 +131,10 @@ const EmpresaContent = () => {
             En <strong>Qaudal</strong> aplicamos una metodología integral que nos permite abordar cada proyecto desde una perspectiva
             360°. Y creemos que cada proyecto es una oportunidad para generar impacto positivo y valor agregado.
             Nuestra metodología combina análisis técnico, innovación y trabajo en equipo, integrando sostenibilidad, eficiencia
-            y calidad en cada etapa. El resultado: proyectos que funcionan hoy y siguen aportando valor en el futuro.
+            y calidad en cada etapa.
+          </p>
+          <p className="text-xl max-w-5xl mx-auto font-semibold italic leading-relaxed mt-3" style={{ color: "#007EA7" }}>
+            El resultado: proyectos que funcionan hoy y siguen aportando valor en el futuro.
           </p>
         </div>
       </div>
@@ -183,9 +191,11 @@ const EmpresaContent = () => {
                   <h4 className="font-semibold text-lg mb-2" style={{ color: "#003249" }}>
                     {caso.title}
                   </h4>
-                  <p className="text-base font-light" style={{ color: "#737373" }}>
-                    {caso.subtitle}
-                  </p>
+                  <p 
+                    className="text-base font-light" 
+                    style={{ color: "#737373" }}
+                    dangerouslySetInnerHTML={{ __html: caso.subtitle }}
+                  />
                 </CardContent>
               </Card>
             ))}
