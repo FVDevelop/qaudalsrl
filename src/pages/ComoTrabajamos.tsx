@@ -65,8 +65,8 @@ const ComoTrabajamos = () => {
           </h1>
           <p className="text-xl max-w-5xl mx-auto font-light leading-relaxed text-white/90">
             En Qaudal aplicamos una metodología integral que nos permite abordar cada proyecto desde una perspectiva
-            360° y creemos que cada proyecto es una oportunidad para generar impacto positivo y valor agregado. Nuestra
-            metodología combina análisis técnico, innovación y trabajo en equipo, integrando sostenibilidad, eficiencia
+            360°. Y creemos que cada proyecto es una oportunidad para generar impacto positivo y valor agregado.
+            Nuestra metodología combina análisis técnico, innovación y trabajo en equipo, integrando sostenibilidad, eficiencia
             y calidad en cada etapa. El resultado: proyectos que funcionan hoy y siguen aportando valor en el futuro.
           </p>
           <div className="w-20 h-1 bg-white mx-auto mt-6"></div>
