@@ -1,17 +1,17 @@
-import React, { useEffect } from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import WhatsAppCTA from '@/components/WhatsAppCTA';
-import { Card, CardContent } from '@/components/ui/card';
+import React, { useEffect } from "react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import WhatsAppCTA from "@/components/WhatsAppCTA";
+import { Card, CardContent } from "@/components/ui/card";
 
 // Import images and components
-import MethodologyDiagram from '@/components/MethodologyDiagram';
-import architecturalPlanBackground from '@/assets/architectural-plan-background.png';
-import carouselAgua from '@/assets/carousel-agua.jpg';
-import construccionMontaje from '@/assets/construccion-montaje.jpg';
-import gestionTecnologica from '@/assets/gestion-tecnologica-it.jpg';
-import energiaRenovables from '@/assets/energia-renovables.jpg';
-import ambienteSeguridad from '@/assets/ambiente-seguridad.jpg';
+import MethodologyDiagram from "@/components/MethodologyDiagram";
+import architecturalPlanBackground from "@/assets/architectural-plan-background.png";
+import carouselAgua from "@/assets/carousel-agua.jpg";
+import construccionMontaje from "@/assets/construccion-montaje.jpg";
+import gestionTecnologica from "@/assets/gestion-tecnologica-it.jpg";
+import energiaRenovables from "@/assets/energia-renovables.jpg";
+import ambienteSeguridad from "@/assets/ambiente-seguridad.jpg";
 
 const ComoTrabajamos = () => {
   useEffect(() => {
@@ -22,38 +22,38 @@ const ComoTrabajamos = () => {
     {
       title: "Rediseño/expansión de plantas",
       subtitle: "de tratamiento y redes",
-      image: carouselAgua
+      image: carouselAgua,
     },
     {
       title: "Estaciones de bombeo",
       subtitle: "y sistemas de impulsión",
-      image: construccionMontaje
+      image: construccionMontaje,
     },
     {
       title: "Implementación de SCADA",
       subtitle: "automatización y telemetría",
-      image: gestionTecnologica
+      image: gestionTecnologica,
     },
     {
       title: "Programas de eficiencia energética",
       subtitle: "con M&V",
-      image: energiaRenovables
+      image: energiaRenovables,
     },
     {
       title: "Monitoreo ambiental",
       subtitle: "(olores, ruido) y gestión de pasivos",
-      image: ambienteSeguridad
-    }
+      image: ambienteSeguridad,
+    },
   ];
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       {/* Hero Section with Gradient Background */}
       <section className="relative pt-32 pb-12 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <img 
+          <img
             src={architecturalPlanBackground}
             alt="Architectural Plan Background"
             className="w-full h-full object-cover object-right"
@@ -64,10 +64,10 @@ const ComoTrabajamos = () => {
             Como Trabajamos
           </h1>
           <p className="text-xl max-w-5xl mx-auto font-light leading-relaxed text-white/90">
-            En Qaudal aplicamos una metodología integral que nos permite abordar cada proyecto 
-            desde una perspectiva 360°. Nuestro enfoque combina experiencia técnica multidisciplinaria 
-            con las mejores prácticas de la industria, garantizando soluciones eficientes y sostenibles 
-            en agua, saneamiento, energía y obras civiles.
+            En Qaudal aplicamos una metodología integral que nos permite abordar cada proyecto desde una perspectiva
+            360° y creemos que cada proyecto es una oportunidad para generar impacto positivo y valor agregado. Nuestra
+            metodología combina análisis técnico, innovación y trabajo en equipo, integrando sostenibilidad, eficiencia
+            y calidad en cada etapa. El resultado: proyectos que funcionan hoy y siguen aportando valor en el futuro.
           </p>
           <div className="w-20 h-1 bg-white mx-auto mt-6"></div>
         </div>
@@ -77,10 +77,10 @@ const ComoTrabajamos = () => {
       <section className="py-12 px-4 bg-gradient-to-b from-background to-muted/20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6">
-            <h2 className="text-4xl font-garet font-normal uppercase mb-4" style={{color: '#003249'}}>
+            <h2 className="text-4xl font-garet font-normal uppercase mb-4" style={{ color: "#003249" }}>
               Nuestra Metodología
             </h2>
-            <p className="text-2xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
+            <p className="text-2xl max-w-3xl mx-auto font-light leading-relaxed" style={{ color: "#737373" }}>
               Proceso integral que garantiza la excelencia en cada etapa del proyecto
             </p>
           </div>
@@ -94,29 +94,28 @@ const ComoTrabajamos = () => {
       <section className="py-12 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-4xl font-garet font-normal uppercase mb-4" style={{color: '#003249'}}>
+            <h2 className="text-4xl font-garet font-normal uppercase mb-4" style={{ color: "#003249" }}>
               Casos Típicos
             </h2>
-            <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{color: '#737373'}}>
+            <p className="text-xl max-w-3xl mx-auto font-light leading-relaxed" style={{ color: "#737373" }}>
               Ejemplos representativos de nuestras soluciones especializadas
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {casosTypicos.map((caso, index) => (
-              <Card key={index} className="overflow-hidden shadow-md hover:shadow-lg transition-shadow rounded-none border-0">
+              <Card
+                key={index}
+                className="overflow-hidden shadow-md hover:shadow-lg transition-shadow rounded-none border-0"
+              >
                 <div className="relative h-40">
-                  <img 
-                    src={caso.image}
-                    alt={`${caso.title} ${caso.subtitle}`}
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={caso.image} alt={`${caso.title} ${caso.subtitle}`} className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-black/40"></div>
                 </div>
                 <CardContent className="p-4">
-                  <h3 className="font-semibold text-lg mb-2" style={{color: '#003249'}}>
+                  <h3 className="font-semibold text-lg mb-2" style={{ color: "#003249" }}>
                     {caso.title}
                   </h3>
-                  <p className="text-sm font-light" style={{color: '#737373'}}>
+                  <p className="text-sm font-light" style={{ color: "#737373" }}>
                     {caso.subtitle}
                   </p>
                 </CardContent>
