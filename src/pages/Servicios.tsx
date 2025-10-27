@@ -1,22 +1,12 @@
 import { useEffect } from "react";
-import { 
-  FileText, 
-  PenTool, 
-  Settings, 
-  Building, 
-  ClipboardCheck, 
-  FileCheck,
-  Shield,
-  Sun,
-  Package
-} from "lucide-react";
+import { FileText, PenTool, Settings, Building, ClipboardCheck, FileCheck, Shield, Sun, Package } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import WhatsAppCTA from '@/components/WhatsAppCTA';
-import renewableEnergyBackground from '@/assets/renewable-energy-background.png';
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import WhatsAppCTA from "@/components/WhatsAppCTA";
+import renewableEnergyBackground from "@/assets/renewable-energy-background.png";
 
 // Import service images
 import consultoriaEstudiosImage from "@/assets/consultoria-estudios.jpg";
@@ -41,13 +31,13 @@ const Servicios = () => {
       //description: "Investigación y evaluación integral para el aprovechamiento de recursos hídricos y planificación de proyectos.",
       image: consultoriaEstudiosImage,
       details: [
-        "Investigación y evaluación para el aprovechamiento de recursos hídricos",
+        "Investigación y evaluación para el aprovechamiento integral de los recursos hídricos",
         "Estudios hidrogeológicos",
         "Estudios técnico–económico–financieros para planificación y proyectos de obras sanitarias, riego y drenaje",
         "Asesoramiento integral en obras de saneamiento",
         "Análisis estadístico de datos para optimización de sistemas",
-        "Estudios de calidad de agua y efluentes"
-      ]
+        "Estudios de calidad de agua y efluentes",
+      ],
     },
     {
       icon: PenTool,
@@ -56,12 +46,12 @@ const Servicios = () => {
       image: ingenieriaProyectosImage,
       details: [
         "Redes y sistemas de agua potable, cloacales, riego y drenaje pluvial",
-        "Plantas de tratamiento (múltiples tecnologías)",
+        "Plantas de tratamiento de agua y desagües cloacales (múltiples tecnologías)",
         "Instalaciones eléctricas de MT/BT, fuerza motriz e iluminación",
         "Sistemas de control y automatización (eléctricos, electrónicos, neumáticos)",
         "Comunicaciones y procesos industriales",
-        "Energías renovables: parques solares y eólicos, integración de recursos distribuidos"
-      ]
+        "Energías renovables: parques solares y eólicos, integración de recursos distribuidos",
+      ],
     },
     {
       icon: Settings,
@@ -70,12 +60,12 @@ const Servicios = () => {
       image: operacionMejoraImage,
       details: [
         "Operación de sistemas de agua, saneamiento, riego y drenaje",
-        "Optimización operativa y gestión de la energía",
+        "Optimización operativa con el objetivo de reducir costos y gestión eficiente de la energía",
         "Estrategias de mantenimiento y planes de mejora",
         //"Monitoreo y control de procesos",
         //"Gestión de la eficiencia energética",
         //"Implementación de mejoras tecnológicas"
-      ]
+      ],
     },
     {
       icon: Building,
@@ -86,10 +76,10 @@ const Servicios = () => {
         "Estudio, proyecto, dirección ejecutiva y ejecución de obras civiles e infraestructura de servicios (agua, cloacas, electricidad, drenaje pluvial, etc.)",
         "Cómputos métricos, especificaciones y planes de inversión",
         "Ejecución directa o mediante terceros habilitados, conforme normativa vigente",
-        //"Cumplimiento de normativa vigente",
+        "Inspección integral de obras",
         //"Gestión de cronogramas y recursos",
         //"Control de calidad en obra"
-      ]
+      ],
     },
     {
       icon: ClipboardCheck,
@@ -103,7 +93,7 @@ const Servicios = () => {
         "Certificación y seguimiento de curva de inversiones; supervisión de subcontratistas; verificación de planes de trabajo",
         //"Supervisión de subcontratistas",
         //"Verificación de planes de trabajo"
-      ]
+      ],
     },
     {
       icon: FileCheck,
@@ -117,7 +107,7 @@ const Servicios = () => {
         "Servicios como subcontratista para provisión, proyecto, Dirección y/o mano de obra, materiales, maquinarias, equipos, instrumental y vehículos",
         //"Dirección y/o mano de obra, materiales, maquinarias",
         //"Suministro de equipos, instrumental y vehículos"
-      ]
+      ],
     },
     {
       icon: Shield,
@@ -130,8 +120,8 @@ const Servicios = () => {
         "Instalación de equipos de monitoreo",
         "Seguridad e higiene industrial",
         "Muestreo y monitoreo de olores para evaluar áreas problemáticas",
-        "Cartografía de niveles de ruido"
-      ]
+        "Cartografía de niveles de ruido",
+      ],
     },
     {
       icon: Sun,
@@ -139,13 +129,13 @@ const Servicios = () => {
       //description: "Proyectos integrales de energía renovable, auditorías energéticas y sistemas de eficiencia.",
       image: energiaSustentableImage,
       details: [
-        "Proyectos de energía sustentable, auditorías y eficiencia energética (detección de oportunidades, bencharking y planes de mejora)",
-        "Diseño, implementación, operación y mantenimiento de generación renovable (solar, eólica, biomasa), cogeneración y gesión de demanda",
+        "Proyectos de energía sustentable, auditorías y eficiencia energética (detección de oportunidades, benchmarking y planes de mejora)",
+        "Diseño, implementación, operación y mantenimiento de generación de energía renovable (solar, eólica, biomasa), cogeneración y gestión de demanda",
         //"Sistemas solares, eólicos, biomasa, cogeneración y gestión de la demanda",
         "Medición y verificación (M&V) de ahorros, instrumentación y sistemas de monitorización",
         "Recuperación y reúso de agua e integración con sistemas hidráulicos y sanitarios",
-        "Comercialización e instalación de equipos y tecnologías vinculadas"
-      ]
+        "Comercialización e instalación de equipos y tecnologías vinculadas",
+      ],
     },
     {
       icon: Package,
@@ -159,34 +149,32 @@ const Servicios = () => {
         //"Equipos de control y automatización",
         //"Instrumental de medición y monitoreo",
         //"Asesoramiento técnico en selección de equipos"
-      ]
-    }
+      ],
+    },
   ];
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       {/* Hero Section with Gradient Background */}
       <section className="relative pt-36 pb-12 bg-gradient-to-r from-[#003249]/95 via-[#007EA7]/85 to-[#003249]/95 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img 
+          <img
             src={renewableEnergyBackground}
             alt="Renewable Energy Background"
             className="w-full h-full object-cover object-right"
           />
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="section-title text-4xl md:text-5xl font-garet uppercase font-normal text-white">
-            Servicios
-          </h1>
+          <h1 className="section-title text-4xl md:text-5xl font-garet uppercase font-normal text-white">Servicios</h1>
         </div>
       </section>
 
       {/* Subtitle outside header */}
       <div className="container mx-auto px-4 pt-5 pb-5">
         <div className="text-center">
-          <p className="text-xl max-w-5xl mx-auto font-semibold leading-relaxed" style={{color: '#007EA7'}}>
+          <p className="text-xl max-w-5xl mx-auto font-semibold leading-relaxed" style={{ color: "#007EA7" }}>
             Soluciones integrales para agua, saneamiento y energía
           </p>
         </div>
@@ -197,20 +185,20 @@ const Servicios = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
             <Link to="/empresa#como-trabajamos">
-              <Button 
+              <Button
                 className="w-full sm:w-auto transition-all duration-300 rounded-none px-8 py-3 text-white hover:opacity-90"
                 style={{
-                  backgroundColor: '#003249'
+                  backgroundColor: "#003249",
                 }}
               >
                 Como Trabajamos
               </Button>
             </Link>
             <Link to="/#contacto">
-              <Button 
+              <Button
                 className="w-full sm:w-auto transition-all duration-300 rounded-none px-8 py-3 text-white hover:opacity-90"
                 style={{
-                  backgroundColor: '#003249'
+                  backgroundColor: "#003249",
                 }}
               >
                 Contactar a un asesor
@@ -225,30 +213,35 @@ const Servicios = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="service-card border-0 overflow-hidden group hover:scale-105 transition-transform duration-300">
+              <Card
+                key={index}
+                className="service-card border-0 overflow-hidden group hover:scale-105 transition-transform duration-300"
+              >
                 <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={service.image} 
+                  <img
+                    src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-black/10"></div>
                 </div>
-                
+
                 <CardContent className="p-6">
-                  <h3 className="font-semibold text-lg mb-4" style={{color: '#003249'}}>
+                  <h3 className="font-semibold text-lg mb-4" style={{ color: "#003249" }}>
                     {service.title}
                   </h3>
-                  
-                  <p className="font-light leading-relaxed text-base mb-6" style={{color: '#737373'}}>
+
+                  <p className="font-light leading-relaxed text-base mb-6" style={{ color: "#737373" }}>
                     {service.description}
                   </p>
-                  
+
                   <div className="space-y-3">
                     {service.details.map((detail, detailIndex) => (
                       <div key={detailIndex} className="flex items-start gap-3">
-                        <div className="w-2 h-2 mt-2 flex-shrink-0" style={{backgroundColor: '#003249'}}></div>
-                        <span className="font-light text-base" style={{color: '#737373'}}>{detail}</span>
+                        <div className="w-2 h-2 mt-2 flex-shrink-0" style={{ backgroundColor: "#003249" }}></div>
+                        <span className="font-light text-base" style={{ color: "#737373" }}>
+                          {detail}
+                        </span>
                       </div>
                     ))}
                   </div>
@@ -258,7 +251,6 @@ const Servicios = () => {
           </div>
         </div>
       </section>
-
 
       <Footer />
       <WhatsAppCTA />
