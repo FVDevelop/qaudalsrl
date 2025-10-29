@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import MethodologyDiagram from "@/components/MethodologyDiagram";
-import construccionMontajeImage from "@/assets/construccion-montaje.jpg";
+import direccionInspeccionImage from "@/assets/direccion-inspeccion.jpg";
 import carouselAgua from "@/assets/carousel-agua.jpg";
 import construccionMontaje from "@/assets/construccion-montaje.jpg";
 import gestionTecnologica from "@/assets/gestion-tecnologica-it.jpg";
@@ -52,8 +52,8 @@ const EmpresaContent = () => {
             {/* Left - Image */}
             <div className="order-2 lg:order-1">
               <img
-                src={construccionMontajeImage}
-                alt="Trabajo in situ de construcción y montaje de Qaudal"
+                src={direccionInspeccionImage}
+                alt="Trabajo in situ de dirección e inspección de Qaudal"
                 className="w-full h-[500px] object-cover shadow-strong"
               />
             </div>
