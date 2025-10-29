@@ -74,7 +74,7 @@ const ComoTrabajamos = () => {
             Nuestra metodología combina análisis técnico, innovación y trabajo en equipo, integrando sostenibilidad, eficiencia
             y calidad en cada etapa.
           </p>
-          <p className="text-xl max-w-5xl mx-auto font-semibold italic leading-relaxed mt-3" style={{ color: "#007EA7" }}>
+          <p className="text-xl max-w-5xl mx-auto font-semibold leading-relaxed mt-3" style={{ color: "#007EA7" }}>
             El resultado: proyectos que funcionan hoy y siguen aportando valor en el futuro.
           </p>
           <div className="w-20 h-1 bg-white mx-auto mt-6"></div>

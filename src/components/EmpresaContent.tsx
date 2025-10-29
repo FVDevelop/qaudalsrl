@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import MethodologyDiagram from "@/components/MethodologyDiagram";
-import workersImage from "@/assets/workers-engineering-team.jpg";
+import construccionMontajeImage from "@/assets/construccion-montaje.jpg";
 import carouselAgua from "@/assets/carousel-agua.jpg";
 import construccionMontaje from "@/assets/construccion-montaje.jpg";
 import gestionTecnologica from "@/assets/gestion-tecnologica-it.jpg";
@@ -52,8 +52,8 @@ const EmpresaContent = () => {
             {/* Left - Image */}
             <div className="order-2 lg:order-1">
               <img
-                src={workersImage}
-                alt="Equipo profesional de Qaudal en ambiente de ingeniería"
+                src={construccionMontajeImage}
+                alt="Trabajo in situ de construcción y montaje de Qaudal"
                 className="w-full h-[500px] object-cover shadow-strong"
               />
             </div>
@@ -133,7 +133,7 @@ const EmpresaContent = () => {
             Nuestra metodología combina análisis técnico, innovación y trabajo en equipo, integrando sostenibilidad, eficiencia
             y calidad en cada etapa.
           </p>
-          <p className="text-xl max-w-5xl mx-auto font-semibold italic leading-relaxed mt-3" style={{ color: "#007EA7" }}>
+          <p className="text-xl max-w-5xl mx-auto font-semibold leading-relaxed mt-3" style={{ color: "#007EA7" }}>
             El resultado: proyectos que funcionan hoy y siguen aportando valor en el futuro.
           </p>
         </div>
