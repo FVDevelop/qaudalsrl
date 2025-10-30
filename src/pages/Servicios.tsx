@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { FileText, PenTool, Settings, Building, ClipboardCheck, FileCheck, Shield, Sun, Package } from "lucide-react";
+import { FileText, PenTool, Settings, Building, ClipboardCheck, FileCheck, Shield, Sun, Package, Droplets } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -18,6 +18,7 @@ import gestionContratacionesImage from "@/assets/gestion-contrataciones.jpg";
 import ambienteSeguridadImage from "@/assets/ambiente-seguridad.jpg";
 import energiaSustentableImage from "@/assets/energia-sustentable.jpg";
 import comercioEquiposImage from "@/assets/comercio-equipos.jpg";
+import heroWaterSanitationImage from "@/assets/hero-water-sanitation.jpg";
 
 const Servicios = () => {
   useEffect(() => {
@@ -149,6 +150,18 @@ const Servicios = () => {
         //"Equipos de control y automatización",
         //"Instrumental de medición y monitoreo",
         //"Asesoramiento técnico en selección de equipos"
+      ],
+    },
+    {
+      icon: Droplets,
+      title: "Gestión sostenible del agua en countries y barrios cerrados",
+      description: "Desarrollo de soluciones integrales para la gestión del agua en emprendimientos residenciales, combinando eficiencia técnica y compromiso ambiental",
+      image: heroWaterSanitationImage,
+      details: [
+        "Diseño y mantenimiento de sistemas pluviales para evitar anegamientos y mejorar el drenaje natural",
+        "Plantas de tratamiento y reutilización de aguas grises o de piscinas, destinadas al riego de espacios verdes y áreas comunes",
+        "Optimización de grandes reservorios de agua (piscinas comunitarias, lagunas ornamentales) mediante procesos de recirculación, potabilización y control de calidad",
+        "Asesoramiento ambiental integral, con enfoque en sostenibilidad y gestión por cuencas",
       ],
     },
   ];
