@@ -175,7 +175,7 @@ const Services = () => {
     { 
       icon: Sun, 
       title: "ENERGÍA SUSTENTABLE", 
-      description: "Innosphere ayuda a las empresas a optimizar el consumo energético de sus edificios mediante soluciones sustentables.",
+      description: "Qaudal ayuda a las empresas a optimizar el consumo energético de sus edificios mediante soluciones sustentables.",
       image: servicesSolarTechImage,
       details: [
         "Integración de energías renovables",
