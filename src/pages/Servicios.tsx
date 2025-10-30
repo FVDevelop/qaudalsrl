@@ -31,7 +31,7 @@ const Servicios = () => {
       //description: "Investigación y evaluación integral para el aprovechamiento de recursos hídricos y planificación de proyectos.",
       image: consultoriaEstudiosImage,
       details: [
-        "Investigación y evaluación para el aprovechamiento de recursos hídricos",
+        "Investigación y evaluación para el aprovechamiento integral de recursos hídricos",
         "Estudios hidrogeológicos",
         "Estudios técnico–económico–financieros para planificación y proyectos de obras sanitarias, riego y drenaje",
         "Asesoramiento integral en obras de saneamiento",
