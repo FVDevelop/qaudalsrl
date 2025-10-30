@@ -28,7 +28,7 @@ const Servicios = () => {
     {
       icon: FileText,
       title: "Consultoría, estudios y planificación",
-      //description: "Investigación y evaluación para el aprovechamiento integral de recursos hídricos y planificación de proyectos.",
+      //description: "Investigación y evaluación integral para el aprovechamiento de recursos hídricos y planificación de proyectos.",
       image: consultoriaEstudiosImage,
       details: [
         "Investigación y evaluación para el aprovechamiento de recursos hídricos",
@@ -46,7 +46,7 @@ const Servicios = () => {
       image: ingenieriaProyectosImage,
       details: [
         "Redes y sistemas de agua potable, cloacales, riego y drenaje pluvial",
-        "Plantas de tratamiento (múltiples tecnologías)",
+        "Plantas de tratamiento de agua y desagües cloacales (múltiples tecnologías)",
         "Instalaciones eléctricas de MT/BT, fuerza motriz e iluminación",
         "Sistemas de control y automatización (eléctricos, electrónicos, neumáticos)",
         "Comunicaciones y procesos industriales",
@@ -60,7 +60,7 @@ const Servicios = () => {
       image: operacionMejoraImage,
       details: [
         "Operación de sistemas de agua, saneamiento, riego y drenaje",
-        "Optimización operativa y gestión de la energía",
+        "Optimización operativa con el objetivo de reducir costos y gestión eficiente de la energía",
         "Estrategias de mantenimiento y planes de mejora",
         //"Monitoreo y control de procesos",
         //"Gestión de la eficiencia energética",
@@ -76,7 +76,7 @@ const Servicios = () => {
         "Estudio, proyecto, dirección ejecutiva y ejecución de obras civiles e infraestructura de servicios (agua, cloacas, electricidad, drenaje pluvial, etc.)",
         "Cómputos métricos, especificaciones y planes de inversión",
         "Ejecución directa o mediante terceros habilitados, conforme normativa vigente",
-        //"Cumplimiento de normativa vigente",
+        "Inspección general de obras",
         //"Gestión de cronogramas y recursos",
         //"Control de calidad en obra"
       ],
