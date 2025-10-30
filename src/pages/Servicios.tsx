@@ -76,7 +76,7 @@ const Servicios = () => {
         "Estudio, proyecto, dirección ejecutiva y ejecución de obras civiles e infraestructura de servicios (agua, cloacas, electricidad, drenaje pluvial, etc.)",
         "Cómputos métricos, especificaciones y planes de inversión",
         "Ejecución directa o mediante terceros habilitados, conforme normativa vigente",
-        //"Cumplimiento de normativa vigente",
+        "Inspección integral de obras",
         //"Gestión de cronogramas y recursos",
         //"Control de calidad en obra"
       ],
