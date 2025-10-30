@@ -18,7 +18,7 @@ import gestionContratacionesImage from "@/assets/gestion-contrataciones.jpg";
 import ambienteSeguridadImage from "@/assets/ambiente-seguridad.jpg";
 import energiaSustentableImage from "@/assets/energia-sustentable.jpg";
 import comercioEquiposImage from "@/assets/comercio-equipos.jpg";
-import infraestructuraUrbanaImage from "@/assets/infraestructura-urbana.jpg";
+import barrioCerradoLagoImage from "@/assets/barrio-cerrado-lago.jpg";
 
 const Servicios = () => {
   useEffect(() => {
@@ -156,7 +156,7 @@ const Servicios = () => {
       icon: Droplets,
       title: "Gestión sostenible del agua en countries y barrios cerrados",
       description: "Desarrollo de soluciones integrales para la gestión del agua en emprendimientos residenciales, combinando eficiencia técnica y compromiso ambiental",
-      image: infraestructuraUrbanaImage,
+      image: barrioCerradoLagoImage,
       details: [
         "Diseño y mantenimiento de sistemas pluviales para evitar anegamientos y mejorar el drenaje natural",
         "Plantas de tratamiento y reutilización de aguas grises o de piscinas, destinadas al riego de espacios verdes y áreas comunes",
