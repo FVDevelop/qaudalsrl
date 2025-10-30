@@ -139,16 +139,6 @@ const Header = () => {
               }`} onClick={() => setIsMenuOpen(false)}>
                 Empresa
               </Link>
-              <Link to="/como-trabajamos" className={`transition-colors font-light text-lg ${
-                location.pathname === "/como-trabajamos" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
-              }`} onClick={() => setIsMenuOpen(false)}>
-                Como Trabajamos
-              </Link>
-              <Link to="/por-que-qaudal" className={`transition-colors font-light text-lg ${
-                location.pathname === "/por-que-qaudal" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
-              }`} onClick={() => setIsMenuOpen(false)}>
-                Por que Elegirnos
-              </Link>
               <Link to="/servicios" className={`transition-colors font-light text-lg ${
                 location.pathname === "/servicios" ? "text-[#003249]" : "text-foreground/80 hover:text-primary"
               }`} onClick={() => setIsMenuOpen(false)}>
