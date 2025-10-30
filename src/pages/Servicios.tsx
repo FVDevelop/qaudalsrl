@@ -18,7 +18,7 @@ import gestionContratacionesImage from "@/assets/gestion-contrataciones.jpg";
 import ambienteSeguridadImage from "@/assets/ambiente-seguridad.jpg";
 import energiaSustentableImage from "@/assets/energia-sustentable.jpg";
 import comercioEquiposImage from "@/assets/comercio-equipos.jpg";
-import heroWaterSanitationImage from "@/assets/hero-water-sanitation.jpg";
+import infraestructuraUrbanaImage from "@/assets/infraestructura-urbana.jpg";
 
 const Servicios = () => {
   useEffect(() => {
@@ -156,7 +156,7 @@ const Servicios = () => {
       icon: Droplets,
       title: "Gestión sostenible del agua en countries y barrios cerrados",
       description: "Desarrollo de soluciones integrales para la gestión del agua en emprendimientos residenciales, combinando eficiencia técnica y compromiso ambiental",
-      image: heroWaterSanitationImage,
+      image: infraestructuraUrbanaImage,
       details: [
         "Diseño y mantenimiento de sistemas pluviales para evitar anegamientos y mejorar el drenaje natural",
         "Plantas de tratamiento y reutilización de aguas grises o de piscinas, destinadas al riego de espacios verdes y áreas comunes",
@@ -225,42 +225,81 @@ const Servicios = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <Card
-                key={index}
-                className="service-card border-0 overflow-hidden group hover:scale-105 transition-transform duration-300"
-              >
-                <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-black/10"></div>
-                </div>
-
-                <CardContent className="p-6">
-                  <h3 className="font-semibold text-lg mb-4" style={{ color: "#003249" }}>
-                    {service.title}
-                  </h3>
-
-                  <p className="font-light leading-relaxed text-base mb-6" style={{ color: "#737373" }}>
-                    {service.description}
-                  </p>
-
-                  <div className="space-y-3">
-                    {service.details.map((detail, detailIndex) => (
-                      <div key={detailIndex} className="flex items-start gap-3">
-                        <div className="w-2 h-2 mt-2 flex-shrink-0" style={{ backgroundColor: "#003249" }}></div>
-                        <span className="font-light text-base" style={{ color: "#737373" }}>
-                          {detail}
-                        </span>
+            {services.map((service, index) => {
+              const isLastService = index === services.length - 1;
+              
+              return (
+                <Card
+                  key={index}
+                  className={`service-card border-0 overflow-hidden group hover:scale-105 transition-transform duration-300 ${
+                    isLastService ? 'md:col-span-3' : ''
+                  }`}
+                >
+                  {isLastService ? (
+                    <div className="flex flex-col md:flex-row">
+                      <div className="relative md:w-1/2 h-64 md:h-auto overflow-hidden">
+                        <img
+                          src={service.image}
+                          alt={service.title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        />
+                        <div className="absolute inset-0 bg-black/10"></div>
                       </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                      <CardContent className="p-6 md:w-1/2">
+                        <h3 className="font-semibold text-lg mb-4" style={{ color: "#003249" }}>
+                          {service.title}
+                        </h3>
+                        <p className="font-light leading-relaxed text-base mb-6" style={{ color: "#737373" }}>
+                          {service.description}
+                        </p>
+                        <div className="space-y-3">
+                          {service.details.map((detail, detailIndex) => (
+                            <div key={detailIndex} className="flex items-start gap-3">
+                              <div className="w-2 h-2 mt-2 flex-shrink-0" style={{ backgroundColor: "#003249" }}></div>
+                              <span className="font-light text-base" style={{ color: "#737373" }}>
+                                {detail}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      </CardContent>
+                    </div>
+                  ) : (
+                    <>
+                      <div className="relative h-48 overflow-hidden">
+                        <img
+                          src={service.image}
+                          alt={service.title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        />
+                        <div className="absolute inset-0 bg-black/10"></div>
+                      </div>
+
+                      <CardContent className="p-6">
+                        <h3 className="font-semibold text-lg mb-4" style={{ color: "#003249" }}>
+                          {service.title}
+                        </h3>
+
+                        <p className="font-light leading-relaxed text-base mb-6" style={{ color: "#737373" }}>
+                          {service.description}
+                        </p>
+
+                        <div className="space-y-3">
+                          {service.details.map((detail, detailIndex) => (
+                            <div key={detailIndex} className="flex items-start gap-3">
+                              <div className="w-2 h-2 mt-2 flex-shrink-0" style={{ backgroundColor: "#003249" }}></div>
+                              <span className="font-light text-base" style={{ color: "#737373" }}>
+                                {detail}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      </CardContent>
+                    </>
+                  )}
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
