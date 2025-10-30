@@ -31,7 +31,7 @@ const Servicios = () => {
       //description: "Investigación y evaluación integral para el aprovechamiento de recursos hídricos y planificación de proyectos.",
       image: consultoriaEstudiosImage,
       details: [
-        "Investigación y evaluación para el aprovechamiento integral de recursos hídricos",
+        "Investigación y evaluación para el aprovechamiento de recursos hídricos",
         "Estudios hidrogeológicos",
         "Estudios técnico–económico–financieros para planificación y proyectos de obras sanitarias, riego y drenaje",
         "Asesoramiento integral en obras de saneamiento",
@@ -46,7 +46,7 @@ const Servicios = () => {
       image: ingenieriaProyectosImage,
       details: [
         "Redes y sistemas de agua potable, cloacales, riego y drenaje pluvial",
-        "Plantas de tratamiento (múltiples tecnologías)",
+        "Plantas de tratamiento de agua y desagües cloacales (múltiples tecnologías)",
         "Instalaciones eléctricas de MT/BT, fuerza motriz e iluminación",
         "Sistemas de control y automatización (eléctricos, electrónicos, neumáticos)",
         "Comunicaciones y procesos industriales",
