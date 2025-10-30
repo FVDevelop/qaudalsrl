@@ -130,7 +130,7 @@ const Servicios = () => {
       image: energiaSustentableImage,
       details: [
         "Proyectos de energía sustentable, auditorías y eficiencia energética (detección de oportunidades, benchmarking y planes de mejora)",
-        "Diseño, implementación, operación y mantenimiento de generación renovable (solar, eólica, biomasa), cogeneración y gesión de demanda",
+        "Diseño, implementación, operación y mantenimiento de generación de energía renovable (solar, eólica, biomasa), cogeneración y gestión de demanda",
         //"Sistemas solares, eólicos, biomasa, cogeneración y gestión de la demanda",
         "Medición y verificación (M&V) de ahorros, instrumentación y sistemas de monitorización",
         "Recuperación y reúso de agua e integración con sistemas hidráulicos y sanitarios",
