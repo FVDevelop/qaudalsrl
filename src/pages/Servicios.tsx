@@ -76,7 +76,7 @@ const Servicios = () => {
         "Estudio, proyecto, dirección ejecutiva y ejecución de obras civiles e infraestructura de servicios (agua, cloacas, electricidad, drenaje pluvial, etc.)",
         "Cómputos métricos, especificaciones y planes de inversión",
         "Ejecución directa o mediante terceros habilitados, conforme normativa vigente",
-        "Inspección integral de obras",
+        //"Cumplimiento de normativa vigente",
         //"Gestión de cronogramas y recursos",
         //"Control de calidad en obra"
       ],
@@ -129,7 +129,7 @@ const Servicios = () => {
       //description: "Proyectos integrales de energía renovable, auditorías energéticas y sistemas de eficiencia.",
       image: energiaSustentableImage,
       details: [
-        "Proyectos de energía sustentable, auditorías y eficiencia energética (detección de oportunidades, bencharking y planes de mejora)",
+        "Proyectos de energía sustentable, auditorías y eficiencia energética (detección de oportunidades, benchmarking y planes de mejora)",
         "Diseño, implementación, operación y mantenimiento de generación renovable (solar, eólica, biomasa), cogeneración y gesión de demanda",
         //"Sistemas solares, eólicos, biomasa, cogeneración y gestión de la demanda",
         "Medición y verificación (M&V) de ahorros, instrumentación y sistemas de monitorización",
