@@ -31,7 +31,7 @@ const Servicios = () => {
       //description: "Investigación y evaluación integral para el aprovechamiento de recursos hídricos y planificación de proyectos.",
       image: consultoriaEstudiosImage,
       details: [
-        "Investigación y evaluación para el aprovechamiento de recursos hídricos",
+        "Investigación y evaluación para el aprovechamiento integral de recursos hídricos",
         "Estudios hidrogeológicos",
         "Estudios técnico–económico–financieros para planificación y proyectos de obras sanitarias, riego y drenaje",
         "Asesoramiento integral en obras de saneamiento",
@@ -129,8 +129,8 @@ const Servicios = () => {
       //description: "Proyectos integrales de energía renovable, auditorías energéticas y sistemas de eficiencia.",
       image: energiaSustentableImage,
       details: [
-        "Proyectos de energía sustentable, auditorías y eficiencia energética (detección de oportunidades, benchmarking y planes de mejora)",
-        "Diseño, implementación, operación y mantenimiento de generación de energía renovable (solar, eólica, biomasa), cogeneración y gestión de demanda",
+        "Proyectos de energía sustentable, auditorías y eficiencia energética (detección de oportunidades, bencharking y planes de mejora)",
+        "Diseño, implementación, operación y mantenimiento de generación renovable (solar, eólica, biomasa), cogeneración y gesión de demanda",
         //"Sistemas solares, eólicos, biomasa, cogeneración y gestión de la demanda",
         "Medición y verificación (M&V) de ahorros, instrumentación y sistemas de monitorización",
         "Recuperación y reúso de agua e integración con sistemas hidráulicos y sanitarios",
