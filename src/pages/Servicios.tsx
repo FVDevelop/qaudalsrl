@@ -46,7 +46,7 @@ const Servicios = () => {
       image: ingenieriaProyectosImage,
       details: [
         "Redes y sistemas de agua potable, cloacales, riego y drenaje pluvial",
-        "Plantas de tratamiento (múltiples tecnologías)",
+        "Plantas de tratamiento de agua y desagües cloacales (múltiples tecnologías)",
         "Instalaciones eléctricas de MT/BT, fuerza motriz e iluminación",
         "Sistemas de control y automatización (eléctricos, electrónicos, neumáticos)",
         "Comunicaciones y procesos industriales",
