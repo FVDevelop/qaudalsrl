@@ -60,7 +60,7 @@ const Servicios = () => {
       image: operacionMejoraImage,
       details: [
         "Operación de sistemas de agua, saneamiento, riego y drenaje",
-        "Optimización operativa con el objetivo de reducir costos y gestión de la energía",
+        "Optimización operativa con el objetivo de reducir costos y gestión eficiente de la energía",
         "Estrategias de mantenimiento y planes de mejora",
         //"Monitoreo y control de procesos",
         //"Gestión de la eficiencia energética",
