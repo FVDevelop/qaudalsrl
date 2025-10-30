@@ -28,7 +28,7 @@ const Servicios = () => {
     {
       icon: FileText,
       title: "Consultoría, estudios y planificación",
-      //description: "Investigación y evaluación integral para el aprovechamiento de recursos hídricos y planificación de proyectos.",
+      //description: "Investigación y evaluación para el aprovechamiento integral de recursos hídricos y planificación de proyectos.",
       image: consultoriaEstudiosImage,
       details: [
         "Investigación y evaluación para el aprovechamiento de recursos hídricos",
